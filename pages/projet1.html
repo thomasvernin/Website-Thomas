@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 | Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+    </header>
+
+    <section class="project-detail">
+        <div class="project-detail-content">
+            <h2>Project 1: Web Design</h2>
+            
+            <div class="project-section">
+                <h3>Description</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h3>Stack Used</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Creative Design</li>
+                    <li>Performance Optimization</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h3>Internet links</h3>
+                <ul>
+                    <li>Github code</li>
+                    <li>Website link of the published project</li>
+                </ul>
+            </div>
+            
+            <a href="../index.html#portfolio" class="btn">Go Back</a>
+        </div>
+        <img src="../images/p1.jpeg" class="image_projet" alt="Project 1 Image">
+    </section>
+
+    <footer>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            margin: 100px;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            padding: 1rem;
+            background-color: #ffffff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-left: 160px;
+        }
+
+        .project-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .project-detail-content {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .project-section {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+        }
+
+        .project-detail img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            grid-column: span 2;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p, ul, li {
+            font-size: 1.5rem;
+            margin-bottom: 4rem;
+            margin-left: 10px;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background-color: #0026ff;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            text-align: center; /* Centrer le bouton */
+        } 
+
+        .footer {
+            width: 100%;
+            padding: 1rem;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-iconTop {
+            font-size: 2rem;
+        } 
+
+        /* Media Queries pour tablettes (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        font-size: 2.5rem;
+        margin-left: 110px;
+    }
+
+    .project-detail-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-section {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p, ul, li {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+    </style>
+</html>
