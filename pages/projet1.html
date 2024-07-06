@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 | Portfolio</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
+    <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
     </header>
 
+    <!-- Project Detail Section -->
     <section class="project-detail">
         <div class="project-detail-content">
             <h2>Project 1: Web Design</h2>
             
+            <!-- Project Sections -->
             <div class="project-section">
                 <h3>Description</h3>
                 <ul>
@@ -53,22 +58,27 @@
                 </ul>
             </div>
             
+            <!-- Go Back Button -->
             <a href="../index.html#portfolio" class="btn">Go Back</a>
         </div>
+        
+        <!-- Project Image -->
         <img src="../images/p1.jpeg" class="image_projet" alt="Project 1 Image">
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-iconTop">
             <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
+    <!-- External Scripts -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
-</body>
 
+    <!-- Internal Styles -->
     <style>
         body {
             display: flex;
@@ -92,7 +102,7 @@
 
         .logo {
             font-size: 3rem;
-            margin-left: 160px;
+            margin-left: 160px; /* Original margin adjusted */
         }
 
         .project-detail {
@@ -109,6 +119,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+            margin: 0 auto; /* Center align the content */
         }
 
         .project-section {
@@ -155,7 +166,8 @@
             margin-top: 1rem;
             margin-bottom: 2rem;
             border-radius: 5px;
-            text-align: center; /* Centrer le bouton */
+            text-align: center;
+            display: inline-block; /* Ensure button is displayed correctly */
         } 
 
         .footer {
@@ -172,41 +184,55 @@
         } 
 
         /* Media Queries pour tablettes (768px - 1024px) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .logo {
-        font-size: 2.5rem;
-        margin-left: 110px;
-    }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .logo {
+                font-size: 2.5rem;
+                margin-left: 110px; /* Original margin adjusted */
+            }
 
-    .project-detail-content {
-        grid-template-columns: 1fr;
-    }
+            .project-detail-content {
+                grid-template-columns: 1fr;
+            }
 
-    .project-section {
-        height: auto;
-    }
+            .project-section {
+                height: auto;
+            }
 
-    h2 {
-        font-size: 3rem;
-    }
+            h2 {
+                font-size: 3rem;
+            }
 
-    h3 {
-        font-size: 1.8rem;
-    }
+            h3 {
+                font-size: 1.8rem;
+            }
 
-    p, ul, li {
-        font-size: 1.3rem;
-        margin-bottom: 1.5rem;
-    }
+            p, ul, li {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
 
-    .btn {
-        font-size: 1.3rem;
-        padding: 0.8rem 1.5rem;
-        margin-bottom: 1rem;
-    }
-}
+            .btn {
+                font-size: 1.3rem;
+                padding: 0.8rem 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
 
+        /* Media Query pour téléphones portables (moins de 768px de largeur) */
+        @media screen and (max-width: 767px) {
+            .logo {
+                margin-right : 160px; /* Adjusted for alignment */
+            }
 
+            .project-section {
+                margin: 0; /* Adjusted for spacing */
+                height: auto; /* Adjusted for height */
+            }
 
+            .project-detail-content {
+                margin: 20px; /* Adjusted for margin */
+            }
+        }
     </style>
+</body>
 </html>
