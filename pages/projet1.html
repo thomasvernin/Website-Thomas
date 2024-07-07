@@ -8,15 +8,12 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="projets.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
-    </header>
 
     <!-- Project Detail Section -->
     <section class="project-detail">
@@ -59,7 +56,7 @@
             </div>
             
             <!-- Go Back Button -->
-            <a href="../index.html#portfolio" class="btn">Go Back</a>
+            <a href="../index.html#portfolio" class="btn">Visit another project</a>
         </div>
         
         <!-- Project Image -->
@@ -76,163 +73,9 @@
     <!-- External Scripts -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 
-    <!-- Internal Styles -->
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            font-family: Arial, sans-serif;
-            margin: 100px;
-            padding: 0;
-        }
-
-        .header {
-            width: 100%;
-            padding: 1rem;
-            background-color: #ffffff;
-            color: #000;
-            display: flex;
-            justify-content: center;
-        }
-
-        .logo {
-            font-size: 3rem;
-            margin-left: 160px; /* Original margin adjusted */
-        }
-
-        .project-detail {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .project-detail-content {
-            max-width: 1200px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin: 0 auto; /* Center align the content */
-        }
-
-        .project-section {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 1rem;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 300px;
-        }
-
-        .project-detail img {
-            max-width: 100%;
-            margin: 1rem 0;
-            border-radius: 20px;
-        }
-
-        h2 {
-            font-size: 4rem;
-            margin-bottom: 3rem;
-            grid-column: span 2;
-        }
-
-        h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        p, ul, li {
-            font-size: 1.5rem;
-            margin-bottom: 4rem;
-            margin-left: 10px;
-        }
-
-        .btn {
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            background-color: #0026ff;
-            color: #fff;
-            text-decoration: none;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            border-radius: 5px;
-            text-align: center;
-            display: inline-block; /* Ensure button is displayed correctly */
-        } 
-
-        .footer {
-            width: 100%;
-            padding: 1rem;
-            color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .footer-iconTop {
-            font-size: 2rem;
-        } 
-
-        /* Media Queries pour tablettes (768px - 1024px) */
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            .logo {
-                font-size: 2.5rem;
-                margin-left: 110px; /* Original margin adjusted */
-            }
-
-            .project-detail-content {
-                grid-template-columns: 1fr;
-            }
-
-            .project-section {
-                height: auto;
-            }
-
-            h2 {
-                font-size: 3rem;
-            }
-
-            h3 {
-                font-size: 1.8rem;
-            }
-
-            p, ul, li {
-                font-size: 1.3rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .btn {
-                font-size: 1.3rem;
-                padding: 0.8rem 1.5rem;
-                margin-bottom: 1rem;
-            }
-        }
-
-        /* Media Query pour téléphones portables (moins de 768px de largeur) */
-        @media screen and (max-width: 767px) {
-            .logo {
-                margin-right : 160px; /* Adjusted for alignment */
-            }
-
-            .project-section {
-                margin: 0; /* Adjusted for spacing */
-                height: auto; /* Adjusted for height */
-            }
-
-            .project-detail-content {
-                margin: 20px; /* Adjusted for margin */
-            }
-        }
-    </style>
+    
 </body>
+
 </html>

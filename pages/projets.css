@@ -1,0 +1,159 @@
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .dark-mode{
+            --bg-color :#030115;
+            --text-color : #fdfdfd;
+            --white-color : #070707; 
+            
+        }
+
+        .project-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .project-detail-content {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 1rem auto; 
+            font-size: 2.6rem;
+            transition: .5s ease;
+
+        }
+
+        .project-section {
+            flex: 1 1 30rem;
+            background: var(--bg-color);
+            padding: 3rem 2rem 4rem;
+            border-radius: 2rem;
+            box-shadow: 0 .1rem .5rem var(--shadow-color);
+            text-align: left;
+            border-top: .2rem solid var(--main-color);
+            border-bottom: .2rem solid var(--main-color);
+            border-left: .2rem solid var(--main-color);
+            border-right: .2rem solid var(--main-color);
+            transition: .5s ease;
+        }
+
+        .project-detail img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            grid-column: span 2;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p, ul, li {
+            font-size: 1.5rem;
+            margin-bottom: 4rem;
+            margin-left: 10px;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background-color: #0026ff;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block; /* Ensure button is displayed correctly */
+        } 
+
+        .footer {
+            width: 100%;
+            padding: 1rem;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-iconTop {
+            font-size: 1rem;
+            margin-left: 50px;
+        } 
+
+        /* Media Queries pour tablettes (768px - 1024px) */
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .logo {
+                font-size: 2.5rem;
+                margin-left: 110px; /* Original margin adjusted */
+            }
+
+            .project-detail-content {
+                grid-template-columns: 1fr;
+            }
+
+            .project-section {
+                height: auto;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            p, ul, li {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .btn {
+                font-size: 1.3rem;
+                padding: 0.8rem 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Media Query pour téléphones portables (moins de 768px de largeur) */
+        @media screen and (max-width: 767px) {
+
+            .logo {
+                margin-right : 250px; /* Adjusted for alignment */
+            }
+
+            .project-section {
+                margin: 0px; /* Adjusted for spacing */
+                height: auto; /* Adjusted for height */
+            }
+
+            .project-detail-content {
+                margin: 20px; /* Adjusted for margin */
+            }
+
+            .footer-iconTop {
+                margin-left: 0px;
+            } 
+        }
+    
