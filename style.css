@@ -661,11 +661,11 @@ span{
 
 @media (max-width: 1024px){
     .header{
-        padding: 2rem 3%;
+        padding: 3rem 3%;
     }
 
     section{
-        padding: 5rem 3% 2rem;
+        padding: 2rem 3% 2rem;
     }
 
     .home .profession-container .profession-box{
@@ -675,14 +675,12 @@ span{
     .home .profession-container .overlay{
         right: -15rem;
     }
-
-    .home-img img{
-        height: 10%;
-        left : 30px ;
-        top : px;
-        bottom : 350px;
+    .home .home-img {
+        display: none;
     }
 }
+
+
 
 @media (max-width: 991px){
 
@@ -706,12 +704,6 @@ span{
 
     .home .profession-container .overlay{
         right: -39.5rem;
-    }
-
-    .home-img img{
-        height: 10%;
-        left : 30px ;
-        bottom : 250px;
     }
 
     .services,
@@ -783,6 +775,10 @@ span{
         text-align: center;
     }
 
+    .profession-container {
+        display: none ;
+    }
+
     .home-content h3{
         font-size: 2.6rem;
     }
@@ -850,12 +846,6 @@ span{
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
-    }
-
-    .home-img img{
-        height: 10%;
-        left : 340px ;
-        bottom : 750px;
     }
 
     .about {
@@ -959,9 +949,6 @@ span{
 
     .home .profession-container{
         display: none;
-    }
-    .home-img img{
-        display : none ; 
     }
 
     .contact form .input-box input{
