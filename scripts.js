@@ -61,13 +61,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-/*=====drak light mode======*/
-let darkModeIcon = document.querySelector('#darkMode-icon');
 
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle('bx-sun');
-  document.body.classList.toggle('dark-mode');
-};
 
 /*=====scroll reveal======*/
 ScrollReveal({
@@ -92,3 +86,41 @@ ScrollReveal().reveal('.home-content h1, .about-img img', {
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {
   origin: 'right'
 });
+
+
+
+// dark-mode.js
+
+// Fonction pour appliquer le mode sombre
+function applyDarkMode() {
+  document.body.classList.add('dark-mode');
+  darkModeIcon.classList.add('bx-sun');
+}
+
+// Fonction pour retirer le mode sombre
+function removeDarkMode() {
+  document.body.classList.remove('dark-mode');
+  darkModeIcon.classList.remove('bx-sun');
+}
+
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+// Vérifier le mode stocké dans le localStorage au chargement de la page
+if (localStorage.getItem('dark-mode') === 'enabled') {
+  applyDarkMode();
+} else {
+  // Assurez-vous que le mode clair est appliqué par défaut
+  removeDarkMode();
+}
+
+// Ajouter un événement au clic sur l'icône de mode sombre
+darkModeIcon.onclick = () => {
+  darkModeIcon.classList.toggle('bx-sun');
+  document.body.classList.toggle('dark-mode');
+  // Enregistrer le mode dans le localStorage
+  if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('dark-mode', 'enabled');
+  } else {
+      localStorage.setItem('dark-mode', 'disabled');
+  }
+};

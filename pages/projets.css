@@ -8,13 +8,18 @@
             font-family: Arial, sans-serif;
             margin: 0px;
             padding: 0;
+            margin-top: 100px;
         }
 
-        .dark-mode{
+        .dark-mode {
             --bg-color :#030115;
             --text-color : #fdfdfd;
             --white-color : #070707; 
-            
+        }
+
+        .bx-moon {
+            margin-left: 1085px;
+
         }
 
         .project-detail {
