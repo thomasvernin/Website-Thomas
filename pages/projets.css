@@ -42,6 +42,15 @@
 
         }
 
+        .project-section:hover {
+            box-shadow: 0 .1rem 2rem var(--shadow-color);
+            transform: scale(1.05);
+        }
+
+        .project-section:hover h3 {
+            color: #0026ff; /* Couleur du titre h3 au survol de la section */
+        }
+
         .project-section {
             flex: 1 1 30rem;
             background: var(--bg-color);
@@ -54,6 +63,8 @@
             border-left: .2rem solid var(--main-color);
             border-right: .2rem solid var(--main-color);
             transition: .5s ease;
+            align-items: center; /* Centre les éléments horizontalement */
+            text-align: center; /* Centre le texte horizontalement */
         }
 
         .project-detail img {
@@ -62,6 +73,13 @@
             border-radius: 20px;
         }
 
+        .bxs-paint, .bx-code-alt, .bx-check-circle, .bx-link-alt {
+            color: #0026ff;
+            font-size: 5rem;
+            
+        }
+        
+
         h2 {
             font-size: 4rem;
             margin-bottom: 3rem;
@@ -69,14 +87,14 @@
         }
 
         h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            
         }
 
         p, ul, li {
             font-size: 1.5rem;
             margin-bottom: 4rem;
             margin-left: 10px;
+            margin-top: 2rem;
         }
 
         .btn {
