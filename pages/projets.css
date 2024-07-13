@@ -68,12 +68,14 @@
         }
 
         .project-detail img {
-            max-width: 100%;
-            margin: 1rem 0;
+            width: 100%;
+            margin: 5rem 0;
             border-radius: 20px;
         }
 
-        .bxs-paint, .bx-code-alt, .bx-check-circle, .bx-link-alt {
+        
+
+        .bx-briefcase, .bx-code-alt, .bx-check-circle, .bx-link-alt {
             color: #0026ff;
             font-size: 5rem;
             
