@@ -1,241 +1,248 @@
 
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            font-family: Arial, sans-serif;
-            margin: 0px;
-            padding: 0;
-            margin-top: 100px;
-        }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    margin-top: 100px;
+}
 
-        .dark-mode {
-            --bg-color :#030115;
-            --text-color : #fdfdfd;
-            --white-color : #070707; 
-        }
 
-        .bx-moon {
-            margin-left: 1085px;
+.dark-mode {
+    --bg-color :#030115;
+    --text-color : #fdfdfd;
+    --white-color : #070707; 
+}
 
-        }
 
-        .logo {
-            cursor: pointer;
-        }
+.bx-moon {
+    margin-left: 1085px;
 
-        .project-detail {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
+}
 
-        .project-detail-content {
-            max-width: 1200px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin: 1rem auto; 
-            font-size: 2.6rem;
-            transition: .5s ease;
+.logo {
+    cursor: pointer;
+}
 
-        }
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
 
-        .project-section:hover {
-            box-shadow: 0 .1rem 2rem var(--shadow-color);
-            transform: scale(1.05);
-        }
+.project-detail-content {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1rem auto; 
+    font-size: 2.6rem;
+    transition: .5s ease;
 
-        .project-section:hover h3 {
-            color: #0026ff; 
-        }
+}
 
-        .project-section {
-            flex: 1 1 30rem;
-            background: var(--bg-color);
-            padding: 3rem 2rem 4rem;
-            border-radius: 2rem;
-            box-shadow: 0 .1rem .5rem var(--shadow-color);
-            text-align: left;
-            border-top: .2rem solid var(--main-color);
-            border-bottom: .2rem solid var(--main-color);
-            border-left: .2rem solid var(--main-color);
-            border-right: .2rem solid var(--main-color);
-            transition: .5s ease;
-            align-items: center; 
-            text-align: center; 
-        }
+.project-section:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.05);
+}
 
-        .project-detail img {
-            width: 100%;
-            margin: 5rem 0;
-            border-radius: 20px;
-        }
+.project-section:hover h3 {
+    color: #0026ff; 
+}
 
-        
+.project-section {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: left;
+    border-top: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    transition: .5s ease;
+    align-items: center; 
+    text-align: center; 
+}
 
-        .bx-briefcase, .bx-code-alt, .bx-check-circle, .bx-link-alt {
-            color: #0026ff;
-            font-size: 5rem;
-            
-        }
-        
+.project-detail img {
+    width: 100%;
+    margin: 5rem 0;
+    border-radius: 20px;
+}
 
-        h2 {
-            font-size: 4rem;
-            margin-bottom: 3rem;
-            grid-column: span 2;
-            position: center;
-        }
 
-        h3 {
-            
-        }
 
-        p, ul, li {
-            font-size: 1.5rem;
-            margin-bottom: 4rem;
-            margin-left: 10px;
-            margin-top: 2rem;
-        }
+.bx-briefcase, .bx-code-alt, .bx-check-circle, .bx-link-alt {
+    color: #0026ff;
+    font-size: 5rem;
+    
+}
 
-        .btn {
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            background-color: #0026ff;
-            color: #fff;
-            text-decoration: none;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            border-radius: 5px;
-            text-align: center;
-            display: inline-block; 
-        } 
 
-        .footer {
-            width: 100%;
-            padding: 1rem;
-            color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    grid-column: span 2;
+    position: center;
+}
 
-        .footer-iconTop {
-            font-size: 1rem;
-            margin-left: 50px;
-        } 
+h3 {
+    
+}
 
-       
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            .logo {
-                font-size: 2.5rem;
-                margin-left: 0px; 
-            }
+p, ul, li {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    margin-left: 10px;
+    margin-top: 2rem;
+}
 
-            .project-detail-content {
-                grid-template-columns: 1fr;
-            }
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #0026ff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; 
+} 
 
-            .project-section {
-                height: auto;
-            }
+.footer {
+    width: 100%;
+    padding: 1rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            h2 {
-                font-size: 3rem;
-            }
+.footer-iconTop {
+    font-size: 1rem;
+    margin-left: 50px;
+} 
 
-            h3 {
-                font-size: 1.8rem;
-            }
 
-            p, ul, li {
-                font-size: 1.3rem;
-                margin-bottom: 1.5rem;
-            }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        font-size: 2.5rem;
+        margin-left: 0px; 
+    }
 
-            .btn {
-                font-size: 1.3rem;
-                padding: 0.8rem 1.5rem;
-                margin-bottom: 1rem;
-            }
-        }
+    .project-detail-content {
+        grid-template-columns: 1fr;
+    }
 
-        
-        @media screen and (max-width: 767px) {
+    .project-section {
+        height: auto;
+    }
 
-            .logo {
-                margin-right : 250px; 
-            }
+    h2 {
+        font-size: 3rem;
+    }
 
-            .project-section {
-                margin: 0px; 
-                height: auto; 
-            }
+    h3 {
+        font-size: 1.8rem;
+    }
 
-            .project-detail-content {
-                margin: 20px; 
-            }
+    p, ul, li {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
 
-            .footer-iconTop {
-                margin-left: 0px;
-            } 
-        }
+    .btn {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
 
-        
-        @media screen and (max-width: 550px) {
-            .logo {
-                font-size: 2rem;
-                margin-right: auto;
-                margin-left: auto;
-            }
-        
-            .project-section {
-                margin: 0;
-                height: auto;
-            }
-        
-            .project-detail-content {
-                margin: 10px;
-                font-size: 2rem;
-            }
-        
-            .footer-iconTop {
-                margin-left: 0;
-            }
-        
-            .bx-moon {
-                margin-left: auto;
-                margin-right: 10px;
-            }
-        
-            h2 {
-                font-size: 3rem;
-                margin-bottom: 2rem;
-            }
-        
-            h3 {
-                font-size: 1.5rem;
-            }
-        
-            p, ul, li {
-                font-size: 1.2rem;
-                margin-bottom: 1.5rem;
-                margin-left: 0;
-                margin-top: 1rem;
-            }
-        
-            .btn {
-                font-size: 1.2rem;
-                padding: 0.8rem 1.2rem;
-                margin-bottom: 1rem;
-            }
-        }
-        
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        margin-right : 250px; 
+    }
+
+    .project-section {
+        margin: 0px; 
+        height: auto; 
+    }
+
+    .project-detail-content {
+        margin: 20px; 
+    }
+
+    .footer-iconTop {
+        margin-left: 0px;
+    } 
+}
+
+
+@media screen and (max-width: 550px) {
+    .logo {
+        font-size: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .project-section {
+        margin: 0;
+        height: auto;
+    }
+
+    .project-detail-content {
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+    .footer-iconTop {
+        margin-left: 0;
+    }
+
+    .bx-moon {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p, ul, li {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
 
     
