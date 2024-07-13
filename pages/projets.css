@@ -18,6 +18,12 @@ body {
     --white-color : #070707; 
 }
 
+/* Ajoutez ces styles pour le dark mode */
+.dark-mode .project-section a,
+.dark-mode .project-section a i {
+    color: white;
+}
+
 
 .bx-moon {
     margin-left: 1085px;
