@@ -22,6 +22,10 @@
 
         }
 
+        .logo {
+            cursor: pointer;
+        }
+
         .project-detail {
             display: flex;
             flex-direction: column;
@@ -48,7 +52,7 @@
         }
 
         .project-section:hover h3 {
-            color: #0026ff; /* Couleur du titre h3 au survol de la section */
+            color: #0026ff; 
         }
 
         .project-section {
@@ -63,8 +67,8 @@
             border-left: .2rem solid var(--main-color);
             border-right: .2rem solid var(--main-color);
             transition: .5s ease;
-            align-items: center; /* Centre les éléments horizontalement */
-            text-align: center; /* Centre le texte horizontalement */
+            align-items: center; 
+            text-align: center; 
         }
 
         .project-detail img {
@@ -86,6 +90,7 @@
             font-size: 4rem;
             margin-bottom: 3rem;
             grid-column: span 2;
+            position: center;
         }
 
         h3 {
@@ -109,7 +114,7 @@
             margin-bottom: 2rem;
             border-radius: 5px;
             text-align: center;
-            display: inline-block; /* Ensure button is displayed correctly */
+            display: inline-block; 
         } 
 
         .footer {
@@ -126,11 +131,11 @@
             margin-left: 50px;
         } 
 
-        /* Media Queries pour tablettes (768px - 1024px) */
+       
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             .logo {
                 font-size: 2.5rem;
-                margin-left: 110px; /* Original margin adjusted */
+                margin-left: 0px; 
             }
 
             .project-detail-content {
@@ -161,24 +166,76 @@
             }
         }
 
-        /* Media Query pour téléphones portables (moins de 768px de largeur) */
+        
         @media screen and (max-width: 767px) {
 
             .logo {
-                margin-right : 250px; /* Adjusted for alignment */
+                margin-right : 250px; 
             }
 
             .project-section {
-                margin: 0px; /* Adjusted for spacing */
-                height: auto; /* Adjusted for height */
+                margin: 0px; 
+                height: auto; 
             }
 
             .project-detail-content {
-                margin: 20px; /* Adjusted for margin */
+                margin: 20px; 
             }
 
             .footer-iconTop {
                 margin-left: 0px;
             } 
         }
+
+        
+        @media screen and (max-width: 550px) {
+            .logo {
+                font-size: 2rem;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        
+            .project-section {
+                margin: 0;
+                height: auto;
+            }
+        
+            .project-detail-content {
+                margin: 10px;
+                font-size: 2rem;
+            }
+        
+            .footer-iconTop {
+                margin-left: 0;
+            }
+        
+            .bx-moon {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+        
+            h3 {
+                font-size: 1.5rem;
+            }
+        
+            p, ul, li {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        
+            .btn {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+        
+
     
