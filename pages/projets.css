@@ -1,3 +1,10 @@
+:root{
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #0026ff;
+    --white-color : #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
 
 body {
     display: flex;
@@ -18,7 +25,6 @@ body {
     --white-color : #070707; 
 }
 
-/* Ajoutez ces styles pour le dark mode */
 .dark-mode .project-section a,
 .dark-mode .project-section a i {
     color: white;
@@ -60,7 +66,7 @@ body {
 }
 
 .project-section:hover h3 {
-    color: #0026ff; 
+    color: var(--main-color); 
 }
 
 .project-section {

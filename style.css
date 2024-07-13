@@ -489,6 +489,12 @@ span{
     color: #333;
 }
 
+/* Styles pour le dark mode */
+.dark-mode .portfolio-layer a i {
+    color: white;
+}
+
+
 .testimonial-container{
     display: flex;
     align-items: center;
