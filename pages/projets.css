@@ -1,34 +1,11 @@
+.heading{
+    margin-top: 100px;
+}
+
 .btn {
     margin-left: 0px;
-    margin-right: 50px;
-    margin-top: 10px;
-    
-}
-
-.smaller-text {
-    font-size: 0.6em; 
-    font-style: italic;
-}
-
-.rotate {
-    animation: spin 10s linear infinite;
-}
-
-.img-between-buttons {
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
-    margin-top: 100px;
-    margin: 10px; 
-    max-width: 100px;  */
-    height: auto;
-}
-
-
-.btn {
+    margin-right: 0px;
+    margin-top: 50px;
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
@@ -38,13 +15,24 @@
     border-radius: 5px;
 }
 
-.img-between-buttons {
-    margin: 10px; 
-    max-width: 100px;  
-    height: auto;
+.smaller-text {
+    font-size: 0.6em; 
+    font-style: italic;
 }
 
-
+.img-between-buttons {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 100px;
+    margin-bottom: -400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--bg-color);
+    outline: .5rem solid var(--main-color);
+    margin: 10px; 
+    max-width: 100px; 
+    height: auto;
+}
 
 
 .bx.bxl-visual-studio {
@@ -68,30 +56,44 @@
 }
 
 a i.bx {
-    font-size: 16px; /* Ajustez cette valeur selon vos préférences */
+    font-size: 16px; 
 }
 
 .image_projet {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.testimonial-container {
+    margin-bottom: 200px;
 }
 
 
-/* Media query pour les tablettes */
-@media (max-width: 900px) {
-    .img-between-buttons,
-    .btn {
-        display: none;
-    }
-}
 
-/* Media query pour les téléphones */
+/* Styles pour appareils mobiles */
 @media (max-width: 600px) {
-    .img-between-buttons,
     .btn {
-        display: none;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+        text-align: center;
+    }
+    
+    .img-between-buttons {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .image_projet {
+        display : none ;   
     }
 }
+
+
+
 
 
 
