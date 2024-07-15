@@ -66,6 +66,7 @@ body{
     font-weight: 600;
     cursor: default;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .navbar a{
@@ -703,6 +704,9 @@ span{
     }
     .home .home-img {
         display: none;
+    }
+    .footer {
+        margin-top: 545px;
     }
 }
 
