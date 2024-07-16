@@ -74,7 +74,7 @@ body{
     font-size: 1.7rem;
     color: var(--white-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
 }
 
 .header.sticky .navbar a{
@@ -290,14 +290,17 @@ section{
     border-left: 384px solid transparent;
 }
 
-.home-img img{
-    position : absolute; 
-    bottom: 250px;
-    right: 150px;
-    height: 20%;
-    padding-right: 0rem;
-    pointer-events: none;
-    border-radius : 100px;
+.home-img img {
+    max-width: 20%; 
+    border-radius: 200px; 
+    margin-bottom: 10px;
+    border: .5rem solid var(--bg-color);
+    outline: .5rem solid var(--main-color);   
+}
+
+.home-img img:hover {
+    border: .1rem solid var(--bg-color);
+    outline: .1rem solid var(--main-color);
 }
 
 span{
@@ -663,9 +666,8 @@ span{
 
 
 
-
-
 /*BREAKPOINTS*/
+
 
 @media (max-width: 1200px){
     html {
@@ -684,6 +686,7 @@ span{
     .home .profession-container .overlay{
         right: -9rem;
     }
+
 }
 
 @media (max-width: 1024px){
@@ -702,9 +705,7 @@ span{
     .home .profession-container .overlay{
         right: -15rem;
     }
-    .home .home-img {
-        display: none;
-    }
+    
     .footer {
         margin-top: 545px;
     }
@@ -735,7 +736,7 @@ span{
     .home .profession-container .overlay{
         right: -39.5rem;
     }
-
+     
     .services,
     .portfolio {
         padding-bottom: 7rem;
@@ -748,6 +749,7 @@ span{
     .footer {
         padding: 2rem 3%;
     }
+
 }
 
 @media (max-width: 768px){
@@ -807,6 +809,10 @@ span{
 
     .profession-container {
         display: none ;
+    }
+
+    .home-content p{
+        text-align: center; 
     }
 
     .home-content h3{
@@ -937,6 +943,7 @@ span{
 
     .home-content p{
         font-size: 1.5rem;
+        text-align: center; 
     }
 
     .home-content .social-media a{

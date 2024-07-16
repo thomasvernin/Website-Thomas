@@ -34,7 +34,6 @@
     height: auto;
 }
 
-
 .bx.bxl-visual-studio {
     font-size: 16px;
 }
@@ -68,7 +67,25 @@ a i.bx {
     margin-bottom: 200px;
 }
 
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
 
+.services-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dark-mode p a  {
+    color: white; /* Makes <i> tags white in dark mode */
+}
 
 /* Styles pour appareils mobiles */
 @media (max-width: 600px) {
@@ -91,6 +108,7 @@ a i.bx {
         display : none ;   
     }
 }
+
 
 
 
