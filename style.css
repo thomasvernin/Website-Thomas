@@ -56,8 +56,8 @@ body{
 
 .header.sticky{
     background-color: var(--bg-color);
-    background: rgba(255, 255, 255, 0.1); /* Couleur de fond semi-transparente */
-    backdrop-filter: blur(10px); /* Effet de flou */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
 }
 
 .logo{
@@ -72,7 +72,7 @@ body{
 .navbar a{
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: var(--main-color);
     font-weight: 500;
     margin-right: 3rem;
 }
@@ -104,7 +104,7 @@ body{
 
 #darkMode-icon{
     font-size: 2.4rem;
-    color: var(--white-color);
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -274,7 +274,7 @@ section{
 .home .profession-box .circle{
     width: 560px;
     height: 560px;
-    border: 3px solid var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 50%;
 }
 
@@ -284,11 +284,19 @@ section{
     right: 0;
     width: 0;
     height: 0;
-    border-top: 384px solid var(--main-color);
-    border-right: 384px solid var(--main-color);
-    border-bottom: 384px solid var(--main-color);
+    border-top: 384px solid rgb(236, 233, 233);
+    border-right: 384px solid rgb(236, 233, 233);
+    border-bottom: 384px solid rgb(236, 233, 233);
     border-left: 384px solid transparent;
+    filter: blur(10px); 
 }
+
+.dark-mode .home .profession-container .overlay {
+    border-top-color: #000; /* noir */
+    border-right-color: #000; /* noir */
+    border-bottom-color: #000; /* noir */
+}
+
 
 .home-img img {
     max-width: 20%; 
@@ -402,7 +410,7 @@ span{
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 3px solid rgba(253, 253, 253, 0.1);
+    border: 5px solid rgba(253, 253, 253, 0.1);
     border-radius: 50%;
     border-top-color: #ffffff;
     animation: spin 1s ease-in-out infinite;
