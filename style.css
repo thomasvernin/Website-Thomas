@@ -205,6 +205,7 @@ section{
     position: absolute;
     top: 0;
     right: 0;
+    left : 450px;
     width: 768px;
     height: 768px;
     border-radius: 50%;
@@ -274,32 +275,32 @@ section{
 .home .profession-box .circle{
     width: 560px;
     height: 560px;
-    border: 1px solid var(--main-color);
+    border: 0px solid var(--main-color);
     border-radius: 50%;
 }
 
-.home .profession-container .overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 384px solid rgb(236, 233, 233);
-    border-right: 384px solid rgb(236, 233, 233);
-    border-bottom: 384px solid rgb(236, 233, 233);
-    border-left: 384px solid transparent;
-    filter: blur(10px); 
-}
 
-.dark-mode .home .profession-container .overlay {
-    border-top-color: #000; /* noir */
-    border-right-color: #000; /* noir */
-    border-bottom-color: #000; /* noir */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .home-img img {
-    max-width: 20%; 
+    max-width: 25%; 
     border-radius: 200px; 
     margin-bottom: 10px;
     border: .5rem solid var(--bg-color);
