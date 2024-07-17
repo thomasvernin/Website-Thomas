@@ -30,6 +30,7 @@
             <a href="#about">A propos</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="../blog/blog.html">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -106,7 +107,7 @@
         <div class="about-content">
             <h2 class="heading"> <span> A propos</span> de THOMAS</h2>
             <h3> " Bonjour, je suis là pour vous aider dans votre prochain projet !</h3>
-            <p>Développeur et blogueur, je crée de nombreuses applications modernes. <br> J'aime partager mes connaissances et mes expériences sur LinkedIn et sur mon blog. <br>
+            <p>Développeur et blogueur, je crée de nombreuses applications modernes. <br> J'aime partager mes connaissances et mes expériences sur mon website et sur mon blog. <br><br>
                Je suis ouvert aux offres d'emploi ou aux opportunités de freelance." </p>
             <a href="a_propos/a_propos.html" class="btn">En savoir plus</a>
         </div>
@@ -249,27 +250,27 @@
             </div>
         </div>
 
-        <!--contact section-->
         <section class="contact" id="contact">
             <h2 class="heading"> Contacter <span>Moi!</span></h2>
-
-            <form action="#">
-
+        
+            <form action="https://formspree.io/f/mrbzbjqy" method="POST">
+        
                 <div class="input-box">
-                    <input type="text" placeholder=" Nom complet ">
-                    <input type="email" placeholder=" Adresse e-mail ">
+                    <input type="text" name="name" placeholder="Nom complet" required>
+                    <input type="email" name="_replyto" placeholder="Adresse e-mail" required>
                 </div>
-
+        
                 <div class="input-box">
-                    <input type="number" placeholder=" Numéro de téléphone ">
-                    <input type="text" placeholder=" Sujet de l'email ">
+                    <input type="tel" name="phone" placeholder="Numéro de téléphone">
+                    <input type="text" name="subject" placeholder="Sujet de l'email">
                 </div>
-
-                <textarea name="" id="" cols="30" rows="10" placeholder=" J'aimerai échanger avec vous pour ..."></textarea>
+        
+                <textarea name="message" cols="30" rows="10" placeholder="J'aimerai échanger avec vous pour ..." required></textarea>
                 <input type="submit" value="Send Message" class="btn">
-
+        
             </form>
         </section>
+        
         
 
         <!--footer section-->

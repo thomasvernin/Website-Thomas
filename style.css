@@ -72,9 +72,21 @@ body{
 .navbar a{
     position: relative;
     font-size: 1.7rem;
-    color: var(--main-color);
+    color: black;
     font-weight: 500;
     margin-right: 3rem;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.dark-mode .navbar a {
+    color: white; 
+}
+
+.dark-mode .navbar a:hover {
+    color: var(--main-color); 
 }
 
 .header.sticky .navbar a{
@@ -280,25 +292,6 @@ section{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home-img img {
     max-width: 25%; 
     border-radius: 200px; 
@@ -381,6 +374,7 @@ span{
     border-right: .2rem solid var(--main-color);
     transition: .5s ease;
 }
+
 
 .services-container .services-box:hover{
     box-shadow: 0 .1rem 2rem var(--shadow-color);
