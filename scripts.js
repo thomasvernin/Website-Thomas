@@ -140,3 +140,27 @@ document.getElementById('project-link').addEventListener('click', function(event
       window.location.href = this.href;
   }, 1000); // Délai de 1 seconde (1000 ms)
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    var popup = document.getElementById('legal-popup');
+    var openBtn = document.getElementById('open-legal');
+    var closeBtn = document.getElementById('close-popup');
+
+    openBtn.onclick = function() {
+        popup.style.display = 'block';
+    }
+
+    closeBtn.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+});
+
