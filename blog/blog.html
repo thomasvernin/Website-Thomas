@@ -8,71 +8,49 @@
     
     <!-- Feuilles de style -->
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="blog.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
+    <!--header design-->
     <header class="header">
-        <a href="../index.html" class="logo" title="Retour à l'acceuil" alt="Logo de Thomas">Thomas</a>
+        <a href="../index.html" class="logo">Thomas</a>
+
+        <nav class="navbar">
+            <a href="../index.html#home" class="active">Accueil</a>
+            <a href="../index.html#about">A propos</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#portfolio">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
         <div class="bx bx-moon" id="darkMode-icon"></div>
-        <div id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
     </header>
 
-    <!--service section-->
-    <section class="services" id="services">
-        <h2  class="heading"> Développement <span> Web </span> <br> 
-            <span class="smaller-text"> "Création de Site Web moderne & responsive"</span></h2>
+    <section>
+        <article class="blog-article">
+            <img src="../images/articles/article1.jpeg" alt="Article Image">
+            <div class="article-content">
+                <h2> Comment apparaître sur Google My Business : Guide complet </h2>
+                <p class="article-meta">Publié le <span>17 juillet 2024</span> par <span>Thomas</span></p>
+                <p class="article-excerpt">Lorsqu’il s’agit d’apparaître sur Google en tant que professionnel, il y a plusieurs étapes à suivre pour optimiser votre présence en ligne. L’une des premières étapes à suivre est de créer une fiche d’établissement sur Google My Business. Cette fiche vous permettra d’apparaître sur Google...</p>
+                <a href="article1.html" class="read-more"><strong>Lire la suite..</strong></a>
+            </div>
+        </article>
 
-        <div class="services-container">
+    <!-- Bouton Page Précédente -->
+    <button class="btn" onclick="history.back()">Page Précédente</button>
 
-            <div class="services-box">
-                <i class="fab fa-react rotate"></i>
-                <h3> REACT</h3>
-                <p> Utilisation de la bibliothèque React pour le front End </p>
-            </div>
-            
-            <div class="services-box">
-                <i class="fab fa-css3-alt"></i>
-                <h3> CSS3 </h3>
-                <p> Utilisation de CSS3 pour le Desing </p>
-            </div>
-            
-            <div class="services-box">
-                <i class="fab fa-js"></i>
-                <h3> JavaScript </h3>
-                <p> Utilisation de JavaScript pour la dynamique </p>
-            </div>
-            
-            <div class="services-box">
-                <i class="fas fa-robot"></i>
-                <h3>Utilisation de l'IA</h3>
-                <p> Utilisation de l'IA pour la productivité </p>
-            </div>
-            
-            <div class="services-box">
-                <i class="fab fa-node-js"></i>
-                <h3>Backend avec NodeJS, Express et mongoDB</h3>
-                <p> Utilisation de mongo DB pour une base de donnée sécurisé <br>
-                Hébergement CloudFlare </p>
-            </div>
-            
-        </div>
+    <div>
+        <a href="../index.html#contact" class="btn"> Me contacter </a>
+    </div>
 
-        <div>
-            <a href="../index.html#home" class="btn"> Consulter un autre service </a>
-        </div>
-        
-        <div>
-            <img src="../images/Pdp.jpg" alt="Description de l'image" class="img-between-buttons">
-        </div>
-    
-        <div>
-            <a href="../index.html#contact" class="btn" style="margin-left: 10px;"> Contactez-moi </a>
-        </div>
-        
     </section>
 
     <!--footer section-->
@@ -82,7 +60,7 @@
         </div>
 
         <div class="footer-iconTop">
-            <a href="#services"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="blog.html"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 

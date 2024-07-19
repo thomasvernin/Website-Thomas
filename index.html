@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Web | De Thomas Guy Vernin</title>
+    <title>Site Web | De Thomas Vernin</title>
 
     <!-- custom css-->
     <link rel="stylesheet" href="style.css">
@@ -12,6 +12,7 @@
     <!--box icon-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
     
 
@@ -53,7 +54,7 @@
             </div>
 
             <p> " Bienvenue sur mon Site Web, <br>
-                je suis un Développeur Full Stack & blogger passioné ! <br>
+                je suis Développeur Full Stack & blogger passioné ! <br>
                 De formation React/Node.js "
 
             <div class="social-media">
@@ -62,7 +63,7 @@
                 <a href="mailto:tvernin49100@gmail.com"><i class='fas fa-envelope'></i></a>
             </div>
 
-            <a href="#contact" class="btn"> Me contacter </a>
+            <a href="#contact" class="btn"> Contactez-nous </a>
         </div>
 
         <div class="profession-container">
@@ -105,12 +106,13 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading"> <span> A propos</span> de THOMAS</h2>
-            <h3> " Bonjour, je suis là pour vous aider dans votre prochain projet !</h3>
-            <p>Développeur et blogueur, je crée de nombreuses applications modernes. <br> J'aime partager mes connaissances et mes expériences sur mon website et sur mon blog. <br><br>
-               Je suis ouvert aux offres d'emploi ou aux opportunités de freelance." </p>
+            <h2 class="heading"><span>À propos</span> de THOMAS</h2>
+            <h3>Bonjour et bienvenue !</h3>
+            <p>Je suis Thomas, développeur passionné et blogueur. Avec une expertise dans la création d'applications modernes, je m'efforce d'apporter des solutions innovantes et efficaces à chaque projet. Mon site web et mon blog sont des espaces où je partage mes connaissances, mes expériences, et des conseils utiles pour vous aider dans vos propres initiatives.</p>
+            <p>Je suis toujours à la recherche de nouvelles opportunités, que ce soit pour des missions freelance ou des collaborations professionnelles. N'hésitez pas à me contacter si vous avez un projet en tête ou si vous souhaitez en savoir plus sur ce que je peux apporter à votre équipe.</p>
             <a href="a_propos/a_propos.html" class="btn">En savoir plus</a>
         </div>
+        
 
     </section>
 
@@ -223,20 +225,41 @@
                 <div class="testimonial-box mySwiper">
                     <div class="testimonial-content swiper-wrapper">
                         <div class="testimonial-slide swiper-slide">
-                            <img src="../images/t1.jpeg" alt="">
+                            <img src="../images/avatar/1.svg" alt="">
                             <h3> Léa Hamon </h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                             <p>"Nous avons été extrêmement satisfaits du service fourni par Thomas et son développement. Son expertise en React et ça capacité à livrer un site Web moderne et réactif ont dépassé nos attentes. Je recommande vivement ses services."</p>
                         </div>
     
                         <div class="testimonial-slide swiper-slide">
-                            <img src="../images/t2.jpeg" alt="">
+                            <img src="../images/avatar/2.svg" alt="">
                             <h3> Victor Rifle</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                             <p>"Travailler avec Thomas a été un véritable plaisir. La maîtrise du CSS3 et JavaScript a permis de créer une interface utilisateur dynamique et engageante. Son professionnalisme et son attention aux détails sont exemplaires."</p>
                         </div>
     
                         <div class="testimonial-slide swiper-slide">
-                            <img src="../images/t3.jpeg" alt="">
+                            <img src="../images/avatar/3.svg" alt="">
                             <h3> Anne Coudet </h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                             <p>"Le développement backend avec NodeJS, Express et MongoDB a été impeccable. Thomas a su créer une solution robuste et évolutive, parfaitement adaptée à nos besoins. Les compétences techniques et les approches collaboratives ont été inestimables."</p>
                         </div>
 
@@ -251,7 +274,7 @@
         </div>
 
         <section class="contact" id="contact">
-            <h2 class="heading"> Contacter <span>Moi!</span></h2>
+            <h2 class="heading"> Vous désirez un site web ? Contacter <span>Moi!</span></h2>
         
             <form action="https://formspree.io/f/mrbzbjqy" method="POST">
         
@@ -265,7 +288,7 @@
                     <input type="text" name="subject" placeholder="Sujet de l'email">
                 </div>
         
-                <textarea name="message" cols="30" rows="10" placeholder="J'aimerai échanger avec vous pour ..." required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder=" Ex : J'aimerai vous rencontrer pour vous proposer un emploi de développeur chez nous ..." required></textarea>
                 <input type="submit" value="Send Message" class="btn">
         
             </form>
@@ -273,16 +296,28 @@
         
         
 
-        <!--footer section-->
+        <!-- footer section -->
         <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 by Thomas | Tous droits réservés!</p>
-            </div>
+              <div class="footer-text">
+                    <p>Copyright &copy; 2024 by Thomas Vernin | Tous droits réservés!</p>
+              </div>
 
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-            </div>
+        <div class="footer-icons">
+        <!-- Phone icon and number -->
+        <div class="footer-phone">
+            <a href="tel:+33647951767">
+                <i class='bx bx-phone'></i> 0647951767
+            </a>
+        </div>
+
+        <!-- Scroll to top icon -->
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        </div>
         </footer>
+
+
 
 
 

@@ -542,12 +542,10 @@ span{
 }
 
 .testimonial-slide img{
-    width: 14rem;
-    height: 14rem;
+    width: 24rem;
+    height: 24rem;
     object-fit: cover;
     border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
 }
 
 .testimonial-slide h3{
@@ -580,6 +578,13 @@ span{
 .testimonial-box .swiper-pagination-bullet-active{
     background: var(--main-color)
 }
+
+.stars i {
+    color: var(--main-color); 
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
 
 .contact{
     padding: 10rem 5rem;
@@ -665,6 +670,28 @@ span{
 .footer-iconTop a i{
     font-size: 2.4rem;
     color: #333;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-phone {
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.footer-phone a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.footer-phone i {
+    margin-right: 8px;
 }
 
 
@@ -1008,6 +1035,11 @@ span{
 
     .footer-iconTop{
         padding: 2rem;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
     }
 
 }
