@@ -54,8 +54,43 @@
     font-size: 16px;
 }
 
+.fab.fa-js {
+    font-size: 16px;
+}
+
+.fas.fa-search {
+    font-size: 16px;
+}
+
+.fab.fa-react {
+    font-size: 16px;
+}
+
+.rotate {
+    animation: spin 7s linear infinite;
+}
+
+.fab.fa-node-js {
+    font-size: 16px;
+}
+
+.fas.fa-server {
+    font-size: 16px;
+}
+
+.fas.fa-database {
+    font-size: 16px;
+}
+
+.icon-feedly {
+    width: 16px;
+    height: 16px;
+}
+
+
 a i.bx {
     font-size: 16px; 
+    
 }
 
 .image_projet {
