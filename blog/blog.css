@@ -8,7 +8,7 @@
 }
 
 .navbar a[href="blog.html"] {
-    color: blue ;
+    color: var(--main-color) ;
     font-weight: bold; 
 }
 
@@ -45,7 +45,7 @@
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #007bff;
+    color: var(--main-color);
 }
 
 .btn {

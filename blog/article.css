@@ -8,7 +8,7 @@
 }
 
 .navbar a[href="blog.html"] {
-    color: blue ;
+    color: var(--main-color) ;
     font-weight: bold; 
 }
 
