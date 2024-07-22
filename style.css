@@ -467,8 +467,8 @@ span{
 
 .portfolio-box:hover .portfolio-layer{
     opacity: 1;
-    background: rgba(10, 48, 172, 0.1); /* Couleur de fond semi-transparente */
-    backdrop-filter: blur(5px); /* Effet de flou */
+    background: rgba(10, 48, 172, 0.1); 
+    backdrop-filter: blur(5px); 
 }
 
 .portfolio-layer h4{
@@ -496,11 +496,9 @@ span{
     color: #333;
 }
 
-/* Styles pour le dark mode */
 .dark-mode .portfolio-layer a i {
     color: white;
 }
-
 
 .testimonial-container{
     display: flex;
@@ -584,7 +582,6 @@ span{
     font-size: 20px;
     margin-bottom: 20px; 
 }
-
 
 .contact{
     padding: 10rem 5rem;
@@ -760,7 +757,6 @@ span{
     color: #ddd; 
 }
 
-/* Style de la popup */
 .popup {
     display: none; 
     position: fixed;
@@ -774,7 +770,6 @@ span{
     backdrop-filter: blur(10px); 
 }
 
-/* Contenu de la popup */
 .popup-content {
     background-color: #fff ; 
     color: var(--main-color); 
@@ -786,7 +781,6 @@ span{
     position: relative;
 }
 
-/* Style du bouton de fermeture */
 .popup-close {
     color: var(--main-color);
     float: right;
@@ -796,18 +790,14 @@ span{
     
 }
 
-/* Changement de couleur du bouton de fermeture au survol */
 .popup-close:hover,
 .popup-close:focus {
     color: #031d55; 
 }
 
-/* Texte à l'intérieur de la popup */
 .popup-content p {
     margin: 0 0 10px 0; 
 }
-
-
 
 
 
@@ -830,6 +820,12 @@ span{
 
     .home .profession-container .overlay{
         right: -9rem;
+    }
+
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
     }
 
 }
@@ -877,6 +873,12 @@ span{
 
 @media (max-width: 991px){
 
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+    }
+
     .navbar a:nth-child(1),
     .navbar a:nth-child(2){
         color: var(--main-color);
@@ -912,6 +914,13 @@ span{
 }
 
 @media (max-width: 768px){
+
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+    }
+
     #menu-icon{
         display: block;
     }
@@ -1120,6 +1129,13 @@ span{
 }
 
 @media (max-width: 617px){
+
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+    }
+
     .portfolio .portfolio-container{
         grid-template-columns: 1fr;
     }
@@ -1161,9 +1177,18 @@ span{
         width: 100%;
     }
 
+    .im
+
 }
 
 @media (max-width: 450px) {
+
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+    }
+
     html {
         font-size: 50%;
     }
@@ -1227,6 +1252,13 @@ span{
 }
 
 @media (max-width: 365px) {
+
+    .header.sticky{
+        background-color: var(--bg-color);
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+    }
+    
     .about-img img{
         width: 90vw;
     }
