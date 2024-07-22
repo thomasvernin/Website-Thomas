@@ -66,6 +66,29 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+
+  
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000, // 4 secondes
+        disableOnInteraction: false,
+      },
+    });
+  
+
+
 /*=====scroll reveal======*/
 ScrollReveal({
   //reset:true,
