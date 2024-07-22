@@ -52,7 +52,10 @@ body{
     align-items: center;
     z-index: 100;
     transition: .5;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
 }
+
 
 .header.sticky{
     background-color: var(--bg-color);
