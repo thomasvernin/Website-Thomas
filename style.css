@@ -716,39 +716,42 @@ span{
     transform: scale(1.1); 
 }
 
+.footer-iconTop {
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre */
+    bottom: 20px; /* Distance du bas de l'écran */
+    right: 20px; /* Distance du bord droit de l'écran */
+    z-index: 1000; /* Assurez-vous que l'icône se trouve au-dessus des autres éléments */
+}
+
 .footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: white;
+    background: white; /* Couleur de fond par défaut */
     border-radius: .8rem;
-    border: .2rem solid var(--main-color);
-    outline: .2rem solid transparent;
+    border: .2rem solid var(--main-color); /* Couleur de bordure */
+    outline: .2rem solid transparent; /* Éviter l'effet de bordure par défaut au focus */
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .footer-iconTop a:hover {
-    outline-color: white;
-    background: var(--main-color); 
-    transform: scale(1.1); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    outline-color: white; /* Bordure au survol */
+    background: var(--main-color); /* Changement de couleur de fond au survol */
+    transform: scale(1.1); /* Agrandissement au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre au survol */
 }
 
 .footer-iconTop a i {
-    font-size: 2.4rem;
-    color: #333;
-    transition: color 0.3s ease;
+    font-size: 2.4rem; /* Taille de l'icône */
+    color: #333; /* Couleur de l'icône */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
 }
 
 .footer-iconTop a:hover i {
-    color: #fff; 
+    color: #fff; /* Couleur de l'icône au survol */
 }
 
-.footer-icons {
-    display: flex;
-    align-items: center;
-}
 
 .footer p {
     margin-top: 15px;
