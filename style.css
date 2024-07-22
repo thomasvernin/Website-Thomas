@@ -809,6 +809,15 @@ span{
         font-size: 55%;
     }
 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
+    }
+
     .home .profession-container{
         height: 85.8rem;
     }
@@ -822,17 +831,16 @@ span{
         right: -9rem;
     }
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
-    }
-
 }
 
 @media (max-width: 1024px){
-    .header{
-        padding: 3rem 3%;
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
 
     section{
@@ -873,10 +881,13 @@ span{
 
 @media (max-width: 991px){
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
 
     .navbar a:nth-child(1),
@@ -915,10 +926,13 @@ span{
 
 @media (max-width: 768px){
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
 
     #menu-icon{
@@ -1130,10 +1144,13 @@ span{
 
 @media (max-width: 617px){
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
 
     .portfolio .portfolio-container{
@@ -1183,10 +1200,13 @@ span{
 
 @media (max-width: 450px) {
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
 
     html {
@@ -1253,12 +1273,15 @@ span{
 
 @media (max-width: 365px) {
 
-    .header.sticky{
-        background-color: var(--bg-color);
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(10px); 
+    .header {
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px); 
+        z-index: 1000; 
     }
-    
+
     .about-img img{
         width: 90vw;
     }
