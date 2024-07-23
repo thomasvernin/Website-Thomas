@@ -1228,7 +1228,12 @@ span{
     .portfolio,
     .testimonial-container,
     .contact{
-        padding: 6rem;    
+        padding: 6rem;
+        margin-bottom: 100px;  
+    }
+
+    .tools {
+        margin-bottom: -250px;
     }
 
     .footer-text {
