@@ -165,6 +165,16 @@ section{
     text-align: justify;
 }
 
+.blogger-link {
+    text-decoration: ;
+    color: var(--main-color);
+}
+
+.blogger-link:hover {
+    text-decoration: underline;
+}
+
+
 .home-content .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -573,7 +583,7 @@ span{
 }
 
 .testimonial-box .swiper-pagination-bullet{
-    background: rgba(230, 230, 230, 0.8);
+    background: rgb(128, 127, 127);
 }
 
 .testimonial-box .swiper-pagination-bullet-active{
