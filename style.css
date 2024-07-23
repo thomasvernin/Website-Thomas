@@ -1243,6 +1243,12 @@ span{
         margin-bottom: 100px;  
     }
 
+    .portfolio-box:hover .portfolio-layer{
+        opacity: 1;
+        background: rgba(10, 48, 172, 0.1); 
+        backdrop-filter: blur(5px); 
+    }
+
     .tools {
         margin-bottom: 0px;
     }
