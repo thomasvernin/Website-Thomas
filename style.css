@@ -414,61 +414,56 @@ span{
     margin: 1rem 0 3rem;
 }
 
-.loading-spinner {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(253, 253, 253, 0.1);
-    border-radius: 50%;
-    border-top-color: #ffffff;
-    animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-
-
-
-
-.portfolio {
+.portfolio{
     padding: 10rem 5rem;
-    overflow: hidden;
-    position: relative;
 }
 
-.portfolio h2 {
+.portfolio h2{
     margin-bottom: 2rem;
 }
 
-.portfolio-container {
-    display: flex;
-    gap: 2.5rem;
-    width: 200%;
-    animation: scroll 30s linear infinite;
-}
-
-.portfolio-box {
+.portfolio {
+    overflow: hidden; /* Masque le débordement pour ne montrer que la partie visible */
     position: relative;
-    display: flex;
+    width: 100%; /* Assurez-vous que le conteneur a une largeur définie */
+}
+
+.portfolio .portfolio-container {
+    display: flex; /* Utilise flex pour aligner les éléments horizontalement */
+    gap: 2.5rem; /* Espace entre les éléments */
+    align-items: center; /* Aligne les éléments verticalement */
+    white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+    animation: scroll 20s linear infinite; /* Applique l'animation de défilement */
+}
+
+.portfolio-container .portfolio-box {
+    flex: 0 0 auto; /* Les éléments ne se redimensionnent pas */
     border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
-    flex: 0 0 auto;
-    width: 30vw;
+    width: 300px; /* Ajustez en fonction de la taille des éléments */
 }
 
-.portfolio-box img {
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Commence au début */
+    }
+    100% {
+        transform: translateX(-100%); /* Défile jusqu'à ce que le contenu soit hors de vue */
+    }
+}
+
+
+.portfolio-box img{
     width: 100%;
-    transition: transform .5s ease;
+    transition: .5 ease;
 }
 
-.portfolio-box:hover img {
+.portfolio-box:hover img{
     transform: scale(1.1);
 }
 
-.portfolio-layer {
+.portfolio-box .portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -483,25 +478,25 @@ span{
     text-align: center;
     padding: 0 4rem;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.portfolio-box:hover .portfolio-layer{
     opacity: 1;
-    background: rgba(10, 48, 172, 0.1);
-    backdrop-filter: blur(5px);
+    background: rgba(10, 48, 172, 0.1); 
+    backdrop-filter: blur(5px); 
 }
 
-.portfolio-layer h4 {
-    font-size: 3rem;
+.portfolio-layer h4{
+    font-size: 2rem;
 }
 
-.portfolio-layer p {
-    font-size: 2.6rem;
+.portfolio-layer p{
+    font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.portfolio-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -512,7 +507,7 @@ span{
     margin-bottom: 1rem;
 }
 
-.portfolio-layer a i {
+.portfolio-layer a i{
     font-size: 2rem;
     color: #333;
 }
@@ -521,14 +516,6 @@ span{
     color: white;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 

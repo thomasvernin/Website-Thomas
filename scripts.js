@@ -152,20 +152,6 @@ darkModeIcon.onclick = () => {
 };
 
 
-document.getElementById('project-link').addEventListener('click', function(event) {
-  event.preventDefault(); // Empêche le lien de suivre immédiatement
-  
-  // Affiche l'icône de chargement
-  document.getElementById('loading-icon').style.display = 'inline-block';
-  
-  // Attends un court délai avant de rediriger
-  setTimeout(() => {
-      window.location.href = this.href;
-  }, 1000); // Délai de 1 seconde (1000 ms)
-});
-
-
-
 
 document.addEventListener('DOMContentLoaded', (event) => {
     var popup = document.getElementById('legal-popup');
