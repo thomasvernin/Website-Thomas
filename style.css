@@ -438,7 +438,7 @@ span{
     flex: 0 0 auto; /* Les éléments ne se redimensionnent pas */
     border-radius: 2rem;
     overflow: hidden;
-    width: 300px; /* Ajustez en fonction de la taille des éléments */
+    width: 200px; /* Ajustez en fonction de la taille des éléments */
 }
 
 .portfolio-box img {

@@ -1,55 +1,86 @@
-/*=====menu icon navbar======*/
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+document.addEventListener("DOMContentLoaded", function() {
+  // Portfolio scrolling
+  const container = document.querySelector('.portfolio-container');
+  const items = document.querySelectorAll('.portfolio-box');
+  const containerWidth = container.scrollWidth / 2; // La largeur réelle sans la duplication
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-};
+  // Dupliquer le contenu pour un défilement infini
+  container.innerHTML += container.innerHTML;
 
+  let start = 0;
+  const speed = 1; // Ajuster la vitesse de défilement
 
-/*=====scroll section active link======*/
-let sections =  document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a');
+  function scrollPortfolio() {
+      start -= speed;
+      if (start <= -containerWidth) {
+          start = 0;
+      }
+      container.style.transform = `translateX(${start}px)`;
+      requestAnimationFrame(scrollPortfolio);
+  }
 
-window.onscroll = () => {
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
+  // Vérifie que toutes les images sont chargées avant de commencer l'animation
+  const images = container.querySelectorAll('img');
+  let loadedImages = 0;
 
-    if(top >= offset && top < offset + height) {
-      navlinks.forEach(links => {
-        links.classList.remove('active');
-        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-      });
+  function imageLoaded() {
+      loadedImages++;
+      if (loadedImages === images.length) {
+          requestAnimationFrame(scrollPortfolio);
+      }
+  }
 
-    };
+  images.forEach(image => {
+      if (image.complete) {
+          imageLoaded();
+      } else {
+          image.addEventListener('load', imageLoaded);
+          image.addEventListener('error', imageLoaded); // Comptabiliser même les erreurs de chargement
+      }
   });
 
+  // Gérer la visibilité de la page
+  document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'visible' && loadedImages === images.length) {
+          requestAnimationFrame(scrollPortfolio);
+      }
+  });
 
+  // Autres animations
+  let menuIcon = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
 
+  menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+  };
 
+  let sections = document.querySelectorAll('section');
+  let navlinks = document.querySelectorAll('header nav a');
 
-/*=====sticky navbar======*/
-let header = document.querySelector('.header');
+  window.onscroll = () => {
+    sections.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
 
-header.classList.toggle('sticky', window.scrollY > 100);
+      if (top >= offset && top < offset + height) {
+        navlinks.forEach(links => {
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        });
+      }
+    });
 
+    let header = document.querySelector('.header');
+    header.classList.toggle('sticky', window.scrollY > 100);
 
-/*=====remove menu icon navbar when click scroll======*/
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+  };
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-
-
-
-};
-
-/*=====swiper======*/
-
-var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
     loop: true,
@@ -62,139 +93,92 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
+  ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+  });
 
+  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+  ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
+  ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
-
-  
-  var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 50,
-      loop: true,
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 3000, // 4 secondes
-        disableOnInteraction: false,
-      },
-    });
-  
-
-
-/*=====scroll reveal======*/
-ScrollReveal({
-  //reset:true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200,
-});
-
-ScrollReveal().reveal('.home-content, .heading', {
-  origin: 'top'
-});
-
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', {
-  origin: 'bottom'
-});
-
-ScrollReveal().reveal('.home-content h1, .about-img img', {
-  origin: 'left'
-});
-
-ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {
-  origin: 'right'
-});
-
-
-
-// dark-mode.js
-
-// Fonction pour appliquer le mode sombre
-function applyDarkMode() {
-  document.body.classList.add('dark-mode');
-  darkModeIcon.classList.add('bx-sun');
-}
-
-// Fonction pour retirer le mode sombre
-function removeDarkMode() {
-  document.body.classList.remove('dark-mode');
-  darkModeIcon.classList.remove('bx-sun');
-}
-
-let darkModeIcon = document.querySelector('#darkMode-icon');
-
-// Vérifier le mode stocké dans le localStorage au chargement de la page
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  applyDarkMode();
-} else {
-  // Assurez-vous que le mode clair est appliqué par défaut
-  removeDarkMode();
-}
-
-// Ajouter un événement au clic sur l'icône de mode sombre
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle('bx-sun');
-  document.body.classList.toggle('dark-mode');
-  // Enregistrer le mode dans le localStorage
-  if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('dark-mode', 'enabled');
-  } else {
-      localStorage.setItem('dark-mode', 'disabled');
+  // Dark mode functionality
+  function applyDarkMode() {
+    document.body.classList.add('dark-mode');
+    darkModeIcon.classList.add('bx-sun');
   }
-};
 
+  function removeDarkMode() {
+    document.body.classList.remove('dark-mode');
+    darkModeIcon.classList.remove('bx-sun');
+  }
 
+  let darkModeIcon = document.querySelector('#darkMode-icon');
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    var popup = document.getElementById('legal-popup');
-    var openBtn = document.getElementById('open-legal');
-    var closeBtn = document.getElementById('close-popup');
+  if (localStorage.getItem('dark-mode') === 'enabled') {
+    applyDarkMode();
+  } else {
+    removeDarkMode();
+  }
 
-    openBtn.onclick = function() {
-        popup.style.display = 'block';
+  darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+    } else {
+        localStorage.setItem('dark-mode', 'disabled');
     }
+  };
 
-    closeBtn.onclick = function() {
-        popup.style.display = 'none';
-    }
+  document.addEventListener('DOMContentLoaded', (event) => {
+      var popup = document.getElementById('legal-popup');
+      var openBtn = document.getElementById('open-legal');
+      var closeBtn = document.getElementById('close-popup');
 
-    window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = 'none';
-        }
-    }
+      openBtn.onclick = function() {
+          popup.style.display = 'block';
+      }
+
+      closeBtn.onclick = function() {
+          popup.style.display = 'none';
+      }
+
+      window.onclick = function(event) {
+          if (event.target == popup) {
+              popup.style.display = 'none';
+          }
+      }
+  });
 });
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const container = document.querySelector('.portfolio-container');
-    const items = document.querySelectorAll('.portfolio-box');
-    const containerWidth = container.scrollWidth;
-    const itemWidth = items[0].offsetWidth;
-    const totalWidth = itemWidth * items.length + (items.length - 1) * 2.5 * 16; // items width + gaps (2.5rem converted to px)
 
-    let start = 0;
 
-    function scrollPortfolio() {
-        start -= 1; // Adjust speed here
-        if (start <= -totalWidth) {
-            start = containerWidth;
-        }
-        container.style.transform = `translateX(${start}px)`;
-        requestAnimationFrame(scrollPortfolio);
-    }
 
-    requestAnimationFrame(scrollPortfolio);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
