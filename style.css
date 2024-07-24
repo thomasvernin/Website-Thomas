@@ -414,7 +414,19 @@ span{
     margin: 1rem 0 3rem;
 }
 
+.loading-spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(253, 253, 253, 0.1);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 1s ease-in-out infinite;
+}
 
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
 
 
 
@@ -517,6 +529,7 @@ span{
         transform: translateX(-100%);
     }
 }
+
 
 
 
