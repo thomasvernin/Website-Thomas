@@ -439,16 +439,16 @@ span{
 .portfolio-container .portfolio-box {
     flex: 0 0 auto; /* Les éléments ne se redimensionnent pas */
     border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    
     overflow: hidden;
-    width: 210px; /* Ajustez en fonction de la taille des éléments */
+    width: 200px; /* Ajustez en fonction de la taille des éléments */
 }
 
 @keyframes scroll {
     10% {
         transform: translateX(0); /* Commence au début */
     }
-    10% {
+    100% {
         transform: translateX(-100%); /* Défile jusqu'à ce que le contenu soit hors de vue */
     }
 }
