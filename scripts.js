@@ -175,6 +175,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector('.portfolio-container');
+    const items = document.querySelectorAll('.portfolio-box');
+    const containerWidth = container.scrollWidth;
+    const itemWidth = items[0].offsetWidth;
+    const totalWidth = itemWidth * items.length + (items.length - 1) * 2.5 * 16; // items width + gaps (2.5rem converted to px)
+
+    let start = 0;
+
+    function scrollPortfolio() {
+        start -= 1; // Adjust speed here
+        if (start <= -totalWidth) {
+            start = containerWidth;
+        }
+        container.style.transform = `translateX(${start}px)`;
+        requestAnimationFrame(scrollPortfolio);
+    }
+
+    requestAnimationFrame(scrollPortfolio);
+});
+
+
+
+
+
 
 
 
