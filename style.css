@@ -441,14 +441,14 @@ span{
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
-    width: 300px; /* Ajustez en fonction de la taille des éléments */
+    width: 310px; /* Ajustez en fonction de la taille des éléments */
 }
 
 @keyframes scroll {
-    0% {
+    10% {
         transform: translateX(0); /* Commence au début */
     }
-    100% {
+    10% {
         transform: translateX(-100%); /* Défile jusqu'à ce que le contenu soit hors de vue */
     }
 }
