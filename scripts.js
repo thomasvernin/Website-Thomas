@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // Portfolio scrolling
   const container = document.querySelector('.portfolio-container');
   const items = document.querySelectorAll('.portfolio-box');
-  const containerWidth = container.scrollWidth / 2; // La largeur réelle sans la duplication
+  const containerWidth = container.scrollWidth / 10; // La largeur réelle sans la duplication
 
   // Dupliquer le contenu pour un défilement infini
   container.innerHTML += container.innerHTML;
 
   let start = 0;
-  const speed = 1; // Ajuster la vitesse de défilement
+  const speed = 0.4; // Ajuster la vitesse de défilement
 
   function scrollPortfolio() {
       start -= speed;
@@ -45,6 +45,16 @@ document.addEventListener("DOMContentLoaded", function() {
           requestAnimationFrame(scrollPortfolio);
       }
   });
+
+
+
+
+
+
+
+
+
+
 
   // Autres animations
   let menuIcon = document.querySelector('#menu-icon');

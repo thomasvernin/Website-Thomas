@@ -414,8 +414,6 @@ span{
     margin: 1rem 0 3rem;
 }
 
-
-
 .portfolio {
     padding: 10rem 5rem;
     overflow: hidden; /* Masque le débordement pour ne montrer que la partie visible */
@@ -424,7 +422,7 @@ span{
 }
 
 .portfolio h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .portfolio .portfolio-container {
