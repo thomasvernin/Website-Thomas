@@ -2,18 +2,25 @@ document.addEventListener("DOMContentLoaded", function() {
   // Portfolio scrolling
   const container = document.querySelector('.portfolio-container');
   const items = document.querySelectorAll('.portfolio-box');
-  const containerWidth = container.scrollWidth / 10; // La largeur réelle sans la duplication
+  const originalContainerWidth = container.scrollWidth / 2; // La largeur réelle sans la duplication
 
   // Dupliquer le contenu pour un défilement infini
   container.innerHTML += container.innerHTML;
 
   let start = 0;
-  const speed = 0.4; // Ajuster la vitesse de défilement
+  const baseSpeed = 0.5; // Vitesse de défilement de base
+  let speed = baseSpeed; // Vitesse actuelle
+  let direction = 1; // 1 pour défilement à droite, -1 pour gauche
+
+  // Appliquer des styles CSS pour une transition plus douce
+  container.style.transition = 'transform 0.1s linear';
 
   function scrollPortfolio() {
-      start -= speed;
-      if (start <= -containerWidth) {
+      start -= speed * direction;
+      if (start <= -originalContainerWidth) {
           start = 0;
+      } else if (start >= 0) {
+          start = -originalContainerWidth;
       }
       container.style.transform = `translateX(${start}px)`;
       requestAnimationFrame(scrollPortfolio);
@@ -45,6 +52,29 @@ document.addEventListener("DOMContentLoaded", function() {
           requestAnimationFrame(scrollPortfolio);
       }
   });
+
+  // Ajouter une variation douce de la vitesse de défilement
+  function adjustSpeed() {
+      speed = baseSpeed + Math.sin(Date.now() / 1000) * 0.2;
+      requestAnimationFrame(adjustSpeed);
+  }
+
+  adjustSpeed();
+
+  // Ajouter un effet de mise à l'échelle et de flou sur les éléments au survol
+  items.forEach(item => {
+      item.style.transition = 'transform 0.3s ease-in-out, filter 0.3s ease-in-out';
+      item.addEventListener('mouseover', () => {
+          item.style.transform = 'scale(1.1)';
+          item.style.filter = 'blur(2px)';
+      });
+      item.addEventListener('mouseout', () => {
+          item.style.transform = 'scale(1)';
+          item.style.filter = 'blur(0)';
+      });
+  });
+});
+
 
 
 

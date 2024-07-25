@@ -414,41 +414,39 @@ span{
     margin: 1rem 0 3rem;
 }
 
-.portfolio {
+.portfolio{
     padding: 10rem 5rem;
-    overflow: hidden; /* Masque le débordement pour ne montrer que la partie visible */
+}
+
+.portfolio h2{
+    margin-bottom: 2rem;
+}
+
+.portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box{
     position: relative;
-    width: 100%; /* Assurez-vous que le conteneur a une largeur définie */
-}
-
-.portfolio h2 {
-    margin-bottom: 5rem;
-}
-
-.portfolio .portfolio-container {
-    display: flex; /* Utilise flex pour aligner les éléments horizontalement */
-    gap: 2.5rem; /* Espace entre les éléments */
-    align-items: center; /* Aligne les éléments verticalement */
-    white-space: nowrap; /* Empêche le retour à la ligne des éléments */
-}
-
-.portfolio-container .portfolio-box {
-    flex: 0 0 auto; /* Les éléments ne se redimensionnent pas */
+    display: flex;
     border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
     overflow: hidden;
-    width: 200px; /* Ajustez en fonction de la taille des éléments */
 }
 
-.portfolio-box img {
+.portfolio-box img{
     width: 100%;
-    transition: .5s ease;
+    transition: .5 ease;
 }
 
-.portfolio-box:hover img {
+.portfolio-box:hover img{
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+.portfolio-box .portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -466,22 +464,22 @@ span{
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.portfolio-box:hover .portfolio-layer{
     opacity: 1;
     background: rgba(10, 48, 172, 0.1); 
     backdrop-filter: blur(5px); 
 }
 
-.portfolio-layer h4 {
-    font-size: 2rem;
+.portfolio-layer h4{
+    font-size: 3rem;
 }
 
-.portfolio-layer p {
-    font-size: 1.6rem;
+.portfolio-layer p{
+    font-size: 2.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.portfolio-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -492,7 +490,7 @@ span{
     margin-bottom: 1rem;
 }
 
-.portfolio-layer a i {
+.portfolio-layer a i{
     font-size: 2rem;
     color: #333;
 }
@@ -500,7 +498,6 @@ span{
 .dark-mode .portfolio-layer a i {
     color: white;
 }
-
 
 
 
