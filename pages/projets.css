@@ -129,8 +129,10 @@ a i.bx {
 }
 
 .dark-mode p a  {
-    color: white; /* Makes <i> tags white in dark mode */
+    color: white; 
 }
+
+
 
 /* Styles pour appareils mobiles */
 @media (max-width: 600px) {
