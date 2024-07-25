@@ -1,126 +1,55 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Portfolio scrolling
-  const container = document.querySelector('.portfolio-container');
-  const items = document.querySelectorAll('.portfolio-box');
-  const originalContainerWidth = container.scrollWidth / 2; // La largeur réelle sans la duplication
+/*=====menu icon navbar======*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-  // Dupliquer le contenu pour un défilement infini
-  container.innerHTML += container.innerHTML;
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
 
-  let start = 0;
-  const baseSpeed = 0.5; // Vitesse de défilement de base
-  let speed = baseSpeed; // Vitesse actuelle
-  let direction = 1; // 1 pour défilement à droite, -1 pour gauche
 
-  // Appliquer des styles CSS pour une transition plus douce
-  container.style.transition = 'transform 0.1s linear';
+/*=====scroll section active link======*/
+let sections =  document.querySelectorAll('section');
+let navlinks = document.querySelectorAll('header nav a');
 
-  function scrollPortfolio() {
-      start -= speed * direction;
-      if (start <= -originalContainerWidth) {
-          start = 0;
-      } else if (start >= 0) {
-          start = -originalContainerWidth;
-      }
-      container.style.transform = `translateX(${start}px)`;
-      requestAnimationFrame(scrollPortfolio);
-  }
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
 
-  // Vérifie que toutes les images sont chargées avant de commencer l'animation
-  const images = container.querySelectorAll('img');
-  let loadedImages = 0;
-
-  function imageLoaded() {
-      loadedImages++;
-      if (loadedImages === images.length) {
-          requestAnimationFrame(scrollPortfolio);
-      }
-  }
-
-  images.forEach(image => {
-      if (image.complete) {
-          imageLoaded();
-      } else {
-          image.addEventListener('load', imageLoaded);
-          image.addEventListener('error', imageLoaded); // Comptabiliser même les erreurs de chargement
-      }
-  });
-
-  // Gérer la visibilité de la page
-  document.addEventListener('visibilitychange', function() {
-      if (document.visibilityState === 'visible' && loadedImages === images.length) {
-          requestAnimationFrame(scrollPortfolio);
-      }
-  });
-
-  // Ajouter une variation douce de la vitesse de défilement
-  function adjustSpeed() {
-      speed = baseSpeed + Math.sin(Date.now() / 1000) * 0.2;
-      requestAnimationFrame(adjustSpeed);
-  }
-
-  adjustSpeed();
-
-  // Ajouter un effet de mise à l'échelle et de flou sur les éléments au survol
-  items.forEach(item => {
-      item.style.transition = 'transform 0.3s ease-in-out, filter 0.3s ease-in-out';
-      item.addEventListener('mouseover', () => {
-          item.style.transform = 'scale(1.1)';
-          item.style.filter = 'blur(2px)';
+    if(top >= offset && top < offset + height) {
+      navlinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
       });
-      item.addEventListener('mouseout', () => {
-          item.style.transform = 'scale(1)';
-          item.style.filter = 'blur(0)';
-      });
+
+    };
   });
-});
 
 
 
 
 
+/*=====sticky navbar======*/
+let header = document.querySelector('.header');
+
+header.classList.toggle('sticky', window.scrollY > 100);
+
+
+/*=====remove menu icon navbar when click scroll======*/
+
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
 
 
 
+};
 
+/*=====swiper======*/
 
-
-
-  // Autres animations
-  let menuIcon = document.querySelector('#menu-icon');
-  let navbar = document.querySelector('.navbar');
-
-  menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-  };
-
-  let sections = document.querySelectorAll('section');
-  let navlinks = document.querySelectorAll('header nav a');
-
-  window.onscroll = () => {
-    sections.forEach(sec => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute('id');
-
-      if (top >= offset && top < offset + height) {
-        navlinks.forEach(links => {
-          links.classList.remove('active');
-          document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-        });
-      }
-    });
-
-    let header = document.querySelector('.header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-  };
-
-  var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
     loop: true,
@@ -133,72 +62,131 @@ document.addEventListener("DOMContentLoaded", function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
   });
 
-  ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-  });
 
-  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-  ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
-  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
-  ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
-  // Dark mode functionality
-  function applyDarkMode() {
-    document.body.classList.add('dark-mode');
-    darkModeIcon.classList.add('bx-sun');
-  }
 
-  function removeDarkMode() {
-    document.body.classList.remove('dark-mode');
-    darkModeIcon.classList.remove('bx-sun');
-  }
+  
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000, // 4 secondes
+        disableOnInteraction: false,
+      },
+    });
+  
 
-  let darkModeIcon = document.querySelector('#darkMode-icon');
 
-  if (localStorage.getItem('dark-mode') === 'enabled') {
-    applyDarkMode();
-  } else {
-    removeDarkMode();
-  }
-
-  darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('dark-mode', 'enabled');
-    } else {
-        localStorage.setItem('dark-mode', 'disabled');
-    }
-  };
-
-  document.addEventListener('DOMContentLoaded', (event) => {
-      var popup = document.getElementById('legal-popup');
-      var openBtn = document.getElementById('open-legal');
-      var closeBtn = document.getElementById('close-popup');
-
-      openBtn.onclick = function() {
-          popup.style.display = 'block';
-      }
-
-      closeBtn.onclick = function() {
-          popup.style.display = 'none';
-      }
-
-      window.onclick = function(event) {
-          if (event.target == popup) {
-              popup.style.display = 'none';
-          }
-      }
-  });
+/*=====scroll reveal======*/
+ScrollReveal({
+  //reset:true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200,
 });
+
+ScrollReveal().reveal('.home-content, .heading', {
+  origin: 'top'
+});
+
+ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', {
+  origin: 'bottom'
+});
+
+ScrollReveal().reveal('.home-content h1, .about-img img', {
+  origin: 'left'
+});
+
+ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {
+  origin: 'right'
+});
+
+
+
+// dark-mode.js
+
+// Fonction pour appliquer le mode sombre
+function applyDarkMode() {
+  document.body.classList.add('dark-mode');
+  darkModeIcon.classList.add('bx-sun');
+}
+
+// Fonction pour retirer le mode sombre
+function removeDarkMode() {
+  document.body.classList.remove('dark-mode');
+  darkModeIcon.classList.remove('bx-sun');
+}
+
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+// Vérifier le mode stocké dans le localStorage au chargement de la page
+if (localStorage.getItem('dark-mode') === 'enabled') {
+  applyDarkMode();
+} else {
+  // Assurez-vous que le mode clair est appliqué par défaut
+  removeDarkMode();
+}
+
+// Ajouter un événement au clic sur l'icône de mode sombre
+darkModeIcon.onclick = () => {
+  darkModeIcon.classList.toggle('bx-sun');
+  document.body.classList.toggle('dark-mode');
+  // Enregistrer le mode dans le localStorage
+  if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('dark-mode', 'enabled');
+  } else {
+      localStorage.setItem('dark-mode', 'disabled');
+  }
+};
+
+
+document.getElementById('project-link').addEventListener('click', function(event) {
+  event.preventDefault(); // Empêche le lien de suivre immédiatement
+  
+  // Affiche l'icône de chargement
+  document.getElementById('loading-icon').style.display = 'inline-block';
+  
+  // Attends un court délai avant de rediriger
+  setTimeout(() => {
+      window.location.href = this.href;
+  }, 1000); // Délai de 1 seconde (1000 ms)
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    var popup = document.getElementById('legal-popup');
+    var openBtn = document.getElementById('open-legal');
+    var closeBtn = document.getElementById('close-popup');
+
+    openBtn.onclick = function() {
+        popup.style.display = 'block';
+    }
+
+    closeBtn.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+});
+
 
 
 

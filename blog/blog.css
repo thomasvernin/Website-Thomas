@@ -52,7 +52,16 @@
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
+    cursor: pointer;
 }
+
+.pdp img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-left: 20px ; 
+}
+
+
 
 
 @media (max-width: 768px) {
