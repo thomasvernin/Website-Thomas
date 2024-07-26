@@ -457,12 +457,12 @@ span{
 .carousel-layer {
     padding: 0px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-/* Ajoute un flou léger aux éléments non survolés */
+
 .carousel-item.blur {
-    filter: blur(5px); /* Ajuste l'intensité du flou selon les besoins */
+    filter: blur(5px); 
     transition: filter 0.3s ease;
 }
 
