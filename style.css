@@ -425,12 +425,15 @@ span{
     margin-bottom: 5rem;
 }
 
+
+
+/* Styles de base pour le carrousel */
 .carousel-container {
     position: relative;
-    width: 140%;
+    width: 100%; /* Largeur à 100% pour éviter les débordements */
     overflow: hidden;
     margin: auto;
-    padding: 0px 0;
+    padding: 0;
 }
 
 .carousel {
@@ -455,24 +458,22 @@ span{
 }
 
 .carousel-layer {
-    padding: 0px;
+    padding: 0;
     text-align: center;
     font-size: 15px;
 }
 
-
 .carousel-item.blur {
-    filter: blur(5px); 
+    filter: blur(5px);
     transition: filter 0.3s ease;
 }
 
-
 .carousel img {
-    width: 100%; 
-    height: auto; 
-    
+    width: 100%;
+    height: auto;
 }
 
+/* Mode sombre pour le carrousel */
 .dark-mode .carousel-layer {
     color: black;
 }
@@ -481,42 +482,59 @@ span{
     color: black;
 }
 
-
-
+/* Responsive pour les tablettes */
 @media (max-width: 768px) {
     .carousel-container {
-        width: 120%; /* Réduit la largeur pour les écrans plus petits */
+        width: 120%; /* Largeur ajustée pour les écrans plus petits */
     }
 
     .carousel-item {
-        max-width: 250px; /* Réduit la largeur maximale */
-        margin: 0 5px; /* Réduit les marges */
+        max-width: 250px;
+        margin: 0 5px;
     }
 
     .carousel-layer {
-        font-size: 14px; /* Réduit la taille de la police */
+        font-size: 14px;
     }
 }
 
-/* Styles pour les téléphones portables */
+/* Responsive pour les téléphones portables */
 @media (max-width: 480px) {
     .carousel-container {
         width: 100%; /* Réduit la largeur à 100% pour les petits écrans */
     }
 
     .carousel-item {
-        max-width: 200px; /* Réduit encore la largeur maximale */
-        margin: 0 5px; /* Réduit les marges */
+        max-width: 200px;
+        margin: 0 5px;
     }
 
     .carousel-layer {
-        font-size: 12px; /* Réduit davantage la taille de la police */
+        font-size: 12px;
     }
 
     .carousel-item img {
-        height: auto; /* Assure que les images conservent leur proportion */
+        height: auto;
     }
 }
+
+/* Ajustements spécifiques pour les grands écrans */
+@media (min-width: 1440px) {
+    .carousel-container {
+        width: 100%; /* Évite les débordements sur les très grands écrans */
+    }
+
+    .carousel {
+        /* Assure que le carrousel utilise correctement l'espace disponible */
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        max-width: 300px; /* Garde une largeur fixe */
+        margin: 0 20px; /* Ajuste les marges pour l'espacement */
+    }
+}
+
 
 
 
