@@ -422,15 +422,15 @@ span{
 }
 
 .portfolio h2{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .carousel-container {
     position: relative;
-    width: 140%; 
+    width: 140%;
     overflow: hidden;
     margin: auto;
-    padding: 20px 0; 
+    padding: 0px 0;
 }
 
 .carousel {
@@ -441,9 +441,9 @@ span{
 }
 
 .carousel-item {
-    min-width: 150px; 
-    margin: 0 10px; 
-    background: #f0f0f0;
+    max-width: 300px;
+    margin: 0 10px;
+    background: #ecd0ff;
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.5s ease;
@@ -451,18 +451,19 @@ span{
 }
 
 .carousel-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .carousel-layer {
-    padding: 10px; 
+    padding: 0px;
     text-align: center;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .carousel img {
-    width: 30%;
-    border-bottom: 2px solid #ddd;
+    width: 100%; 
+    height: auto; 
+    
 }
 
 .dark-mode .carousel-layer {
@@ -472,7 +473,6 @@ span{
 .dark-mode .carousel-layer a {
     color: black;
 }
-
 
 
 
