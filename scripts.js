@@ -1,44 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
-  const items = document.querySelectorAll('.carousel-item');
   let isMoving = true;
-
-  // Clone carousel items for infinite scroll effect
-  items.forEach(item => {
-      const clone = item.cloneNode(true);
-      carousel.appendChild(clone);
-  });
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-      const itemWidth = items[0].getBoundingClientRect().width;
-      carousel.style.transform = `translateX(${-currentIndex * (itemWidth + 30)}px)`;
+  let intervalId;
+  
+  // Fonction pour démarrer le carrousel
+  function startCarousel() {
+      intervalId = setInterval(() => {
+          if (isMoving) {
+              const firstItem = carousel.querySelector('.carousel-item');
+              const itemWidth = firstItem.offsetWidth;
+              carousel.appendChild(firstItem); // Déplace le premier élément à la fin
+              carousel.style.transition = 'none';
+              carousel.style.transform = `translateX(-${itemWidth}px)`;
+              requestAnimationFrame(() => {
+                  requestAnimationFrame(() => {
+                      carousel.style.transition = 'transform 0.5s ease-in-out';
+                      carousel.style.transform = 'translateX(0)';
+                  });
+              });
+          }
+      }, 3000); // Change l'élément toutes les 3 secondes
   }
 
-  function nextItem() {
-      if (!isMoving) return;
-      currentIndex++;
-      const itemsLength = items.length;
-
-      if (currentIndex >= itemsLength) {
-          carousel.style.transition = 'none';
-          currentIndex = 0;
-          updateCarousel();
-          setTimeout(() => {
-              carousel.style.transition = 'transform 0.5s ease-in-out';
-              currentIndex++;
-              updateCarousel();
-          }, 50);
-      } else {
-          updateCarousel();
-      }
+  // Fonction pour arrêter le carrousel
+  function stopCarousel() {
+      clearInterval(intervalId);
   }
 
-  setInterval(nextItem, 3000); // Change item every 3 seconds
+  // Démarre le carrousel au chargement de la page
+  startCarousel();
 
-  updateCarousel();
+  // Événements pour arrêter et redémarrer le carrousel
+  carousel.addEventListener('mouseover', stopCarousel);
+  carousel.addEventListener('mouseout', startCarousel);
 });
+
+
 
 
 
