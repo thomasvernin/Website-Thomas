@@ -1,7 +1,44 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('.carousel');
+  const items = document.querySelectorAll('.carousel-item');
+  let isMoving = true;
 
+  // Clone carousel items for infinite scroll effect
+  items.forEach(item => {
+      const clone = item.cloneNode(true);
+      carousel.appendChild(clone);
+  });
 
+  let currentIndex = 0;
 
+  function updateCarousel() {
+      const itemWidth = items[0].getBoundingClientRect().width;
+      carousel.style.transform = `translateX(${-currentIndex * (itemWidth + 30)}px)`;
+  }
 
+  function nextItem() {
+      if (!isMoving) return;
+      currentIndex++;
+      const itemsLength = items.length;
+
+      if (currentIndex >= itemsLength) {
+          carousel.style.transition = 'none';
+          currentIndex = 0;
+          updateCarousel();
+          setTimeout(() => {
+              carousel.style.transition = 'transform 0.5s ease-in-out';
+              currentIndex++;
+              updateCarousel();
+          }, 50);
+      } else {
+          updateCarousel();
+      }
+  }
+
+  setInterval(nextItem, 3000); // Change item every 3 seconds
+
+  updateCarousel();
+});
 
 
 
