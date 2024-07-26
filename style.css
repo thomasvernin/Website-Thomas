@@ -483,6 +483,45 @@ span{
 
 
 
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 120%; /* Réduit la largeur pour les écrans plus petits */
+    }
+
+    .carousel-item {
+        max-width: 250px; /* Réduit la largeur maximale */
+        margin: 0 5px; /* Réduit les marges */
+    }
+
+    .carousel-layer {
+        font-size: 14px; /* Réduit la taille de la police */
+    }
+}
+
+/* Styles pour les téléphones portables */
+@media (max-width: 480px) {
+    .carousel-container {
+        width: 100%; /* Réduit la largeur à 100% pour les petits écrans */
+    }
+
+    .carousel-item {
+        max-width: 200px; /* Réduit encore la largeur maximale */
+        margin: 0 5px; /* Réduit les marges */
+    }
+
+    .carousel-layer {
+        font-size: 12px; /* Réduit davantage la taille de la police */
+    }
+
+    .carousel-item img {
+        height: auto; /* Assure que les images conservent leur proportion */
+    }
+}
+
+
+
+
+
 
 
 
