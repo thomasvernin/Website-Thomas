@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.carousel-item');
   let isMoving = true;
   let intervalId;
-  
+
   // Fonction pour démarrer le carrousel
   function startCarousel() {
       intervalId = setInterval(() => {
           if (isMoving) {
-              const firstItem = carousel.querySelector('.carousel-item');
-              const itemWidth = firstItem.offsetWidth;
-              carousel.appendChild(firstItem); // Déplace le premier élément à la fin
+              const lastItem = carousel.querySelector('.carousel-item:last-child');
+              const itemWidth = lastItem.offsetWidth;
+              carousel.insertBefore(lastItem, carousel.firstChild); // Déplace le dernier élément au début
               carousel.style.transition = 'none';
-              carousel.style.transform = `translateX(-${itemWidth}px)`;
+              carousel.style.transform = `translateX(${itemWidth}px)`;
               requestAnimationFrame(() => {
                   requestAnimationFrame(() => {
                       carousel.style.transition = 'transform 0.5s ease-in-out';
@@ -44,8 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+  // Fonction pour ajuster la taille du carrousel lors du redimensionnement
+  function adjustCarousel() {
+      carousel.style.transition = 'none';
+      const lastItem = carousel.querySelector('.carousel-item:last-child');
+      const itemWidth = lastItem.offsetWidth;
+      carousel.style.transform = `translateX(${itemWidth}px)`;
+      requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+              carousel.style.transition = 'transform 0.5s ease-in-out';
+              carousel.style.transform = 'translateX(0)';
+          });
+      });
+  }
+
   // Démarre le carrousel au chargement de la page
   startCarousel();
+
+  // Ajuste le carrousel au redimensionnement de la fenêtre
+  window.addEventListener('resize', adjustCarousel);
 
   // Événements pour arrêter le carrousel et appliquer le flou
   items.forEach(item => {
@@ -58,7 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
           removeBlur();
       });
   });
+
+  // Ajuste le carrousel immédiatement après le chargement
+  adjustCarousel();
 });
+
+
 
 
 
