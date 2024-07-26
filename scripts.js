@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   });
               });
           }
-      }, 3000); // Change l'élément toutes les 3 secondes
+      }, 2000); // Change l'élément toutes les 3 secondes
   }
 
   // Fonction pour arrêter le carrousel
