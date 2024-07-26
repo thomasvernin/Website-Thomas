@@ -1,84 +1,102 @@
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
   const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
   let isMoving = true;
   let intervalId;
 
   // Fonction pour démarrer le carrousel
   function startCarousel() {
-      intervalId = setInterval(() => {
-          if (isMoving) {
-              const lastItem = carousel.querySelector('.carousel-item:last-child');
-              const itemWidth = lastItem.offsetWidth;
-              carousel.insertBefore(lastItem, carousel.firstChild); // Déplace le dernier élément au début
-              carousel.style.transition = 'none';
-              carousel.style.transform = `translateX(${itemWidth}px)`;
-              requestAnimationFrame(() => {
-                  requestAnimationFrame(() => {
-                      carousel.style.transition = 'transform 0.5s ease-in-out';
-                      carousel.style.transform = 'translateX(0)';
-                  });
-              });
-          }
-      }, 2000); // Change l'élément toutes les 3 secondes
+    intervalId = setInterval(() => {
+      if (isMoving) {
+        const itemWidth = items[0].offsetWidth;
+        carousel.style.transition = 'none';
+        carousel.style.transform = `translateX(-${itemWidth}px)`;
+
+        // Déplace le premier élément à la fin
+        carousel.appendChild(carousel.firstElementChild);
+
+        // Redémarre le carrousel en douceur
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+            carousel.style.transform = 'translateX(0)';
+          });
+        });
+      }
+    }, 3000); // Change l'élément toutes les 3 secondes
   }
 
   // Fonction pour arrêter le carrousel
   function stopCarousel() {
-      clearInterval(intervalId);
+    clearInterval(intervalId);
   }
 
   // Fonction pour appliquer le flou
   function applyBlur(exceptItem) {
-      items.forEach(item => {
-          if (item !== exceptItem) {
-              item.classList.add('blur');
-          }
-      });
+    items.forEach(item => {
+      if (item !== exceptItem) {
+        item.classList.add('blur');
+      }
+    });
   }
 
   // Fonction pour retirer le flou
   function removeBlur() {
-      items.forEach(item => {
-          item.classList.remove('blur');
-      });
+    items.forEach(item => {
+      item.classList.remove('blur');
+    });
   }
 
   // Fonction pour ajuster la taille du carrousel lors du redimensionnement
   function adjustCarousel() {
-      carousel.style.transition = 'none';
-      const lastItem = carousel.querySelector('.carousel-item:last-child');
-      const itemWidth = lastItem.offsetWidth;
-      carousel.style.transform = `translateX(${itemWidth}px)`;
+    carousel.style.transition = 'none';
+    const itemWidth = items[0].offsetWidth;
+    carousel.style.transform = `translateX(-${itemWidth}px)`;
+    requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-              carousel.style.transition = 'transform 0.5s ease-in-out';
-              carousel.style.transform = 'translateX(0)';
-          });
+        carousel.style.transition = 'transform 0.5s ease-in-out';
+        carousel.style.transform = 'translateX(0)';
       });
+    });
   }
 
-  // Démarre le carrousel au chargement de la page
+  // Initialiser le carrousel
   startCarousel();
 
-  // Ajuste le carrousel au redimensionnement de la fenêtre
+  // Ajuste le carrousel lors du redimensionnement de la fenêtre
   window.addEventListener('resize', adjustCarousel);
 
   // Événements pour arrêter le carrousel et appliquer le flou
   items.forEach(item => {
-      item.addEventListener('mouseover', () => {
-          stopCarousel();
-          applyBlur(item);
-      });
-      item.addEventListener('mouseout', () => {
-          startCarousel();
-          removeBlur();
-      });
+    item.addEventListener('mouseover', () => {
+      stopCarousel();
+      applyBlur(item);
+    });
+    item.addEventListener('mouseout', () => {
+      startCarousel();
+      removeBlur();
+    });
   });
 
   // Ajuste le carrousel immédiatement après le chargement
   adjustCarousel();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

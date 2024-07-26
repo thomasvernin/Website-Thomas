@@ -473,7 +473,6 @@ span{
     height: auto;
 }
 
-/* Mode sombre pour le carrousel */
 .dark-mode .carousel-layer {
     color: black;
 }
@@ -482,58 +481,51 @@ span{
     color: black;
 }
 
-/* Responsive pour les tablettes */
-@media (max-width: 768px) {
+
+
+
+/* Styles pour les tablettes et petits écrans (de 768px à 1024px) */
+@media (max-width: 1024px) {
     .carousel-container {
-        width: 120%; /* Largeur ajustée pour les écrans plus petits */
-    }
-
-    .carousel-item {
-        max-width: 250px;
-        margin: 0 5px;
-    }
-
-    .carousel-layer {
-        font-size: 14px;
-    }
-}
-
-/* Responsive pour les téléphones portables */
-@media (max-width: 480px) {
-    .carousel-container {
-        width: 100%; /* Réduit la largeur à 100% pour les petits écrans */
-    }
-
-    .carousel-item {
-        max-width: 200px;
-        margin: 0 5px;
-    }
-
-    .carousel-layer {
-        font-size: 12px;
-    }
-
-    .carousel-item img {
-        height: auto;
-    }
-}
-
-/* Ajustements spécifiques pour les grands écrans */
-@media (min-width: 1440px) {
-    .carousel-container {
-        width: 100%; /* Évite les débordements sur les très grands écrans */
+        width: 100%; /* Ajuste la largeur à 100% pour les tablettes et petits écrans */
     }
 
     .carousel {
-        /* Assure que le carrousel utilise correctement l'espace disponible */
-        margin: 0 auto;
+        flex-wrap: wrap; /* Permet de placer les éléments en colonnes */
+        justify-content: center; /* Centre les éléments à l'intérieur du conteneur */
     }
 
     .carousel-item {
-        max-width: 300px; /* Garde une largeur fixe */
-        margin: 0 20px; /* Ajuste les marges pour l'espacement */
+        width: calc(50% - 10px); /* Chaque élément occupe 50% de la largeur du conteneur, moins les marges */
+        margin: 5px 0; /* Ajuste les marges pour un espacement vertical */
+    }
+
+    .carousel-layer {
+        font-size: 14px; /* Réduit la taille de la police */
     }
 }
+
+/* Styles pour les téléphones portables (en dessous de 768px) */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%; /* Ajuste la largeur à 100% pour les téléphones */
+    }
+
+    .carousel {
+        flex-direction: column; /* Dispose les éléments en colonne */
+        justify-content: center; /* Centre les éléments à l'intérieur du conteneur */
+    }
+
+    .carousel-item {
+        width: 100%; /* Chaque élément occupe 100% de la largeur du conteneur */
+        margin: 5px 0; /* Ajuste les marges pour un espacement vertical */
+    }
+
+    .carousel-layer {
+        font-size: 12px; /* Réduit la taille de la police */
+    }
+}
+
 
 
 
