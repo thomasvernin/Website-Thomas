@@ -460,6 +460,13 @@ span{
     font-size: 20px;
 }
 
+/* Ajoute un flou léger aux éléments non survolés */
+.carousel-item.blur {
+    filter: blur(5px); /* Ajuste l'intensité du flou selon les besoins */
+    transition: filter 0.3s ease;
+}
+
+
 .carousel img {
     width: 100%; 
     height: auto; 

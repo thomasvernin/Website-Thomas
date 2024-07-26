@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
+  const items = document.querySelectorAll('.carousel-item');
   let isMoving = true;
   let intervalId;
   
@@ -27,13 +28,38 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(intervalId);
   }
 
+  // Fonction pour appliquer le flou
+  function applyBlur(exceptItem) {
+      items.forEach(item => {
+          if (item !== exceptItem) {
+              item.classList.add('blur');
+          }
+      });
+  }
+
+  // Fonction pour retirer le flou
+  function removeBlur() {
+      items.forEach(item => {
+          item.classList.remove('blur');
+      });
+  }
+
   // Démarre le carrousel au chargement de la page
   startCarousel();
 
-  // Événements pour arrêter et redémarrer le carrousel
-  carousel.addEventListener('mouseover', stopCarousel);
-  carousel.addEventListener('mouseout', startCarousel);
+  // Événements pour arrêter le carrousel et appliquer le flou
+  items.forEach(item => {
+      item.addEventListener('mouseover', () => {
+          stopCarousel();
+          applyBlur(item);
+      });
+      item.addEventListener('mouseout', () => {
+          startCarousel();
+          removeBlur();
+      });
+  });
 });
+
 
 
 
