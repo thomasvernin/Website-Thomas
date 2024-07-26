@@ -526,20 +526,81 @@ span{
     }
 }
 
+.bx.bxl-visual-studio {
+    font-size: 16px;
+}
+
+.fab.fa-github {
+    font-size: 16px;
+}
+
+.fab.fa-figma {
+    font-size: 16px;
+}
+
+.fab.fa-html5 {
+    font-size: 16px;
+}
+
+.fab.fa-node-js {
+    font-size: 60px;
+}
+
+.fas.fa-robot {
+    font-size: 60px;
+}
+
+.fab.fa-css3-alt {
+    font-size: 60px;
+}
+
+.fab.fa-js {
+    font-size: 60px;
+}
+
+.fas.fa-search {
+    font-size: 16px;
+}
+
+.fab.fa-react {
+    font-size: 60px;
+}
+
+.rotate {
+    animation: spin 7s linear infinite;
+}
+
+.fa-node-js {
+    font-size: 16px;
+}
+
+.fas.fa-server {
+    font-size: 16px;
+}
+
+.fas.fa-database {
+    font-size: 16px;
+}
+
+.icon-feedly {
+    width: 16px;
+    height: 16px;
+}
 
 
+a i.bx {
+    font-size: 16px; 
+    
+}
 
+.smaller-text {
+    font-size: 0.6em; 
+    font-style: italic;
+}
 
-
-
-
-
-
-
-
-
-
-
+.rotate {
+    animation: spin 10s linear infinite;
+}
 
 .testimonial-container{
     display: flex;
