@@ -478,6 +478,47 @@ span{
     color: black;
 }
 
+/* Style des boutons de filtres */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 0.8rem 2rem;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.7rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.filter-btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.filter-btn.active {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+
+
 
 
 

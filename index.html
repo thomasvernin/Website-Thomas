@@ -125,10 +125,20 @@
 
     <section class="portfolio" id="portfolio">
         <h2 class="heading">PROJETS du <span>Portfolio</span></h2>
+    
+        <!-- Filtres -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">#Tous</button>
+            <button class="filter-btn" data-filter="frontend">#FrontEnd</button>
+            <button class="filter-btn" data-filter="backend">#BackEnd</button>
+            <button class="filter-btn" data-filter="seo">#SEO</button>
+            <button class="filter-btn" data-filter="gestion-projets">#Gestion de projets</button>
+        </div>
+    
         <div class="carousel-container">
             <div class="carousel">
-                <!-- Projet 1 -->
-                <a href="pages/projet1.html" class="carousel-item-link">
+                <!-- Projet 1 - FrontEnd -->
+                <a href="pages/projet1.html" class="carousel-item-link" data-category="frontend">
                     <div class="carousel-item">
                         <img src="images/1.png" alt="">
                         <div class="carousel-layer">
@@ -138,8 +148,8 @@
                         </div>
                     </div>
                 </a>
-                <!-- Projet 2 -->
-                <a href="pages/projet2.html" class="carousel-item-link">
+                <!-- Projet 2 - FrontEnd -->
+                <a href="pages/projet2.html" class="carousel-item-link" data-category="frontend">
                     <div class="carousel-item">
                         <img src="images/2.png" alt="">
                         <div class="carousel-layer">
@@ -149,8 +159,8 @@
                         </div>
                     </div>
                 </a>
-                <!-- Projet 3 -->
-                <a href="pages/projet3.html" class="carousel-item-link">
+                <!-- Projet 3 - SEO -->
+                <a href="pages/projet3.html" class="carousel-item-link" data-category="seo">
                     <div class="carousel-item">
                         <img src="images/3.png" alt="">
                         <div class="carousel-layer">
@@ -160,8 +170,8 @@
                         </div>
                     </div>
                 </a>
-                <!-- Projet 4 -->
-                <a href="pages/projet4.html" class="carousel-item-link">
+                <!-- Projet 4 - FrontEnd -->
+                <a href="pages/projet4.html" class="carousel-item-link" data-category="frontend">
                     <div class="carousel-item">
                         <img src="images/4.png" alt="">
                         <div class="carousel-layer">
@@ -171,8 +181,8 @@
                         </div>
                     </div>
                 </a>
-                <!-- Projet 5 -->
-                <a href="pages/projet5.html" class="carousel-item-link">
+                <!-- Projet 5 - BackEnd -->
+                <a href="pages/projet5.html" class="carousel-item-link" data-category="backend">
                     <div class="carousel-item">
                         <img src="images/5.png" alt="">
                         <div class="carousel-layer">
@@ -182,13 +192,13 @@
                         </div>
                     </div>
                 </a>
-                <!-- Projet 6 -->
-                <a href="pages/projet6.html" class="carousel-item-link">
+                <!-- Projet 6 - Gestion de projets -->
+                <a href="pages/projet6.html" class="carousel-item-link" data-category="gestion-projets">
                     <div class="carousel-item">
                         <img src="images/6.png" alt="">
                         <div class="carousel-layer">
                             <h4>Qwuenta</h4>
-                            <p>SRUM Planification <br> du projet.</p>
+                            <p>SCRUM Planification <br> du projet.</p>
                             <i class='bx bx-link-external'></i>
                         </div>
                     </div>
@@ -474,6 +484,8 @@
     <script src="scripts.js"></script>
 
     <script src="popup.js"></script>
+
+    <script src="filtres.js"></script>
 
     <script src="../pages/projets.js"></script>
 
