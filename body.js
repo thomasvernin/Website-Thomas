@@ -14,5 +14,5 @@ const maxHeight = window.innerHeight - 100;
 balls.forEach(ball => {
     setInterval(() => {
         animateBall(ball, maxWidth, maxHeight);
-    }, 5000); // Change de position toutes les 5 secondes
+    }, 2000); // Change de position toutes les  secondes
 });

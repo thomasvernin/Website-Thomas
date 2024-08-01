@@ -42,25 +42,20 @@ body{
 }
 
 
-
-
-
-/* Styles de base pour les boules floues */
 .background-blur-ball {
     position: absolute;
     border-radius: 50%;
-    background: rgba(201, 205, 243, 0.993); /* Couleur blanche avec opacité */
+    background: rgba(201, 205, 243, 0.993); 
     filter: blur(100px);
     opacity: 0.7;
     animation: move 20s infinite alternate ease-in-out;
 }
 
 .dark-mode .background-blur-ball {
-    background: rgba(50, 36, 88, 0.7); /* Couleur plus sombre pour le mode sombre */
+    background: rgba(50, 36, 88, 0.7); 
     opacity: 0.5;
 }
 
-/* Différentes tailles pour les boules */
 .ball1 {
     width: 300px;
     height: 300px;
@@ -82,7 +77,6 @@ body{
     left: 70%;
 }
 
-/* Animation pour le mouvement des boules */
 @keyframes move {
     0% {
         transform: translateY(0) translateX(0);
@@ -327,7 +321,6 @@ section{
     color: var(--main-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
-    background: var(--bg-color);
     padding: 13px 0;
 }
 
@@ -465,9 +458,6 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-
-
-
 
 .portfolio{
     padding: 10rem 5rem;
@@ -680,7 +670,7 @@ span{
 }
 
 .fas.fa-envelope {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .fab.fa-github {
