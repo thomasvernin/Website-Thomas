@@ -478,23 +478,44 @@ span{
     color: black;
 }
 
-/* Style des boutons de filtres */
-.filter-buttons {
-    text-align: center;
+
+
+
+
+
+.filter-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.filter-label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Space between filter buttons */
 }
 
 .filter-btn {
-    padding: 0.8rem 2rem;
+    padding: 0.2rem 0.5rem;
     background: var(--main-color);
     border-radius: 10px;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
     font-size: 1.7rem;
     color: var(--white-color);
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
-    border: .2rem solid transparent;
-    transition: .5s ease;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+    margin-bottom: 10px; /* Space between rows if wrapped */
+    cursor: pointer;
 }
 
 .filter-btn:hover {
@@ -511,11 +532,32 @@ span{
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-label {
+        margin-bottom: 10px;
+    }
+
+    .filter-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .filter-btn {
-        padding: 8px 15px;
-        font-size: 12px;
+        flex: 1 1 auto;
+        text-align: center;
     }
 }
+
+
+
+
+
+
+
 
 
 
