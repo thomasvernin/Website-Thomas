@@ -41,6 +41,61 @@ body{
     transition: .5s ease;
 }
 
+
+
+
+
+/* Styles de base pour les boules floues */
+.background-blur-ball {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(201, 205, 243, 0.993); /* Couleur blanche avec opacité */
+    filter: blur(100px);
+    opacity: 0.7;
+    animation: move 20s infinite alternate ease-in-out;
+}
+
+.dark-mode .background-blur-ball {
+    background: rgba(50, 36, 88, 0.7); /* Couleur plus sombre pour le mode sombre */
+    opacity: 0.5;
+}
+
+/* Différentes tailles pour les boules */
+.ball1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 20%;
+}
+
+.ball2 {
+    width: 500px;
+    height: 500px;
+    top: 30%;
+    left: 50%;
+}
+
+.ball3 {
+    width: 400px;
+    height: 400px;
+    top: 70%;
+    left: 70%;
+}
+
+/* Animation pour le mouvement des boules */
+@keyframes move {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-50px) translateX(-50px);
+    }
+}
+
+
+
+
+
 .header{
     position: fixed;
     top: 0;
