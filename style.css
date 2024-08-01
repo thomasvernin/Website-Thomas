@@ -306,11 +306,10 @@ section{
 
 
 .home-img img {
-    max-width: 25%; 
+    max-width: 35%; 
     border-radius: 200px; 
     margin-bottom: 10px;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);   
+      
 }
 
 .home-img img:hover {
