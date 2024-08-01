@@ -309,12 +309,10 @@ section{
     max-width: 35%; 
     border-radius: 200px; 
     margin-bottom: 10px;
-      
 }
 
 .home-img img:hover {
     border: .1rem solid var(--bg-color);
-    outline: .1rem solid var(--main-color);
 }
 
 span{
@@ -429,7 +427,7 @@ span{
 /* Styles de base pour le carrousel */
 .carousel-container {
     position: relative;
-    width: 100%; /* Largeur à 100% pour éviter les débordements */
+    width: 100%; 
     overflow: hidden;
     margin: auto;
     padding: 0;
@@ -445,8 +443,8 @@ span{
 .carousel-item {
     max-width: 300px;
     margin: 0 10px;
-    background: #ecd0ff;
-    border-radius: 10px;
+    background: #f7effd;
+    border-radius: 0px;
     overflow: hidden;
     transition: transform 0.5s ease;
     flex-shrink: 0;
@@ -527,6 +525,10 @@ span{
 
 .bx.bxl-visual-studio {
     font-size: 16px;
+}
+
+.fas.fa-envelope {
+    font-size: 15px;
 }
 
 .fab.fa-github {
