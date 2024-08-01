@@ -530,6 +530,20 @@ span{
     border-color: var(--main-color);
 }
 
+/* Appliquer un effet de flou */
+.flou {
+    filter: blur(5px);
+    opacity: 0.5;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+/* Réinitialiser l'effet de flou lorsqu'un élément n'est pas survolé */
+.carousel-item-link:not(.flou) {
+    filter: none;
+    opacity: 1;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .filter-container {
