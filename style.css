@@ -75,10 +75,6 @@ body.dark-mode {
     --bubble-color: rgba(55, 55, 109, 0.877); /* Couleur de la boule en mode sombre */
 }
 
-
-
-
-
 .header{
     position: fixed;
     top: 0;
