@@ -42,48 +42,37 @@ body{
 }
 
 
-.background-blur-ball {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(201, 205, 243, 0.993); 
-    filter: blur(100px);
-    opacity: 0.7;
-    animation: move 20s infinite alternate ease-in-out;
-}
-
-.dark-mode .background-blur-ball {
-    background: rgba(50, 36, 88, 0.7); 
-    opacity: 0.5;
-}
-
-.ball1 {
-    width: 300px;
-    height: 300px;
-    top: 10%;
-    left: 20%;
-}
-
-.ball2 {
-    width: 500px;
-    height: 500px;
-    top: 30%;
+/* Style pour la boule floue en arrière-plan */
+#background-bubble {
+    position: fixed;
+    top: 50%;
     left: 50%;
+    width: 300px; /* Taille de la boule */
+    height: 300px; /* Taille de la boule */
+    background-color: var(--bubble-color); /* Couleur de la boule */
+    border-radius: 50%;
+    filter: blur(150px); /* Effet flou */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ignorer les clics */
+    z-index: -1; /* Derrière tout le contenu */
+    animation: bubbleMovement 10s infinite; /* Animation de mouvement */
 }
 
-.ball3 {
-    width: 400px;
-    height: 400px;
-    top: 70%;
-    left: 70%;
+/* Animation de mouvement pour la boule */
+@keyframes bubbleMovement {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
 }
 
-@keyframes move {
-    0% {
-        transform: translateY(0) translateX(0);
-    }
-    100% {
-        transform: translateY(-50px) translateX(-50px);
-    }
+/* Couleurs en mode clair */
+:root {
+    --bubble-color: var(--main-color); /* Couleur de la boule en mode clair */
+}
+
+/* Couleurs en mode sombre */
+body.dark-mode {
+    --bubble-color: rgba(55, 55, 109, 0.877); /* Couleur de la boule en mode sombre */
 }
 
 

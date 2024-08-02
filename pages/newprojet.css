@@ -342,6 +342,16 @@ body.dark-mode {
     margin-bottom: 50px;
 }
 
+.fab.fa-js {
+    font-size: 16px;
+}
+
+.icon-Notion {
+    width: 16px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve le ratio d'aspect de l'image */
+  }
+  
+
 
 
 
