@@ -1,0 +1,399 @@
+/* Styles pour la section et les rubriques */
+.project-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4.5rem; /* Augmenter la taille du titre du projet */
+    color: var(--main-color);
+}
+
+/* Spécificité pour "Booki - Agence de voyage" */
+.project-title span {
+    display: block;
+}
+
+/* Mode clair (par défaut) */
+.project-title span.special {
+    color: black; /* Couleur du texte en mode clair */
+}
+
+/* Mode sombre */
+.dark-mode .project-title span.special {
+    color: white; /* Couleur du texte en mode sombre */
+}
+
+.content-section {
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-item {
+    flex: 1 1 calc(50% - 40px);
+    color: black; /* Couleur par défaut du texte dans les rubriques, sauf h2 */
+    padding: 20px;
+    border: 2px solid var(--main-color); /* Applique la couleur du contour des rubriques */
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: relative; /* Nécessaire pour le positionnement du contenu déroulant */
+    margin: 0 auto; /* Centre la section */
+    max-width: 100%; /* Assure que l'élément prend toute la largeur disponible */
+    transition: transform 0.3s ease; /* Transition douce pour l'agrandissement */
+}
+
+/* Supprimer l'ombre */
+.section-item {
+    box-shadow: none; /* Retire l'ombre des rubriques */
+}
+
+/* Agrandir la rubrique au survol */
+.section-item:hover {
+    transform: scale(1.05); /* Augmente la taille de la rubrique à 105% */
+}
+
+/* Styles pour les titres h2 */
+.section-item h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-color); /* Couleur du texte des titres */
+    transition: color 0.3s; /* Transition pour l'effet de survol */
+    font-size: 2rem; /* Augmenter la taille des titres h2 */
+}
+
+/* Style pour les icônes dans h2 */
+.section-item h2 i {
+    color: var(--main-color); /* Couleur des icônes dans les titres h2 */
+    font-size: 1.5rem; /* Augmenter la taille des icônes dans h2 */
+}
+
+/* Style pour le titre h2 au survol */
+.section-item:hover h2 {
+    color: var(--main-color); /* Couleur du texte au survol */
+}
+
+/* Style pour l'icône de la flèche */
+.arrow {
+    transition: transform 0.3s; /* Animation de la rotation */
+    font-size: 1.5rem; /* Augmenter la taille de l'icône de la flèche */
+    margin-left: 5px;
+}
+
+/* Masquer le contenu déroulant par défaut */
+.dropdown-content {
+    display: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 0px solid #e0e0e0;
+}
+
+/* Afficher le menu déroulant et tourner la flèche au survol */
+.section-item:hover .dropdown-content {
+    display: block;
+}
+
+.section-item:hover .arrow {
+    transform: rotate(180deg); /* Tourner la flèche de 180 degrés */
+}
+
+/* Image styling */
+.image-container {
+    text-align: center; /* Centre le contenu textuellement */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px; /* Ajuster la hauteur maximale de l'image */
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Galerie de projets */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les éléments de la galerie */
+    margin-top: 10px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center; /* Aligne l'image et la phrase au centre verticalement */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    color: inherit; /* Hérite la couleur du texte pour ne pas affecter le style */
+    width: 100%; /* Ajuste la largeur de chaque élément */
+    max-width: 300px; /* Largeur maximale de chaque élément */
+}
+
+.project-item img {
+    max-width: 100px; /* Largeur maximale de l'image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-description {
+    margin-left: 15px; /* Espacement entre l'image et la phrase */
+    font-size: 1.2rem; /* Augmenter la taille de la description */
+    color: black; /* Couleur du texte de la description */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+}
+
+/* Assurez-vous d'appliquer ce style uniquement aux images des rubriques spécifiques */
+.zoom-effect {
+    transition: transform 0.3s ease; /* Transition douce pour l'effet de zoom */
+}
+
+/* Zoom sur les images au survol */
+.zoom-effect:hover {
+    transform: scale(1.05); /* Augmente la taille de l'image à 110% */
+}
+
+/* Styles généraux pour les sections, déjà définis */
+.services-section {
+    max-width: 100%; /* Assure que l'élément prend toute la largeur disponible */
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espace entre l'image et le bouton */
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+.service-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service-button {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.7rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.service-button:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Style de la liste à puces */
+.dropdown-content ul {
+    padding-left: 20px; /* Espace pour les puces */
+    list-style-type: disc; /* Type de puces */
+}
+
+.dropdown-content ul li {
+    margin-bottom: 5px; /* Espace entre les éléments de la liste */
+    font-size: 1.1rem; /* Augmenter la taille du texte des éléments de la liste */
+}
+
+/* CSS pour ajuster la taille des icônes à 16px */
+.section-item .dropdown-content ul li i {
+    font-size: 1.3rem; /* Augmenter la taille des icônes dans la liste */
+}
+
+/* Supprimer les puces pour la liste dans la rubrique Liens */
+.section-item .dropdown-content ul {
+    list-style-type: none; /* Supprime les puces */
+    padding-left: 0;       /* Supprime le retrait par défaut */
+}
+
+/* Assurer que les liens prennent toute la largeur de l'élément parent pour un clic facile */
+.section-item .dropdown-content ul li a {
+    display: block;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: inherit;        /* Hérite la couleur du texte pour une apparence uniforme */
+    padding: 5px 0;        /* Ajoute un peu d'espace autour des liens pour les rendre plus cliquables */
+    font-size: 1.1rem; /* Augmenter la taille du texte des liens */
+}
+
+/* Styles pour le mode sombre */
+.dark-mode .section-item {
+    color: #fff; /* Couleur du texte par défaut dans le mode sombre */
+}
+
+.dark-mode .project-description {
+    color: #fff; /* Texte blanc pour les descriptions dans le mode sombre */
+}
+
+
+
+
+/* Style de la fenêtre modale */
+.modal {
+    display: none; /* Cacher la fenêtre modale par défaut */
+    position: fixed; /* Fixe la fenêtre modale à l'écran */
+    z-index: 1000; /* S'assurer que la fenêtre modale est au-dessus du contenu */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Ajoute une barre de défilement si le contenu est trop grand */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre avec transparence */
+}
+
+/* Style de l'image dans la modale */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Style pour le texte de la légende */
+#caption {
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Style pour le bouton de fermeture */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Style pour la boule floue en arrière-plan */
+#background-bubble {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px; /* Taille de la boule */
+    height: 300px; /* Taille de la boule */
+    background-color: var(--bubble-color); /* Couleur de la boule */
+    border-radius: 50%;
+    filter: blur(150px); /* Effet flou */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ignorer les clics */
+    z-index: -1; /* Derrière tout le contenu */
+    animation: bubbleMovement 10s infinite; /* Animation de mouvement */
+}
+
+/* Animation de mouvement pour la boule */
+@keyframes bubbleMovement {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
+}
+
+/* Couleurs en mode clair */
+:root {
+    --bubble-color: var(--main-color); /* Couleur de la boule en mode clair */
+}
+
+/* Couleurs en mode sombre */
+body.dark-mode {
+    --bubble-color: rgba(55, 55, 109, 0.877); /* Couleur de la boule en mode sombre */
+}
+
+/* Style pour les images de service */
+.service-image {
+    transition: transform 0.3s ease; /* Transition douce pour l'effet de zoom */
+}
+
+/* Effet de zoom au survol */
+.service-image:hover {
+    transform: scale(1.1); /* Augmente la taille de l'image à 110% */
+}
+
+
+
+
+
+
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .section-item {
+        flex: 1 1 100%;
+    }
+
+    .project-gallery {
+        gap: 10px; /* Réduit l'espacement entre les projets sur les petits écrans */
+    }
+
+    .project-item {
+        flex-direction: column; /* Pour les petits écrans, empile l'image et la description verticalement */
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+    
+    .project-item img {
+        max-width: 100%; /* L'image prend toute la largeur disponible sur les petits écrans */
+    }
+
+    .project-description {
+        margin-left: 0; /* Supprime l'espacement pour les petits écrans */
+        margin-top: 10px; /* Ajoute un espacement au-dessus de la description */
+        text-align: center; /* Centre le texte pour les petits écrans */
+    }
+
+    /* Style pour les sections de services sur les petits écrans */
+    .service-content {
+        flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
+        align-items: center; /* Centre les éléments horizontalement */
+        text-align: center; /* Centre le texte et le bouton */
+    }
+
+    .service-image {
+        margin-bottom: 10px; /* Ajoute de l'espace sous l'image */
+    }
+
+    .service-button {
+        margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton */
+        display: inline-block; /* Assure que le bouton est en ligne pour le centrage */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
