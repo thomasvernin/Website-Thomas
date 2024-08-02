@@ -41,7 +41,6 @@ body{
     transition: .5s ease;
 }
 
-
 /* Style pour la boule floue en arrière-plan */
 #background-bubble {
     position: fixed;

@@ -5,13 +5,6 @@
 
 
 
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
   const items = document.querySelectorAll('.carousel-item');
