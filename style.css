@@ -13,10 +13,10 @@
 
 :root{
     --bg-color: #fdfdfd;
-    --text-color: #333;
+    --text-color: #000000;
     --main-color: #7451eb ;
     --white-color : #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
+    --shadow-color: rgba(0,0,0, .2);
 }
 
 .dark-mode{
@@ -52,7 +52,7 @@ body{
     background-color: var(--bubble-color); /* Couleur de la boule */
     border-radius: 50%;
     filter: blur(150px); /* Effet flou */
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -100%);
     pointer-events: none; /* Ignorer les clics */
     z-index: -1; /* Derrière tout le contenu */
     animation: bubbleMovement 10s infinite; /* Animation de mouvement */
@@ -456,8 +456,6 @@ span{
     margin-bottom: 5rem;
 }
 
-
-
 /* Styles de base pour le carrousel */
 .carousel-container {
     position: relative;
@@ -512,9 +510,12 @@ span{
     color: black;
 }
 
-
-
-
+.carousel-item-link .carousel-layer,
+.carousel-item-link .carousel-layer:focus,
+.carousel-item-link .carousel-layer:active,
+.carousel-item-link .carousel-layer:hover {
+    color: rgb(124, 124, 124) !important; 
+}
 
 
 .filter-container {
@@ -548,7 +549,7 @@ span{
     font-weight: 600;
     border: 0.2rem solid transparent;
     transition: 0.5s ease;
-    margin-bottom: 10px; /* Space between rows if wrapped */
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
