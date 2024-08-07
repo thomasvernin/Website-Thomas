@@ -877,84 +877,210 @@ a i.bx {
     cursor: pointer;
 }
 
+
+
+
 .footer {
-    background-color: var(--main-color);
-    color: #fff;
-    padding: 20px;
+    background: linear-gradient(135deg, var(--footer-bg-color), #111);
+    color: var(--footer-text-color);
+    padding: 40px 20px; /* Augmenter le padding pour plus d'espace */
     text-align: center;
+    border-top: 5px solid var(--footer-border-color);
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path/to/your/background-image.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1; /* Opacité pour un effet de superposition */
+    z-index: -1; /* Placer derrière le contenu */
 }
 
 .footer-text {
-    margin-bottom: 15px;
+    margin-bottom: 30px; /* Augmenter l'espace sous cette section */
 }
 
 .footer-text a {
-    color: #fff;
+    color: var(--footer-text-color);
     text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 18px; /* Augmenter la taille de la police */
+    font-weight: 500; /* Légèrement plus gras */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 2px 4px var(--footer-shadow-color);
 }
 
 .footer-text a:hover {
-    color: #ddd; 
-    transform: scale(1.1); 
+    color: var(--footer-link-hover-color);
+    transform: translateY(-3px); /* Effet de levage */
+    text-shadow: 0 4px 6px var(--footer-shadow-color);
 }
 
 .footer-text i {
-    font-size: 24px;
+    font-size: 28px; /* Augmenter la taille des icônes */
 }
 
 .footer-links {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--footer-border-color);
+    padding-bottom: 20px;
 }
 
 .footer-links a {
-    color: #fff;
+    color: var(--footer-text-color);
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ddd; 
-    transform: scale(1.1); 
+    color: var(--footer-link-hover-color);
+    transform: translateY(-3px);
+    text-shadow: 0 4px 6px var(--footer-shadow-color);
 }
 
 .footer-social {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .footer-social a {
-    color: #fff;
+    color: var(--footer-text-color);
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 15px;
+    font-size: 32px; /* Augmenter la taille des icônes sociales */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--footer-newsletter-bg);
 }
 
 .footer-social a:hover {
-    color: #ddd; 
-    transform: scale(1.1); 
+    color: var(--footer-link-hover-color);
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.3); /* Effet de survol */
 }
 
 .footer-social i {
-    font-size: 30px;
+    font-size: 36px; /* Augmenter la taille des icônes sociales */
 }
 
 .footer-credits {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .footer-credits a {
-    color: #fff;
+    color: var(--footer-text-color);
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .footer-credits a:hover {
-    color: #ddd; 
-    transform: scale(1.1); 
+    color: var(--footer-link-hover-color);
+    transform: translateY(-3px);
+    text-shadow: 0 4px 6px var(--footer-shadow-color);
 }
+
+.footer p {
+    margin-top: 20px; /* Augmenter l'espace au-dessus du texte */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: var(--footer-link-hover-color);
+}
+
+.footer-newsletter {
+    background-color: var(--footer-newsletter-bg);
+    border-radius: 8px; /* Arrondir les coins du bloc */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-newsletter p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-newsletter input {
+    padding: 12px;
+    border: 1px solid var(--footer-border-color);
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.footer-newsletter button {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--footer-button-bg);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: var(--footer-button-hover-bg);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer * {
+    animation: fadeInUp 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-social a {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+    .footer-links a, .footer-text a {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .footer-newsletter input, .footer-newsletter button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 
 .footer-iconTop {
     position: fixed; /* Fixe l'élément par rapport à la fenêtre */
@@ -970,8 +1096,8 @@ a i.bx {
     padding: .8rem;
     background: white; /* Couleur de fond par défaut */
     border-radius: .8rem;
-    border: .2rem solid var(--main-color); /* Couleur de bordure */
-    outline: .2rem solid transparent; /* Éviter l'effet de bordure par défaut au focus */
+    border: .1rem solid var(--main-color); /* Couleur de bordure */
+    outline: .1rem solid transparent; /* Éviter l'effet de bordure par défaut au focus */
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -985,22 +1111,11 @@ a i.bx {
 .footer-iconTop a i {
     font-size: 2.4rem; /* Taille de l'icône */
     color: #333; /* Couleur de l'icône */
-    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+    transition: color 0.1s ease; /* Transition pour le changement de couleur */
 }
 
 .footer-iconTop a:hover i {
     color: #fff; /* Couleur de l'icône au survol */
-}
-
-
-.footer p {
-    margin-top: 15px;
-    font-size: 15px;
-    transition: color 0.3s ease;
-}
-
-.footer p:hover {
-    color: #ddd; 
 }
 
 .popup {
