@@ -41,7 +41,7 @@
     flex: 1 1 calc(50% - 40px);
     color: black; /* Couleur par défaut du texte dans les rubriques, sauf h2 */
     padding: 20px;
-    border: 2px solid var(--main-color); /* Applique la couleur du contour des rubriques */
+    border: 1px solid var(--main-color); /* Applique la couleur du contour des rubriques */
     border-radius: 15px;
     box-sizing: border-box;
     position: relative; /* Nécessaire pour le positionnement du contenu déroulant */
@@ -191,7 +191,7 @@
     color: var(--white-color);
     letter-spacing: .1rem;
     font-weight: 600;
-    border: .2rem solid transparent;
+    border: .1rem solid transparent;
     transition: .5s ease;
 }
 
