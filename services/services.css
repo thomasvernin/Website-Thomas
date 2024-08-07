@@ -28,8 +28,6 @@
     height: 14rem;
     object-fit: cover;
     border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
     margin-top: 200px;
     margin: 20px; 
     max-width: 100px; 
@@ -49,6 +47,13 @@
     margin-bottom: 00px;
 
 }
+
+.fas.fa-database{
+    font-size: 60px;
+}
+
+
+
 
 /* Styles pour appareils mobiles */
 @media (max-width: 600px) {

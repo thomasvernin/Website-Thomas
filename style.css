@@ -695,6 +695,10 @@ span{
     font-size: 60px;
 }
 
+.fas.fa-database {
+    font-size: 60px;
+}
+
 .rotate {
     animation: spin 7s linear infinite;
 }
@@ -708,7 +712,7 @@ span{
 }
 
 .fas.fa-database {
-    font-size: 16px;
+    font-size: 60px;
 }
 
 .icon-feedly {
