@@ -1084,7 +1084,7 @@ a i.bx {
 
 .footer-iconTop {
     position: fixed; /* Fixe l'élément par rapport à la fenêtre */
-    bottom: 20px; /* Distance du bas de l'écran */
+    bottom: 40px; /* Distance du bas de l'écran */
     right: 20px; /* Distance du bord droit de l'écran */
     z-index: 1000; /* Assurez-vous que l'icône se trouve au-dessus des autres éléments */
 }
@@ -1109,7 +1109,7 @@ a i.bx {
 }
 
 .footer-iconTop a i {
-    font-size: 2.4rem; /* Taille de l'icône */
+    font-size: 1.4rem; /* Taille de l'icône */
     color: #333; /* Couleur de l'icône */
     transition: color 0.1s ease; /* Transition pour le changement de couleur */
 }
