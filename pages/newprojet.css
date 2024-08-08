@@ -353,7 +353,13 @@ body.dark-mode {
   
 
 
-
+  iframe {
+    border: 0; /* Supprime la bordure */
+    width: 768px; 
+    height: 432px;
+    margin-left: 300px;
+    border-radius: 15px;
+}
 
 
 
