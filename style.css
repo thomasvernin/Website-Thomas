@@ -11,20 +11,22 @@
     font-family: 'Inter', 'sans-serif';
 }
 
-:root{
-    --bg-color: #fdfdfd;
-    --text-color: #000000;
-    --main-color: #7451eb ;
-    --white-color : #fdfdfd;
-    --shadow-color: rgba(0,0,0, .2);
+:root {
+    --bg-color: #ffffff; /* Light background color, similar to Vercel's light mode */
+    --text-color: #000000; /* Standard black text */
+    --main-color: #000000; /* Vercel often uses black as the primary color in light mode */
+    --white-color: #ffffff; /* White color for elements */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.dark-mode{
-    --bg-color :#030115;
-    --text-color : #fdfdfd;
-    --white-color : #070707; 
-    
+.dark-mode {
+    --bg-color: #000000; /* Dark background color for dark mode */
+    --text-color: #eaeaea; /* Light grey text color, typical in dark themes */
+    --main-color: #ffffff; /* White as the main color in dark mode */
+    --white-color: #121212; /* Dark grey/black for elements that need a subtle contrast */
+    --shadow-color: rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
 }
+
 
 html{
     font-size:62.5%;
