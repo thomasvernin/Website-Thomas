@@ -11,21 +11,41 @@
     font-family: 'Inter', 'sans-serif';
 }
 
+/* :root{
+    --bg-color: #fdfdfd;
+    --text-color: #000000;
+    --main-color: #7451eb ;
+    --white-color : #fdfdfd;
+    --shadow-color: rgba(0,0,0, .2);
+}
+
+.dark-mode{
+    --bg-color :#030115;
+    --text-color : #fdfdfd;
+    --white-color : #070707; 
+    
+} */
+
 :root {
-    --bg-color: #ffffff; /* Light background color, similar to Vercel's light mode */
-    --text-color: #000000; /* Standard black text */
-    --main-color: #000000; /* Vercel often uses black as the primary color in light mode */
-    --white-color: #ffffff; /* White color for elements */
-    --shadow-color: rgba(0, 0, 0, 0.1); /* Soft shadow */
+    --bg-color: #ffffff; /* Couleur de fond claire, similaire au mode clair de Vercel */
+    --text-color: #000000; /* Texte noir standard */
+    --main-color: #000000; /* Vercel utilise souvent le noir comme couleur principale en mode clair */
+    --white-color: #ffffff; /* Couleur blanche pour les éléments */
+    --shadow-color: rgba(5, 5, 5, 0.1); /* Ombre douce */
+    --text2-color: rgb(124, 120, 120); 
+    --btn-color: rgb(51, 50, 50); 
 }
 
 .dark-mode {
-    --bg-color: #000000; /* Dark background color for dark mode */
-    --text-color: #eaeaea; /* Light grey text color, typical in dark themes */
-    --main-color: #ffffff; /* White as the main color in dark mode */
-    --white-color: #121212; /* Dark grey/black for elements that need a subtle contrast */
-    --shadow-color: rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+    --bg-color: #000000; /* Couleur de fond sombre pour le mode sombre */
+    --text-color: #eaeaea; /* Couleur de texte gris clair, typique dans les thèmes sombres */
+    --main-color: #ffffff; /* Blanc comme couleur principale en mode sombre */
+    --white-color: #121212; /* Gris foncé/noir pour les éléments nécessitant un contraste subtil */
+    --shadow-color: rgba(255, 255, 255, 0.1); /* Ombre légère pour le mode sombre */
+    --text2-color: rgb(124, 120, 120);
+    --btn-color: rgb(51, 50, 50);
 }
+
 
 
 html{
@@ -74,7 +94,7 @@ body{
 
 /* Couleurs en mode sombre */
 body.dark-mode {
-    --bubble-color: rgba(55, 55, 109, 0.877); /* Couleur de la boule en mode sombre */
+    --bubble-color: rgba(44, 42, 42, 0.877); /* Couleur de la boule en mode sombre */
 }
 
 .header{
@@ -96,13 +116,13 @@ body.dark-mode {
 .header.sticky{
     background-color: var(--bg-color);
     background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(30px); 
 }
 
 .logo{
     font-size: 2.5rem;
     color: var(--main-color);
-    font-weight: 600;
+    font-weight: 800;
     cursor: default;
     margin-right: auto;
     cursor: pointer;
@@ -110,8 +130,8 @@ body.dark-mode {
 
 .navbar a{
     position: relative;
-    font-size: 1.7rem;
-    color: black;
+    font-size: 1.4rem;
+    color: var(--text2-color);
     font-weight: 500;
     margin-right: 3rem;
 }
@@ -121,7 +141,7 @@ body.dark-mode {
 }
 
 .dark-mode .navbar a {
-    color: white; 
+    color: var(--text2-color);
 }
 
 .dark-mode .navbar a:hover {
@@ -241,14 +261,14 @@ section{
     color: var(--white-color);
     letter-spacing: .1rem;
     font-weight: 600;
-    border: .1rem solid transparent;
+    border: .1rem solid ;
     transition: .5s ease;
 }
 
 .btn:hover{
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: var(--btn-color);
 }
 
 .home .profession-container{
@@ -351,7 +371,7 @@ section{
 }
 
 span{
-    color: var(--main-color);
+    color:var(--text2-color);
 }
 
 .testimonial-slide i {
@@ -414,26 +434,25 @@ span{
     flex: 1 1 30rem;
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    border-radius: 1rem;
     text-align: center;
-    border-top: .1rem solid var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    border-left: .1rem solid var(--main-color);
-    border-right: .1rem solid var(--main-color);
+    border-top: .1rem solid var(--btn-color);
+    border-bottom: .1rem solid var(--btn-color);
+    border-left: .1rem solid var(--btn-color);
+    border-right: .1rem solid var(--btn-color);
     transition: .5s ease;
 }
 
 
 .services-container .services-box:hover{
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    box-shadow: 0 .1rem 2rem var(--btn-color);
     transform: scale(1.02);
 }
 
 
 .services-box i{
     font-size: 7rem;
-    color: var(--main-color);
+    color: var(--text2-color);
 }
 
 .services-box h3{
@@ -442,7 +461,7 @@ span{
 }
 
 .services-box:hover h3{
-    color: var(--main-color);
+    color: var(--text2-color);
 }
 
 .services-box p{
@@ -505,18 +524,18 @@ span{
 }
 
 .dark-mode .carousel-layer {
-    color: black;
+    color: var(--text2-color);
 }
 
 .dark-mode .carousel-layer a {
-    color: black;
+    color: var(--text2-color);
 }
 
 .carousel-item-link .carousel-layer,
 .carousel-item-link .carousel-layer:focus,
 .carousel-item-link .carousel-layer:active,
 .carousel-item-link .carousel-layer:hover {
-    color: rgb(124, 124, 124) !important; 
+    color: var(--text2-color) !important; 
 }
 
 
@@ -550,6 +569,7 @@ span{
     letter-spacing: 0.1rem;
     font-weight: 600;
     border: 0.1rem solid transparent;
+    border-color: var(--btn-color);
     transition: 0.5s ease;
     margin-bottom: 10px;
     cursor: pointer;
@@ -558,30 +578,26 @@ span{
 .filter-btn:hover {
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: var(--btn-color);
 }
 
 .filter-btn.active {
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: var(--btn-color);
 }
 
-/* Appliquer un effet de flou */
 .flou {
     filter: blur(5px);
     opacity: 0.5;
     transition: filter 0.3s, opacity 0.3s;
 }
 
-/* Réinitialiser l'effet de flou lorsqu'un élément n'est pas survolé */
 .carousel-item-link:not(.flou) {
     filter: none;
     opacity: 1;
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .filter-container {
         flex-direction: column;
@@ -603,19 +619,6 @@ span{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Styles pour les tablettes et petits écrans (de 768px à 1024px) */
 @media (max-width: 1024px) {
     .carousel-container {
         width: 100%; /* Ajuste la largeur à 100% pour les tablettes et petits écrans */
@@ -726,7 +729,6 @@ span{
     height: 16px;
 }
 
-
 a i.bx {
     font-size: 16px; 
     
@@ -771,13 +773,13 @@ a i.bx {
     align-items: center;
     flex-direction: column;
     background: var(--bg-color);
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     padding: 3rem 5rem;
-    border-top: .1rem solid var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    border-left: .1rem solid var(--main-color);
-    border-right: .1rem solid var(--main-color);
+    border-top: .1rem solid var(--btn-color);
+    border-bottom: .1rem solid var(--btn-color);
+    border-left: .1rem solid var(--btn-color);
+    border-right: .1rem solid var(--btn-color);
 }
 
 .testimonial-slide img{
@@ -823,7 +825,7 @@ a i.bx {
 }
 
 .stars i {
-    color: var(--main-color); 
+    color: yellow; 
     font-size: 20px;
     margin-bottom: 20px; 
 }
@@ -856,12 +858,12 @@ a i.bx {
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--bg-color);
-    border-radius: .8rem;
+    border-radius: 1rem;
     margin: .7rem 0;
-    border-top: .1rem solid var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    border-left: .1rem solid var(--main-color);
-    border-right: .1rem solid var(--main-color);
+    border-top: .1rem solid var(--btn-color);
+    border-bottom: .1rem solid var(--btn-color);
+    border-left: .1rem solid var(--btn-color);
+    border-right: .1rem solid var(--btn-color);
 }
 
 .contact form .input-box input{
@@ -878,9 +880,6 @@ a i.bx {
     margin-top: 2rem;
     cursor: pointer;
 }
-
-
-
 
 .footer {
     background: linear-gradient(135deg, var(--footer-bg-color), #111);
@@ -968,7 +967,7 @@ a i.bx {
 .footer-social a:hover {
     color: var(--footer-link-hover-color);
     transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.3); /* Effet de survol */
+    
 }
 
 .footer-social i {
