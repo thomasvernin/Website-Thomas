@@ -504,7 +504,7 @@ span{
     max-width: 300px;
     margin: 0 10px;
     background: #f7effd;
-    border-radius: 0px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.5s ease;
     flex-shrink: 0;
