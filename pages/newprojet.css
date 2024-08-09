@@ -14,12 +14,12 @@
 
 /* Mode clair (par défaut) */
 .project-title span.special {
-    color: black; /* Couleur du texte en mode clair */
+    color: var(--text2-color); /* Couleur du texte en mode clair */
 }
 
 /* Mode sombre */
 .dark-mode .project-title span.special {
-    color: white; /* Couleur du texte en mode sombre */
+    color: var(--text2-color); /* Couleur du texte en mode sombre */
 }
 
 .content-section {
@@ -41,8 +41,8 @@
     flex: 1 1 calc(50% - 40px);
     color: black; /* Couleur par défaut du texte dans les rubriques, sauf h2 */
     padding: 20px;
-    border: 1px solid var(--main-color); /* Applique la couleur du contour des rubriques */
-    border-radius: 15px;
+    border: 1px solid var(--btn-color); /* Applique la couleur du contour des rubriques */
+    border-radius: 10px;
     box-sizing: border-box;
     position: relative; /* Nécessaire pour le positionnement du contenu déroulant */
     margin: 0 auto; /* Centre la section */
@@ -67,7 +67,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    color: var(--text-color); /* Couleur du texte des titres */
+    color: var(--text2-color); /* Couleur du texte des titres */
     transition: color 0.3s; /* Transition pour l'effet de survol */
     font-size: 2rem; /* Augmenter la taille des titres h2 */
 }
@@ -80,7 +80,7 @@
 
 /* Style pour le titre h2 au survol */
 .section-item:hover h2 {
-    color: var(--main-color); /* Couleur du texte au survol */
+    color: var(--text2-color); /* Couleur du texte au survol */
 }
 
 /* Style pour l'icône de la flèche */
@@ -146,7 +146,7 @@
 
 .project-description {
     margin-left: 15px; /* Espacement entre l'image et la phrase */
-    font-size: 1.2rem; /* Augmenter la taille de la description */
+    font-size: 1.5rem; /* Augmenter la taille de la description */
     color: black; /* Couleur du texte de la description */
     display: flex;
     align-items: center; /* Centre le texte verticalement */
@@ -198,23 +198,30 @@
 .service-button:hover {
     background: transparent;
     color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: var(--btn-color);
 }
 
 /* Style de la liste à puces */
+
+.dropdown-content {
+    font-size: 2rem;
+}
+
 .dropdown-content ul {
     padding-left: 20px; /* Espace pour les puces */
     list-style-type: disc; /* Type de puces */
+    font-size: 2rem
+    font-size: 2rem;
 }
 
 .dropdown-content ul li {
     margin-bottom: 5px; /* Espace entre les éléments de la liste */
-    font-size: 1.1rem; /* Augmenter la taille du texte des éléments de la liste */
+    font-size: 2rem
 }
 
 /* CSS pour ajuster la taille des icônes à 16px */
 .section-item .dropdown-content ul li i {
-    font-size: 1.3rem; /* Augmenter la taille des icônes dans la liste */
+    font-size: 2rem; /* Augmenter la taille des icônes dans la liste */
 }
 
 /* Supprimer les puces pour la liste dans la rubrique Liens */
@@ -229,7 +236,7 @@
     text-decoration: none; /* Supprime le soulignement des liens */
     color: inherit;        /* Hérite la couleur du texte pour une apparence uniforme */
     padding: 5px 0;        /* Ajoute un peu d'espace autour des liens pour les rendre plus cliquables */
-    font-size: 1.1rem; /* Augmenter la taille du texte des liens */
+    font-size: 2.1rem; /* Augmenter la taille du texte des liens */
 }
 
 /* Styles pour le mode sombre */
@@ -300,7 +307,7 @@
     left: 50%;
     width: 300px; /* Taille de la boule */
     height: 300px; /* Taille de la boule */
-    background-color: var(--bubble-color); /* Couleur de la boule */
+    background-color: var(); /* Couleur de la boule */
     border-radius: 50%;
     filter: blur(150px); /* Effet flou */
     transform: translate(-50%, -50%);
