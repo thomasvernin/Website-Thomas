@@ -621,38 +621,117 @@ span{
 
 .fab.fa-node-js {
     font-size: 60px;
+    color: #39af39;
 }
 
-.fas.fa-robot {
-    font-size: 60px;
-}
-
-.fab.fa-css3-alt {
-    font-size: 60px;
-}
-
-.fab.fa-css3-alt:hover {
+.fab.fa-node-js:hover {
     font-size: 60px;
     background: 
-        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #FF5733 62.5%, transparent 62.5%, transparent 87.5%, #FF5733 87.5%) 0 0, 
-        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #FFC300 62.5%, transparent 62.5%, transparent 87.5%, #FFC300 87.5%) 5px 5px,
-        linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
-        linear-gradient(45deg, #0050c7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #C70039 62.5%, transparent 62.5%, transparent 87.5%, #C70039 87.5%) 5px 0,
-        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #900C3F 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
-        linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
+    linear-gradient(45deg, #33ff8f 12.5%, transparent 12.5%, transparent 37.5%, #33d183 37.5%, #33e5a0 62.5%, transparent 62.5%, transparent 87.5%, #33d183 87.5%) 0 0, 
+    linear-gradient(45deg, #00ff8f 12.5%, transparent 12.5%, transparent 37.5%, #00ffbb 37.5%, #00ffbb 62.5%, transparent 62.5%, transparent 87.5%, #00e0a0 87.5%) 5px 5px,
+    linear-gradient(45deg, #a2e6a1 12.5%, transparent 12.5%, transparent 37.5%, #b1f4a6 37.5%, #c8f7a6 62.5%, transparent 62.5%, transparent 87.5%, #c8f7a6 87.5%) 0 5px, 
+    linear-gradient(45deg, #6dff6e 12.5%, transparent 12.5%, transparent 37.5%, #3dff3d 37.5%, #9aff9a 62.5%, transparent 62.5%, transparent 87.5%, #1aff1a 87.5%) 5px 0,
+    linear-gradient(45deg, #5dff5d 12.5%, transparent 12.5%, transparent 37.5%, #4cde4c 37.5%, #2ebc2e 62.5%, transparent 62.5%, transparent 87.5%, #009f00 87.5%) -5px -5px,
+    linear-gradient(45deg, #5aff5a 12.5%, transparent 12.5%, transparent 37.5%, #5aff5a 37.5%, #5aff5a 62.5%, transparent 62.5%, transparent 87.5%, #5aff5a 87.5%) -10px -10px;
     background-size: 10px 10px;
-    background-color: #282c34;
+    background-color: #6cb3cf;
     -webkit-background-clip: text;
     color: transparent;
-    animation: pixelAnimation 5s infinite alternate;
+    animation: pixelAnimation 20s infinite alternate;
 }
 
 @keyframes pixelAnimation {
     0% {
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
     }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
     50% {
-        background-position: 10px 10px, -5px -5px, 10px -5px, -10px 10px, 5px 5px, 0 0;
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
+
+
+
+.fas.fa-robot {
+    font-size: 60px;
+    color: gray;
+}
+
+.fas.fa-robot:hover {
+    font-size: 60px;
+    background: 
+        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #33cfff 62.5%, transparent 62.5%, transparent 87.5%, #338bff 87.5%) 0 0, 
+        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #00d9ff 62.5%, transparent 62.5%, transparent 87.5%, #00c3ff 87.5%) 5px 5px,
+        linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
+        linear-gradient(45deg, #009fc7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #155aee 62.5%, transparent 62.5%, transparent 87.5%, #002ec7 87.5%) 5px 0,
+        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #290c90 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
+        linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #6cb3cf;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 20s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
+    50% {
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
+
+.fab.fa-css3-alt {
+    font-size: 60px;
+    color: #0300c7;
+}
+
+.fab.fa-css3-alt:hover {
+    font-size: 60px;
+    background: 
+        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #33cfff 62.5%, transparent 62.5%, transparent 87.5%, #338bff 87.5%) 0 0, 
+        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #00d9ff 62.5%, transparent 62.5%, transparent 87.5%, #00c3ff 87.5%) 5px 5px,
+        linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
+        linear-gradient(45deg, #009fc7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #155aee 62.5%, transparent 62.5%, transparent 87.5%, #002ec7 87.5%) 5px 0,
+        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #290c90 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
+        linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #6cb3cf;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 20s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
+    50% {
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
     }
     100% {
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
@@ -662,7 +741,43 @@ span{
 
 .fab.fa-js {
     font-size: 60px;
+    color: yellow;
 }
+
+.fab.fa-js:hover {
+    font-size: 60px;
+    background: 
+    linear-gradient(45deg, #f7e06e 12.5%, transparent 12.5%, transparent 37.5%, #f7d66e 37.5%, #f7e8a1 62.5%, transparent 62.5%, transparent 87.5%, #f7d66e 87.5%) 0 0, 
+    linear-gradient(45deg, #f7e06e 12.5%, transparent 12.5%, transparent 37.5%, #f7d87a 37.5%, #f7e8a1 62.5%, transparent 62.5%, transparent 87.5%, #f7d87a 87.5%) 5px 5px,
+    linear-gradient(45deg, #f9eb85 12.5%, transparent 12.5%, transparent 37.5%, #f9e89f 37.5%, #fef3b0 62.5%, transparent 62.5%, transparent 87.5%, #fef3b0 87.5%) 0 5px, 
+    linear-gradient(45deg, #f9d74d 12.5%, transparent 12.5%, transparent 37.5%, #f9c94d 37.5%, #fef3a1 62.5%, transparent 62.5%, transparent 87.5%, #f9c94d 87.5%) 5px 0,
+    linear-gradient(45deg, #f7c82f 12.5%, transparent 12.5%, transparent 37.5%, #f7b424 37.5%, #f7a618 62.5%, transparent 62.5%, transparent 87.5%, #f7a618 87.5%) -5px -5px,
+    linear-gradient(45deg, #f7e6a0 12.5%, transparent 12.5%, transparent 37.5%, #f7e6a0 37.5%, #f7e6a0 62.5%, transparent 62.5%, transparent 87.5%, #f7e6a0 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #fef7d8; /* Couleur de fond de l'icône */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 20s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
+    50% {
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
+
 
 .fas.fa-search {
     font-size: 16px;
@@ -676,25 +791,31 @@ span{
 .fab.fa-react:hover {
     font-size: 60px;
     background: 
-        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #FF5733 62.5%, transparent 62.5%, transparent 87.5%, #FF5733 87.5%) 0 0, 
-        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #FFC300 62.5%, transparent 62.5%, transparent 87.5%, #FFC300 87.5%) 5px 5px,
+        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #33cfff 62.5%, transparent 62.5%, transparent 87.5%, #338bff 87.5%) 0 0, 
+        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #00d9ff 62.5%, transparent 62.5%, transparent 87.5%, #00c3ff 87.5%) 5px 5px,
         linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
-        linear-gradient(45deg, #009fc7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #C70039 62.5%, transparent 62.5%, transparent 87.5%, #C70039 87.5%) 5px 0,
-        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #900C3F 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
+        linear-gradient(45deg, #009fc7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #155aee 62.5%, transparent 62.5%, transparent 87.5%, #002ec7 87.5%) 5px 0,
+        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #290c90 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
         linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
     background-size: 10px 10px;
-    background-color: #282c34;
+    background-color: #6cb3cf;
     -webkit-background-clip: text;
     color: transparent;
-    animation: pixelAnimation 5s infinite alternate;
+    animation: pixelAnimation 20s infinite alternate;
 }
 
 @keyframes pixelAnimation {
     0% {
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
     }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
     50% {
-        background-position: 10px 10px, -5px -5px, 10px -5px, -10px 10px, 5px 5px, 0 0;
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
     }
     100% {
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
@@ -706,8 +827,43 @@ span{
 
 
 
+
 .fas.fa-database {
     font-size: 60px;
+}
+
+.fas.fa-database:hover {
+    font-size: 60px;
+    background: 
+    linear-gradient(45deg, #33ff8f 12.5%, transparent 12.5%, transparent 37.5%, #33d183 37.5%, #33e5a0 62.5%, transparent 62.5%, transparent 87.5%, #33d183 87.5%) 0 0, 
+    linear-gradient(45deg, #00ff8f 12.5%, transparent 12.5%, transparent 37.5%, #00ffbb 37.5%, #00ffbb 62.5%, transparent 62.5%, transparent 87.5%, #00e0a0 87.5%) 5px 5px,
+    linear-gradient(45deg, #a2e6a1 12.5%, transparent 12.5%, transparent 37.5%, #b1f4a6 37.5%, #c8f7a6 62.5%, transparent 62.5%, transparent 87.5%, #c8f7a6 87.5%) 0 5px, 
+    linear-gradient(45deg, #6dff6e 12.5%, transparent 12.5%, transparent 37.5%, #3dff3d 37.5%, #9aff9a 62.5%, transparent 62.5%, transparent 87.5%, #1aff1a 87.5%) 5px 0,
+    linear-gradient(45deg, #5dff5d 12.5%, transparent 12.5%, transparent 37.5%, #4cde4c 37.5%, #2ebc2e 62.5%, transparent 62.5%, transparent 87.5%, #009f00 87.5%) -5px -5px,
+    linear-gradient(45deg, #5aff5a 12.5%, transparent 12.5%, transparent 37.5%, #5aff5a 37.5%, #5aff5a 62.5%, transparent 62.5%, transparent 87.5%, #5aff5a 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #6cb3cf;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 20s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
+    50% {
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
 }
 
 .rotate {
