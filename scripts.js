@@ -1,87 +1,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.querySelector('.carousel');
-  const items = document.querySelectorAll('.carousel-item');
-  const totalItems = items.length;
-  let isMoving = true;
-  let intervalId;
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card-link');
 
-  // Fonction pour démarrer le carrousel
-  function startCarousel() {
-    intervalId = setInterval(() => {
-      if (isMoving) {
-        const itemWidth = items[0].offsetWidth;
-        carousel.style.transition = 'none';
-        carousel.style.transform = `translateX(-${itemWidth}px)`;
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filterValue = button.getAttribute('data-filter');
 
-        // Déplace le premier élément à la fin
-        carousel.appendChild(carousel.firstElementChild);
+            // Réinitialiser les boutons de filtre actifs
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
 
-        // Redémarre le carrousel en douceur
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            carousel.style.transition = 'transform 0.5s ease-in-out';
-            carousel.style.transform = 'translateX(0)';
-          });
+            // Filtrer les cartes
+            cards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                    card.style.display = 'block'; // Afficher les cartes qui correspondent au filtre
+                } else {
+                    card.style.display = 'none'; // Masquer les cartes qui ne correspondent pas
+                }
+            });
         });
-      }
-    }, 3000); // Change l'élément toutes les 3 secondes
-  }
-
-  // Fonction pour arrêter le carrousel
-  function stopCarousel() {
-    clearInterval(intervalId);
-  }
-
-  // Fonction pour appliquer le flou
-  function applyBlur(exceptItem) {
-    items.forEach(item => {
-      if (item !== exceptItem) {
-        item.classList.add('blur');
-      }
     });
-  }
-
-  // Fonction pour retirer le flou
-  function removeBlur() {
-    items.forEach(item => {
-      item.classList.remove('blur');
-    });
-  }
-
-  // Fonction pour ajuster la taille du carrousel lors du redimensionnement
-  function adjustCarousel() {
-    carousel.style.transition = 'none';
-    const itemWidth = items[0].offsetWidth;
-    carousel.style.transform = `translateX(-${itemWidth}px)`;
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        carousel.style.transition = 'transform 0.5s ease-in-out';
-        carousel.style.transform = 'translateX(0)';
-      });
-    });
-  }
-
-  // Initialiser le carrousel
-  startCarousel();
-
-  // Ajuste le carrousel lors du redimensionnement de la fenêtre
-  window.addEventListener('resize', adjustCarousel);
-
-  // Événements pour arrêter le carrousel et appliquer le flou
-  items.forEach(item => {
-    item.addEventListener('mouseover', () => {
-      stopCarousel();
-      applyBlur(item);
-    });
-    item.addEventListener('mouseout', () => {
-      startCarousel();
-      removeBlur();
-    });
-  });
-
-  // Ajuste le carrousel immédiatement après le chargement
-  adjustCarousel();
 });
 
 

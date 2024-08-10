@@ -484,188 +484,106 @@ span{
     margin-bottom: 5rem;
 }
 
-/* Styles de base pour le carrousel */
-.carousel-container {
-    position: relative;
-    width: 100%; 
-    overflow: hidden;
-    margin: auto;
-    padding: 0;
+
+
+
+
+
+
+/* Section Portfolio */
+.portfolio {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.carousel {
-    display: flex;
-    flex-wrap: nowrap;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
-}
-
-.carousel-item {
-    max-width: 300px;
-    margin: 0 10px;
-    background: #f7effd;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.5s ease;
-    flex-shrink: 0;
-}
-
-.carousel-item:hover {
-    transform: scale(1.03);
-}
-
-.carousel-layer {
-    padding: 0;
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+.heading span {
+    color: #007bff; /* Couleur accent pour le span */
+}
+
+.fas.fa-external-link-alt {
     font-size: 15px;
 }
 
-.carousel-item.blur {
-    filter: blur(5px);
-    transition: filter 0.3s ease;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-}
-
-.dark-mode .carousel-layer {
-    color: var(--text2-color);
-}
-
-.dark-mode .carousel-layer a {
-    color: var(--text2-color);
-}
-
-.carousel-item-link .carousel-layer,
-.carousel-item-link .carousel-layer:focus,
-.carousel-item-link .carousel-layer:active,
-.carousel-item-link .carousel-layer:hover {
-    color: var(--text2-color) !important; 
-}
-
-
+/* Filter Container */
 .filter-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap; 
+    margin-bottom: 2rem;
 }
 
 .filter-label {
     font-weight: bold;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 25px;
+    margin-bottom: 0.5rem;
+    color: #121212;
 }
 
 .filter-buttons {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 10px; /* Space between filter buttons */
+    gap: 0.5rem;
 }
 
 .filter-btn {
-    padding: 0.2rem 0.5rem;
-    background: var(--main-color);
-    border-radius: 10px;
-    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
-    font-size: 1.7rem;
-    color: var(--white-color);
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    border: 0.1rem solid transparent;
-    border-color: var(--btn-color);
-    transition: 0.5s ease;
-    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-}
-
-.filter-btn:hover {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--btn-color);
+    color: #121212;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .filter-btn.active {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--btn-color);
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
 }
 
-.flou {
-    filter: blur(5px);
-    opacity: 0.5;
-    transition: filter 0.3s, opacity 0.3s;
+.filter-btn:hover {
+    background-color: #f0f0f0;
 }
 
-.carousel-item-link:not(.flou) {
-    filter: none;
-    opacity: 1;
-}
 
-@media (max-width: 768px) {
-    .filter-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .filter-label {
-        margin-bottom: 10px;
-    }
 
-    .filter-buttons {
-        width: 100%;
-        justify-content: space-between;
-    }
 
-    .filter-btn {
-        flex: 1 1 auto;
-        text-align: center;
-    }
-}
 
-@media (max-width: 1024px) {
-    .carousel-container {
-        width: 100%; /* Ajuste la largeur à 100% pour les tablettes et petits écrans */
-    }
 
-    .carousel {
-        flex-wrap: wrap; /* Permet de placer les éléments en colonnes */
-        justify-content: center; /* Centre les éléments à l'intérieur du conteneur */
-    }
 
-    .carousel-item {
-        width: calc(50% - 10px); /* Chaque élément occupe 50% de la largeur du conteneur, moins les marges */
-        margin: 5px 0; /* Ajuste les marges pour un espacement vertical */
-    }
 
-    .carousel-layer {
-        font-size: 14px; /* Réduit la taille de la police */
-    }
-}
 
-/* Styles pour les téléphones portables (en dessous de 768px) */
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 100%; /* Ajuste la largeur à 100% pour les téléphones */
-    }
 
-    .carousel {
-        flex-direction: column; /* Dispose les éléments en colonne */
-        justify-content: center; /* Centre les éléments à l'intérieur du conteneur */
-    }
 
-    .carousel-item {
-        width: 100%; /* Chaque élément occupe 100% de la largeur du conteneur */
-        margin: 5px 0; /* Ajuste les marges pour un espacement vertical */
-    }
 
-    .carousel-layer {
-        font-size: 12px; /* Réduit la taille de la police */
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bx.bxl-visual-studio {
     font-size: 16px;
