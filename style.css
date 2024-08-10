@@ -670,6 +670,11 @@ span{
 
 .fab.fa-react {
     font-size: 60px;
+    color: #009fc7;
+}
+
+.fab.fa-react:hover {
+    font-size: 60px;
     background: 
         linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #FF5733 62.5%, transparent 62.5%, transparent 87.5%, #FF5733 87.5%) 0 0, 
         linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #FFC300 62.5%, transparent 62.5%, transparent 87.5%, #FFC300 87.5%) 5px 5px,
