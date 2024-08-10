@@ -1505,11 +1505,16 @@ a i.bx {
     .portfolio,
     .testimonial-container,
     .contact
-    .about {
-        padding: 6rem;
+    .tools
+    .about
+    .contact {
+        padding: 1rem;
         margin-bottom: 100px;  
     }
-
+    
+    .portfolio {
+        margin-top: 30px;
+    }
     .tools {
         margin-bottom: 0px;
     }
