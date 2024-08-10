@@ -830,6 +830,7 @@ span{
 
 .fas.fa-database {
     font-size: 60px;
+    color: #086308;
 }
 
 .fas.fa-database:hover {
@@ -865,6 +866,11 @@ span{
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
     }
 }
+
+.triangle-icon { 
+    height: 20px;
+    width: 20px;
+}   
 
 .rotate {
     animation: spin 7s linear infinite;
