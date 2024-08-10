@@ -34,6 +34,7 @@
     --shadow-color: rgba(5, 5, 5, 0.1); /* Ombre douce */
     --text2-color: rgb(124, 120, 120); 
     --btn-color: rgb(202, 199, 199); 
+    --bleu-color : #007bff;
 }
 
 .dark-mode {
@@ -44,6 +45,7 @@
     --shadow-color: rgba(255, 255, 255, 0.1); /* Ombre légère pour le mode sombre */
     --text2-color: rgb(124, 120, 120);
     --btn-color: rgb(51, 50, 50);
+    --bleu-color : #007bff;
 }
 
 
@@ -221,11 +223,13 @@ section{
     font-size: 3.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
+    color: var(--bleu-color);
 }
 
 .home-content p{
     font-size: 1.6rem;
     text-align: justify;
+    color: var(--text2-color)
 }
 
 .blogger-link {
@@ -504,7 +508,7 @@ span{
 }
 
 .heading span {
-    color: #007bff; /* Couleur accent pour le span */
+    color: var(--bleu-color); 
 }
 
 .fas.fa-external-link-alt {
@@ -627,6 +631,35 @@ span{
     font-size: 60px;
 }
 
+.fab.fa-css3-alt:hover {
+    font-size: 60px;
+    background: 
+        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #FF5733 62.5%, transparent 62.5%, transparent 87.5%, #FF5733 87.5%) 0 0, 
+        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #FFC300 62.5%, transparent 62.5%, transparent 87.5%, #FFC300 87.5%) 5px 5px,
+        linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
+        linear-gradient(45deg, #0050c7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #C70039 62.5%, transparent 62.5%, transparent 87.5%, #C70039 87.5%) 5px 0,
+        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #900C3F 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
+        linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #282c34;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 5s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    50% {
+        background-position: 10px 10px, -5px -5px, 10px -5px, -10px 10px, 5px 5px, 0 0;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
+
+
 .fab.fa-js {
     font-size: 60px;
 }
@@ -637,7 +670,36 @@ span{
 
 .fab.fa-react {
     font-size: 60px;
+    background: 
+        linear-gradient(45deg, #33f1ff 12.5%, transparent 12.5%, transparent 37.5%, #338bff 37.5%, #FF5733 62.5%, transparent 62.5%, transparent 87.5%, #FF5733 87.5%) 0 0, 
+        linear-gradient(45deg, #0084ff 12.5%, transparent 12.5%, transparent 37.5%, #00d9ff 37.5%, #FFC300 62.5%, transparent 62.5%, transparent 87.5%, #FFC300 87.5%) 5px 5px,
+        linear-gradient(45deg, #8eeafae1 12.5%, transparent 12.5%, transparent 37.5%, #a6f2f7 37.5%, #DAF7A6 62.5%, transparent 62.5%, transparent 87.5%, #DAF7A6 87.5%) 0 5px, 
+        linear-gradient(45deg, #009fc7 12.5%, transparent 12.5%, transparent 37.5%, #0300c7 37.5%, #C70039 62.5%, transparent 62.5%, transparent 87.5%, #C70039 87.5%) 5px 0,
+        linear-gradient(45deg, #0c9090 12.5%, transparent 12.5%, transparent 37.5%, #0c7c90 37.5%, #900C3F 62.5%, transparent 62.5%, transparent 87.5%, #900C3F 87.5%) -5px -5px,
+        linear-gradient(45deg, #61dafb 12.5%, transparent 12.5%, transparent 37.5%, #61dafb 37.5%, #61dafb 62.5%, transparent 62.5%, transparent 87.5%, #61dafb 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #282c34;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 5s infinite alternate;
 }
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    50% {
+        background-position: 10px 10px, -5px -5px, 10px -5px, -10px 10px, 5px 5px, 0 0;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
+
+
+
+
+
 
 .fas.fa-database {
     font-size: 60px;
@@ -1501,6 +1563,11 @@ a i.bx {
         width: 100%;
     }
 
+    .service {
+        margin-top: -  400px;
+    }
+
+    .home,
     .services,
     .portfolio,
     .testimonial-container,
@@ -1513,8 +1580,8 @@ a i.bx {
     }
     
     .portfolio {
-        margin-top: 30px;
-    }
+        margin-top: -200px;
+
     .tools {
         margin-bottom: 0px;
     }
