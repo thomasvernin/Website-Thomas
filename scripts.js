@@ -1,31 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.card-link');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filterValue = button.getAttribute('data-filter');
-
-            // Réinitialiser les boutons de filtre actifs
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            // Filtrer les cartes
-            cards.forEach(card => {
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    card.style.display = 'block'; // Afficher les cartes qui correspondent au filtre
-                } else {
-                    card.style.display = 'none'; // Masquer les cartes qui ne correspondent pas
-                }
-            });
-        });
-    });
-});
-
-
-
-
 /*=====menu icon navbar======*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -57,9 +29,6 @@ window.onscroll = () => {
   });
 
 
-
-
-
 /*=====sticky navbar======*/
 let header = document.querySelector('.header');
 
@@ -70,9 +39,6 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
-
-
-
 };
 
 /*=====swiper======*/
@@ -180,17 +146,6 @@ darkModeIcon.onclick = () => {
 };
 
 
-document.getElementById('project-link').addEventListener('click', function(event) {
-  event.preventDefault(); // Empêche le lien de suivre immédiatement
-  
-  // Affiche l'icône de chargement
-  document.getElementById('loading-icon').style.display = 'inline-block';
-  
-  // Attends un court délai avant de rediriger
-  setTimeout(() => {
-      window.location.href = this.href;
-  }, 1000); // Délai de 1 seconde (1000 ms)
-});
 
 
 
