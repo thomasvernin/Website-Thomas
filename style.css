@@ -504,16 +504,6 @@ span{
     background-color: #f0f0f0;
 }
 
-
-
-
-
-
-
-
-
-
-
 .fab.fa-linkedin:hover {
     font-size: px;
     background: 
@@ -564,7 +554,7 @@ span{
 
 
 .fas.fa-envelope {
-    font-size: px;
+    font-size: 20 px;
 }
 
 .fas.fa-envelope:hover {
@@ -612,7 +602,7 @@ span{
 }
 
 .fab.fa-github {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .fab.fa-github:hover {
