@@ -531,6 +531,15 @@ a i.bx {
 
 
 
+.triangle-icon {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid var(--main-color); 
+    margin-bottom: 10px; 
+}
+
 
 
 
