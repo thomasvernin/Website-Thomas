@@ -954,10 +954,6 @@ span{
         backdrop-filter: blur(10px); 
     }
     
-    section {
-        margin-bottom: -10rem; /* Ajustez la valeur selon vos besoins */
-    }
-    
     #menu-icon{
         display: block;
     }
