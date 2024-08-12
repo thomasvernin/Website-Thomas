@@ -91,6 +91,19 @@
     transition: .5s ease;
 }
 
+.cards{
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    border-top: .1rem solid var(--btn-color);
+    border-bottom: .1rem solid var(--btn-color);
+    border-left: .1rem solid var(--btn-color);
+    border-right: .1rem solid var(--btn-color);
+    transition: .5s ease;
+}
+
 .card:hover{
     box-shadow: 0 .1rem 2rem var(--btn-color);
     transform: scale(1.02);
