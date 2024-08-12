@@ -32,6 +32,138 @@
 }
 
 
+
+#certificates {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.7rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .1rem solid ;
+    transition: .5s ease;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.filter-btn.active {
+    background-color: transparent; 
+    color: var(--btn-color); 
+}
+
+.filter-btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--btn-color);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    border-top: .1rem solid var(--btn-color);
+    border-bottom: .1rem solid var(--btn-color);
+    border-left: .1rem solid var(--btn-color);
+    border-right: .1rem solid var(--btn-color);
+    transition: .5s ease;
+}
+
+.card:hover{
+    box-shadow: 0 .1rem 2rem var(--btn-color);
+    transform: scale(1.02);
+}
+
+.icon {
+    width: 40px; /* Ajuste la largeur de l'icône */
+    height: 40px; /* Ajuste la hauteur de l'icône */
+    margin-bottom: 10px; /* Espace sous l'icône */
+    color: var(--main-color); /* Couleur de l'icône */
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0.8rem 1.6rem; 
+    background: var(--main-color);
+    border-radius: 8px; 
+    box-shadow: 0 0.2rem 0.4rem var(--shadow-color); 
+    font-size: 1.4rem; 
+    color: var(--white-color);
+    letter-spacing: 0.05rem; 
+    font-weight: 500; 
+    border: 0.1rem solid; 
+    transition: 0.3s ease; 
+    margin-top: 20px;
+}
+
+.btn-download:hover {
+    background: var(--btn-color); 
+}
+
+
+
+
+/* Tablette (de 768px à 1024px) */
+@media (max-width: 1024px) {
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+}
+
+/* Mobile (moins de 768px) */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .logo {
         margin-left: 20px;
