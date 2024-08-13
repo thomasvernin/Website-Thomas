@@ -112,14 +112,19 @@
 }
 
 .icon {
-    width: 40px; /* Ajuste la largeur de l'icône */
-    height: 40px; /* Ajuste la hauteur de l'icône */
-    margin-bottom: 10px; /* Espace sous l'icône */
-    color: var(--main-color); /* Couleur de l'icône */
+    width: 40px; 
+    height: 40px; 
+    margin-bottom: 10px; 
+    color: var(--main-color); 
+}
+
+.h3 {
+    font-size: 30px;
 }
 
 .card h3 {
     margin: 10px 0;
+    font-size: 15px;
 }
 
 .btn-download {
