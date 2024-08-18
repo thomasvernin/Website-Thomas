@@ -547,6 +547,14 @@ span{
     font-size: 1.5em; 
 }
 
+.subtitle {
+    font-size: 0.85em; 
+    margin-top: -10px; 
+    color: #555; 
+    font-style: italic; 
+}
+  
+
 .stars i {
     color: yellow; 
     font-size: 20px;
