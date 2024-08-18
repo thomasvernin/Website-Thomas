@@ -361,7 +361,7 @@ span{
 }
 
 .services h2{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .services{
@@ -537,7 +537,7 @@ span{
 }
 
 .testimonial-box .swiper-pagination-bullet-active{
-    background: var(--main-color)
+    background: var(--bleu-color)
 }
 
 .testimonial-content ul li {
@@ -938,10 +938,6 @@ span{
        
     }
 
-    .portfolio {
-        padding-bottom: 0rem;
-    }
-
     .contact{
         min-height: auto;
     }
@@ -1102,23 +1098,9 @@ span{
         margin-top: -2rem;
     }
 
-    .services h2 {
-        margin-bottom: 2rem;  
-    }
-
-    .portfolio h2 {
-        margin-bottom: -1rem;
-    }
-
-
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .services {
-        padding-bottom: 500px; /* Ajustez cette valeur selon vos besoins */
-    }
-    
 
     .testimonial-container .testimonial-wrapper {
         padding: 2rem 0;
