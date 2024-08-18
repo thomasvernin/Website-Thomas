@@ -1,3 +1,5 @@
+
+
 .fas.fa-graduation-cap{
     font-size: 20px;
 }
@@ -5,12 +7,12 @@
 .fas.fa-graduation-cap.icon:hover{
     font-size: px;
     background: 
-    linear-gradient(45deg, #00bcd4 12.5%, transparent 12.5%, transparent 37.5%, #03a9f4 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #00bcd4 87.5%) 0 0,
-    linear-gradient(45deg, #03a9f4 12.5%, transparent 12.5%, transparent 37.5%, #0288d1 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #03a9f4 87.5%) 5px 5px,
-    linear-gradient(45deg, #0288d1 12.5%, transparent 12.5%, transparent 37.5%, #01579b 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #0288d1 87.5%) 0 5px,
-    linear-gradient(45deg, #01579b 12.5%, transparent 12.5%, transparent 37.5%, #003c8f 37.5%, #004ba0 62.5%, transparent 62.5%, transparent 87.5%, #01579b 87.5%) 5px 0,
-    linear-gradient(45deg, #03a9f4 12.5%, transparent 12.5%, transparent 37.5%, #0288d1 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #03a9f4 87.5%) -5px -5px,
-    linear-gradient(45deg, #0288d1 12.5%, transparent 12.5%, transparent 37.5%, #1976d2 37.5%, #004ba0 62.5%, transparent 62.5%, transparent 87.5%, #0288d1 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
@@ -40,12 +42,12 @@
 .fas.fa-graduation-cap:hover {
     font-size: px;
     background: 
-    linear-gradient(45deg, #00bcd4 12.5%, transparent 12.5%, transparent 37.5%, #03a9f4 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #00bcd4 87.5%) 0 0,
-    linear-gradient(45deg, #03a9f4 12.5%, transparent 12.5%, transparent 37.5%, #0288d1 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #03a9f4 87.5%) 5px 5px,
-    linear-gradient(45deg, #0288d1 12.5%, transparent 12.5%, transparent 37.5%, #01579b 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #0288d1 87.5%) 0 5px,
-    linear-gradient(45deg, #01579b 12.5%, transparent 12.5%, transparent 37.5%, #003c8f 37.5%, #004ba0 62.5%, transparent 62.5%, transparent 87.5%, #01579b 87.5%) 5px 0,
-    linear-gradient(45deg, #03a9f4 12.5%, transparent 12.5%, transparent 37.5%, #0288d1 37.5%, #1976d2 62.5%, transparent 62.5%, transparent 87.5%, #03a9f4 87.5%) -5px -5px,
-    linear-gradient(45deg, #0288d1 12.5%, transparent 12.5%, transparent 37.5%, #1976d2 37.5%, #004ba0 62.5%, transparent 62.5%, transparent 87.5%, #0288d1 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
@@ -152,19 +154,6 @@
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .bx.bx-code-alt:hover{
@@ -575,20 +564,15 @@ a i.bx {
 
 
 
-
-
-
-
-
 .fab.fa-linkedin:hover {
     font-size: px;
     background: 
-    linear-gradient(45deg, #000000 12.5%, transparent 12.5%, transparent 37.5%, #808080 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #000000 87.5%) 0 0,
-    linear-gradient(45deg, #333333 12.5%, transparent 12.5%, transparent 37.5%, #999999 37.5%, #cccccc 62.5%, transparent 62.5%, transparent 87.5%, #333333 87.5%) 5px 5px,
-    linear-gradient(45deg, #666666 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #dddddd 62.5%, transparent 62.5%, transparent 87.5%, #666666 87.5%) 0 5px,
-    linear-gradient(45deg, #bbbbbb 12.5%, transparent 12.5%, transparent 37.5%, #dddddd 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #bbbbbb 87.5%) 5px 0,
-    linear-gradient(45deg, #888888 12.5%, transparent 12.5%, transparent 37.5%, #cccccc 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #888888 87.5%) -5px -5px,
-    linear-gradient(45deg, #555555 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #555555 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
@@ -626,12 +610,12 @@ a i.bx {
 .fas.fa-envelope:hover {
     font-size: px;
     background: 
-    linear-gradient(45deg, #000000 12.5%, transparent 12.5%, transparent 37.5%, #808080 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #000000 87.5%) 0 0,
-    linear-gradient(45deg, #333333 12.5%, transparent 12.5%, transparent 37.5%, #999999 37.5%, #cccccc 62.5%, transparent 62.5%, transparent 87.5%, #333333 87.5%) 5px 5px,
-    linear-gradient(45deg, #666666 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #dddddd 62.5%, transparent 62.5%, transparent 87.5%, #666666 87.5%) 0 5px,
-    linear-gradient(45deg, #bbbbbb 12.5%, transparent 12.5%, transparent 37.5%, #dddddd 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #bbbbbb 87.5%) 5px 0,
-    linear-gradient(45deg, #888888 12.5%, transparent 12.5%, transparent 37.5%, #cccccc 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #888888 87.5%) -5px -5px,
-    linear-gradient(45deg, #555555 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #555555 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
@@ -702,13 +686,6 @@ a i.bx {
 
 
 
-
-
-
-
-
-
-
 .fab.fa-github {
     font-size: 20px;
 }
@@ -716,12 +693,12 @@ a i.bx {
 .fab.fa-github:hover {
     font-size: px;
     background: 
-    linear-gradient(45deg, #000000 12.5%, transparent 12.5%, transparent 37.5%, #808080 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #000000 87.5%) 0 0,
-    linear-gradient(45deg, #333333 12.5%, transparent 12.5%, transparent 37.5%, #999999 37.5%, #cccccc 62.5%, transparent 62.5%, transparent 87.5%, #333333 87.5%) 5px 5px,
-    linear-gradient(45deg, #666666 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #dddddd 62.5%, transparent 62.5%, transparent 87.5%, #666666 87.5%) 0 5px,
-    linear-gradient(45deg, #bbbbbb 12.5%, transparent 12.5%, transparent 37.5%, #dddddd 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #bbbbbb 87.5%) 5px 0,
-    linear-gradient(45deg, #888888 12.5%, transparent 12.5%, transparent 37.5%, #cccccc 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #888888 87.5%) -5px -5px,
-    linear-gradient(45deg, #555555 12.5%, transparent 12.5%, transparent 37.5%, #aaaaaa 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 87.5%, #555555 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
@@ -927,12 +904,12 @@ a i.bx {
 .fab.fa-css3-alt:hover {
     font-size: 60px;
     background: 
-    linear-gradient(45deg, #003366 12.5%, transparent 12.5%, transparent 37.5%, #004080 37.5%, #0056b3 62.5%, transparent 62.5%, transparent 87.5%, #003366 87.5%) 0 0,
-    linear-gradient(45deg, #004080 12.5%, transparent 12.5%, transparent 37.5%, #0056b3 37.5%, #0066cc 62.5%, transparent 62.5%, transparent 87.5%, #004080 87.5%) 5px 5px,
-    linear-gradient(45deg, #003366 12.5%, transparent 12.5%, transparent 37.5%, #0056b3 37.5%, #0066cc 62.5%, transparent 62.5%, transparent 87.5%, #003366 87.5%) 0 5px,
-    linear-gradient(45deg, #0056b3 12.5%, transparent 12.5%, transparent 37.5%, #0066cc 37.5%, #3388ff 62.5%, transparent 62.5%, transparent 87.5%, #0056b3 87.5%) 5px 0,
-    linear-gradient(45deg, #004080 12.5%, transparent 12.5%, transparent 37.5%, #0066cc 37.5%, #3388ff 62.5%, transparent 62.5%, transparent 87.5%, #004080 87.5%) -5px -5px,
-    linear-gradient(45deg, #003366 12.5%, transparent 12.5%, transparent 37.5%, #0056b3 37.5%, #3388ff 62.5%, transparent 62.5%, transparent 87.5%, #003366 87.5%) -10px -10px;
+    linear-gradient(45deg, #1e3a8a 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #1e3a8a 87.5%) 0 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #1e3a8a 37.5%, #93c5fd 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) 5px 5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #3b82f6 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) 0 5px,
+    linear-gradient(45deg, #ffffff 12.5%, transparent 12.5%, transparent 37.5%, #3b82f6 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #ffffff 87.5%) 5px 0,
+    linear-gradient(45deg, #3b82f6 12.5%, transparent 12.5%, transparent 37.5%, #93c5fd 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #3b82f6 87.5%) -5px -5px,
+    linear-gradient(45deg, #93c5fd 12.5%, transparent 12.5%, transparent 37.5%, #ffffff 37.5%, #1e3a8a 62.5%, transparent 62.5%, transparent 87.5%, #93c5fd 87.5%) -10px -10px;
     background-size: 10px 10px;
     background-color: #6cb3cf;
     -webkit-background-clip: text;
