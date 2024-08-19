@@ -141,38 +141,20 @@
 
 
 @media (max-width: 768px) {
-    .blog-article {
-        flex-direction: column;
-    }
-
-    .blog-article img {
-        width: 100%;
-        height: auto;
-    }
-
-    .article-content {
+    
+    
+    .article-full {
         padding: 10px;
+        margin: 10px;
+        margin-top: 70px;
     }
 
-    .newsletter h2 {
-        font-size: 1.5em;
-    }
-
-    .newsletter p {
-        font-size: 1em;
-        margin-bottom: 15px;
-    }
-
-    #newsletter-form {
+    .article-full p {
         padding: 10px;
-    }
-
-    #newsletter-form label {
-        font-size: 0.9em;
     }
 
     #newsletter-form input[type="email"] {
-        max-width: 40%;
+        max-width: 60%;
         font-size: 0.9em;
         padding: 8px;
     }

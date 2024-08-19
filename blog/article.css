@@ -157,23 +157,6 @@
         padding: 10px;
     }
 
-    .newsletter h2 {
-        font-size: 1.5em;
-    }
-
-    .newsletter p {
-        font-size: 1em;
-        margin-bottom: 15px;
-    }
-
-    #newsletter-form {
-        padding: 10px;
-    }
-
-    #newsletter-form label {
-        font-size: 0.9em;
-    }
-
     #newsletter-form input[type="email"] {
         max-width: 40%;
         font-size: 0.9em;
