@@ -154,7 +154,7 @@
     }
 
     #newsletter-form input[type="email"] {
-        max-width: 60%;
+        max-width: 40%;
         font-size: 0.9em;
         padding: 8px;
     }
