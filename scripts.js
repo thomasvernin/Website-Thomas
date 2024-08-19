@@ -148,6 +148,37 @@ darkModeIcon.onclick = () => {
 
 
 
+document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche la soumission du formulaire pour le test
+    
+    var email = document.getElementById('email').value;
+    var responseMessage = document.getElementById('response-message');
+    
+    if (validateEmail(email)) {
+        // Simuler une requête d'inscription (remplacer par une vraie requête API ou autre logique)
+        responseMessage.textContent = 'Merci pour votre inscription, nous vous enverrons les dernières tendances tech !';
+        responseMessage.style.color = '#28a745'; // Couleur du message de succès
+        document.getElementById('newsletter-form').reset(); // Réinitialise le formulaire
+    } else {
+        responseMessage.textContent = 'Veuillez entrer une adresse email valide.';
+        responseMessage.style.color = '#dc3545'; // Couleur du message d'erreur
+    }
+});
+
+// Fonction pour valider l'adresse email
+function validateEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+
+
+
+
+
+
+
+
 
 
 

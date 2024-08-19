@@ -64,8 +64,79 @@
 
 
 
+/* Style global de la section de newsletter */
 
 
+.newsletter-content {
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color : (--var-main-color);
+}
+
+.newsletter p {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color : (--var-main-color);
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter-form label {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    color : (--var-main-color);
+}
+
+#newsletter-form input[type="email"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#newsletter-form button {
+    display: inline-block;
+    padding: 1.2rem 2.3rem;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.7rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .1rem solid ;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--btn-color);
+}
+
+#response-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #28a745; 
+}
+
+.h2 span {
+    color: var(--bleu-color);
+}
 
 
 
@@ -81,6 +152,38 @@
 
     .article-content {
         padding: 10px;
+    }
+
+    .newsletter h2 {
+        font-size: 1.5em;
+    }
+
+    .newsletter p {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    #newsletter-form {
+        padding: 10px;
+    }
+
+    #newsletter-form label {
+        font-size: 0.9em;
+    }
+
+    #newsletter-form input[type="email"] {
+        max-width: 40%;
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #newsletter-form button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #response-message {
+        font-size: 1em;
     }
 }
 
