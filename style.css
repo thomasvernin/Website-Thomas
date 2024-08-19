@@ -1263,9 +1263,9 @@ span{
     .services,
     .portfolio,
     .testimonial-container,
-    .contact
-    .tools
-    .about
+    .contact,
+    .tools,
+    .about,
     .contact {
         padding: 1rem;
         margin-bottom: 0px;  
