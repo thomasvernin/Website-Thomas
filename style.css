@@ -334,8 +334,8 @@ span{
 }
 
 .about-img img{
-    width: 17vw;
-    border-radius: 10px;
+    width: 10vw;
+    border-radius: 150px;
     padding-top: 0rem;
 }
 
@@ -1104,8 +1104,7 @@ span{
     }
 
     .about-img img{
-        width: 70vw;
-        margin-top: -2rem;
+        width: 25vw; 
     }
 
     .portfolio .portfolio-container {
@@ -1218,6 +1217,9 @@ span{
         border-radius: 0;
         width: 100%;
     }
+
+    
+    
 
 }
 

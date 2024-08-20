@@ -15,7 +15,7 @@
 .blog-article {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 10px;
     overflow: hidden;
     margin-top: 100px;
 }
@@ -147,6 +147,10 @@
         padding: 10px;
         margin: 10px;
         margin-top: 70px;
+    }
+
+    .blog-article img {
+        display :none ;
     }
 
     .article-full p {
