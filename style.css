@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #ffffff; 
+    --bg-color: #f1f1f1; 
     --text-color: #000000; 
     --main-color: #000000; 
     --white-color: #ffffff; 
@@ -23,7 +23,7 @@
 }
 
 .dark-mode {
-    --bg-color: #000000; 
+    --bg-color: #0b0a0e; 
     --text-color: #eaeaea; 
     --main-color: #ffffff; 
     --white-color: #121212; 
@@ -206,7 +206,6 @@ section{
     padding: 1.2rem 2.8rem;
     background: var(--main-color);
     border-radius: 10px;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 1.7rem;
     color: var(--white-color);
     letter-spacing: .1rem;
@@ -396,7 +395,6 @@ span{
 }
 
 .services-container .services-box:hover{
-    box-shadow: 0 .1rem 2rem var(--btn-color);
     transform: scale(1.02);
 }
 
@@ -497,7 +495,6 @@ span{
     flex-direction: column;
     background: var(--bg-color);
     border-radius: 1rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
     padding: 3rem 5rem;
     border-top: .1rem solid var(--btn-color);
     border-bottom: .1rem solid var(--btn-color);
