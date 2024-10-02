@@ -266,7 +266,8 @@
 
 /* Style de l'image dans la modale */
 .modal-content {
-    margin: auto;
+    margin: auto ;
+    margin-top: 50px;
     display: block;
     max-width: 80%;
     max-height: 80%;
