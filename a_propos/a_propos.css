@@ -154,8 +154,7 @@
     display: inline-block;
     padding: 0.8rem 1.6rem; 
     background: var(--main-color);
-    border-radius: 8px; 
-    box-shadow: 0 0.2rem 0.4rem var(--shadow-color); 
+    border-radius: 8px;  
     font-size: 1.4rem; 
     color: var(--white-color);
     letter-spacing: 0.05rem; 
@@ -166,8 +165,17 @@
 }
 
 .btn-download:hover {
-    background: var(--btn-color); 
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--btn-color);
 }
+
+
+
+
+
+
+
 
 
 @media (max-width: 1024px) {
