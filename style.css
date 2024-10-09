@@ -323,6 +323,59 @@ section{
     border: .1rem solid var(--bg-color);
 }
 
+
+
+
+
+.home {
+    position: relative;
+}
+
+.grid-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.grid-background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(128, 128, 128, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(128, 128, 128, 0.5) 1px, transparent 1px);
+    background-size: 70px 70px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 span{
     color:var(--text2-color);
 }
@@ -535,9 +588,6 @@ span{
     font-size: 1.5rem;
     text-align: center;
 }
-
-
-
 
 .testimonial-box .swiper-button-next:after, 
 .testimonial-box .swiper-button-prev:after { 
