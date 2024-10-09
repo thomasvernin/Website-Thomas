@@ -430,7 +430,8 @@ span{
 }
 
 .heading {
-    font-size: 2rem;
+    font-size: 4rem;
+    font-style: italic;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -548,11 +549,10 @@ span{
   margin-left: -100px ; 
 }
 
-
-
-
-
-
+.stack-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 .testimonial-box .swiper-pagination-bullet{
     background: rgb(128, 127, 127);
