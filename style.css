@@ -617,7 +617,8 @@ span{
 .testimonial-box .swiper-button-next:after, 
 .testimonial-box .swiper-button-prev:after { 
   color: var(--bg-color); 
-  font-size: 15px;
+  font-size: 10px;
+  font-weight: 900;
 } 
 
 .testimonial-box .swiper-button-next{
