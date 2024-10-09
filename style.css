@@ -96,6 +96,10 @@ body{
     color: var(--main-color); 
 }
 
+.navbar a:hover {
+    color: rgb(193, 192, 192) ; 
+}
+
 .header.sticky .navbar a{
     color: var(--text2-color);
     
