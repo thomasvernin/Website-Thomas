@@ -439,6 +439,16 @@ span{
     color: var(--bleu-color); 
 }
 
+.icon-container {
+    display: flex;          /* Utilise flexbox pour l'alignement horizontal */
+    align-items: center;    /* Aligne les icônes au centre verticalement */
+    gap: 15px;              /* Espace entre les icônes */
+}
+
+.testimonial-slide {
+    text-align: center;     /* Centrer le texte sous les icônes */
+}
+
 .fas.fa-external-link-alt {
     font-size: 15px;
     color: var(--main-color);
@@ -555,6 +565,7 @@ span{
 .testimonial-content ul li {
     font-size: 1.5em; 
 }
+
 
 .subtitle {
     font-size: 0.85em; 
