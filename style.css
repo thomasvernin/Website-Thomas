@@ -613,16 +613,45 @@ span{
 
 .testimonial-box .swiper-button-next:after, 
 .testimonial-box .swiper-button-prev:after { 
-  color: var(--bleu-color); 
-  font-size: 15px;
+  color: var(--text-color); 
+  font-size: 20px;
 } 
 
 .testimonial-box .swiper-button-next{
+  background-color: var(--btn-color);
   margin-right: -100px ;
+  color: var(--bleu-color); 
+  font-size: 20px;
+  border: 0px solid var(--bleu-color);
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-box .swiper-button-next:hover{
+  background-color : var(--hover-button)
 }
     
 .testimonial-box .swiper-button-prev{
+  background-color: var(--btn-color);
   margin-left: -100px ; 
+  margin-right: -100px ;
+  color: var(--bleu-color); 
+  font-size: 20px;
+  border: 0px solid var(--bleu-color);
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-box .swiper-button-prev:hover{
+    background-color : var(--hover-button)
 }
 
 .stack-title {
