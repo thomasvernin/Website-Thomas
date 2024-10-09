@@ -331,6 +331,18 @@ section{
     position: relative;
 }
 
+.services {
+    position: relative;
+}
+
+.about {
+    position: relative;
+}
+
+.contact {
+    position: relative;
+}
+
 .grid-background {
     position: absolute;
     top: 0;
@@ -355,6 +367,16 @@ section{
     z-index: -1;
     opacity: 0.2;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
