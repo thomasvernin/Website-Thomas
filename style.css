@@ -20,7 +20,8 @@
     --text2-color: rgb(124, 120, 120); 
     --btn-color: rgb(202, 199, 199); 
     --bleu-color : #007bff;
-    --hover-button : rgb(193, 192, 192);
+    --hover-button : #ebebeb;
+    --button-background: #000000;
 }
 
 .dark-mode {
@@ -32,7 +33,9 @@
     --text2-color: rgb(124, 120, 120);
     --btn-color: rgb(51, 50, 50);
     --bleu-color : #007bff;
-    --hover-button : rgb(193, 192, 192);
+    --hover-button : #1d1d1d;
+    --btn-background: #000000;
+    --button-background: #ffffff;
 }
 
 html{
@@ -613,45 +616,45 @@ span{
 
 .testimonial-box .swiper-button-next:after, 
 .testimonial-box .swiper-button-prev:after { 
-  color: var(--text-color); 
-  font-size: 20px;
+  color: var(--bg-color); 
+  font-size: 15px;
 } 
 
 .testimonial-box .swiper-button-next{
-  background-color: var(--btn-color);
+  background-color: var(--button-background);
   margin-right: -100px ;
-  color: var(--bleu-color); 
+  color: var(--white-color); 
   font-size: 20px;
   border: 0px solid var(--bleu-color);
   border-radius: 50%; 
-  width: 40px; 
-  height: 40px;
+  width: 30px; 
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .testimonial-box .swiper-button-next:hover{
-  background-color : var(--hover-button)
+    opacity: 0.8;
 }
     
 .testimonial-box .swiper-button-prev{
-  background-color: var(--btn-color);
+  background-color: var(--button-background);
   margin-left: -100px ; 
   margin-right: -100px ;
-  color: var(--bleu-color); 
+  color: var(--white-color); 
   font-size: 20px;
   border: 0px solid var(--bleu-color);
   border-radius: 50%; 
-  width: 40px; 
-  height: 40px;
+  width: 30px; 
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .testimonial-box .swiper-button-prev:hover{
-    background-color : var(--hover-button)
+    opacity: 0.8;
 }
 
 .stack-title {
