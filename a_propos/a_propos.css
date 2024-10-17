@@ -67,7 +67,7 @@ p {
 }
 
 .filter-btn.active {
-    background-color: transparent;
+    background-color: var(--btn-color);
     color: var(--hover-button);
 }
 
