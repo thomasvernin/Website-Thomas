@@ -197,7 +197,7 @@ section{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: transparent;
+    
     border: .1rem solid var(--btn-color);
     border-radius: 50%;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
