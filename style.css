@@ -138,6 +138,10 @@ body{
     padding: 0.5rem;
 }
 
+#darkMode-icon:hover{
+    opacity : 0.8 ; 
+}
+
 .header.sticky #darkMode-icon{
     color: var(--text-color);
     opacity:.9;
@@ -206,10 +210,6 @@ section{
     margin: 2.5rem 1.5rem 3rem 0;
 }
 
-.home-content .social-media a:hover{
-    
-}
-
 .btn{
     display: inline-block;
     padding: 1.2rem 2.8rem;
@@ -224,8 +224,7 @@ section{
 }
 
 .btn:hover{
-    background: transparent;
-    color: var(--main-color);
+    opacity: 0.8;
     border-color: var(--btn-color);
 }
 
