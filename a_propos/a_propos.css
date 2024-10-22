@@ -72,9 +72,7 @@ p {
 }
 
 .filter-btn:hover {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--btn-color);
+    opacity : 0.5 ;
 }
 
 .filter-btn.technicien {
