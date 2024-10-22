@@ -77,6 +77,39 @@ p {
     border-color: var(--btn-color);
 }
 
+.filter-btn.technicien {
+    background-color: #28a745; /* Couleur spécifique pour Technicien */
+}
+
+.filter-btn.support {
+    background-color: #ffc107; /* Couleur spécifique pour Support */
+}
+
+.filter-btn.développeur {
+    background-color: #076aff; /* Couleur spécifique pour Support */
+}
+
+.filter-btn.seo {
+    background-color: #07d2ff; /* Couleur spécifique pour Support */
+}
+
+.filter-btn.technicien.active {
+    opacity: 0.5;
+}
+
+.filter-btn.support.active {
+    opacity: 0.5;
+}
+
+.filter-btn.développeur.active {
+    opacity: 0.5;
+}
+
+.filter-btn.seo.active {
+    opacity: 0.5;
+}
+
+
 
 
 
