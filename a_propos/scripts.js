@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fonction pour appliquer le filtre
     function applyFilter(filter) {
         cards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.style.display = 'block';
+            // Récupérer les catégories de la carte et les convertir en tableau
+            const categories = card.getAttribute('data-category').split(' ');
+
+            // Vérifier si le filtre est 'all' ou si les catégories incluent le filtre
+            if (filter === 'all' || categories.includes(filter)) {
+                card.style.display = 'block'; // Affiche la carte si elle correspond au filtre
             } else {
-                card.style.display = 'none';
+                card.style.display = 'none'; // Cache la carte sinon
             }
         });
     }
@@ -31,6 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Marquer le bouton "Tous" comme actif par défaut
     document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
