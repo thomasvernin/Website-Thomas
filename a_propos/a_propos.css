@@ -55,11 +55,10 @@ p {
     padding: 1rem 0rem;
     background : var(--main-color);
     border-radius: 80px;
-    box-shadow: 0 .1rem .3rem var(--shadow-color);
     font-size: 1.2rem;
     color: var(--bg-color);
     letter-spacing: .05rem;
-    font-weight: 900;
+    font-weight: 1000;
     border: .1rem solid;
     transition: .3s ease;
     cursor: pointer;
@@ -67,8 +66,7 @@ p {
 }
 
 .filter-btn.active {
-    background-color: var(--btn-color);
-    color: var(--hover-button);
+    opacity : 0.5 ;
 }
 
 .filter-btn:hover {
@@ -92,25 +90,20 @@ p {
 }
 
 .filter-btn.technicien.active {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .filter-btn.support.active {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .filter-btn.développeur.active {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .filter-btn.seo.active {
-    opacity: 0.5;
+    opacity: 0.8;
 }
-
-
-
-
-
 
 .cards-container {
     display: grid;
@@ -202,17 +195,9 @@ p {
     border-color: var(--btn-color);
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
     .filters {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         gap: 0.75rem;
     }
 }
