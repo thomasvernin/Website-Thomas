@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFilter(defaultFilter);
     // Marquer le bouton "Tous" comme actif par défaut
     document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+
 });
 
 
