@@ -34,8 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFilter(defaultFilter);
     // Marquer le bouton "Tous" comme actif par défaut
     document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
-
 });
+
+
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = 'block';
+    document.getElementById('popupOverlay').style.display = 'block';
+}
+
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
+    document.getElementById('popupOverlay').style.display = 'none';
+}
+
+
+
+
 
 
 
