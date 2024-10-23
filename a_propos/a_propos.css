@@ -208,7 +208,7 @@ p {
     padding: 30px;
     background: linear-gradient(145deg, #ffffff, #f1f1f1);
     border-radius: 15px;
-    border: 1px solid var(--btn-color);
+    border: 0px solid var(--btn-color);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
@@ -232,6 +232,10 @@ p {
     cursor: pointer; 
     color: black; 
     font-size: 20px; 
+}
+
+.close-btn:hover {
+    opacity : 0.6 ;
 }
 
 .popup-overlay {
