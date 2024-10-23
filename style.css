@@ -139,12 +139,11 @@ body{
 }
 
 #darkMode-icon:hover{
-    opacity : 0.8 ; 
+    opacity : 0.5 ; 
 }
 
 .header.sticky #darkMode-icon{
     color: var(--text-color);
-    opacity:.9;
 }
 
 #menu-icon {
