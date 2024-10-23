@@ -19,7 +19,7 @@
     margin: 20px;
     background-color: var(--main-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .img-between-buttons {
@@ -56,6 +56,10 @@
 }
 
 
+.fas.fa-caret-up {
+    font-size: 40px;
+    color: var(--main-color);
+}
 
 
 /* Styles pour appareils mobiles */
