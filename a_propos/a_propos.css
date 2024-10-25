@@ -53,20 +53,20 @@ p {
     display: inline-block;
     max-width: 200px;
     padding: 1rem 0rem;
-    background : var(--main-color);
-    border-radius: 80px;
+    background :rgb(140, 140, 140);
+    border-radius: 6px;
     font-size: 1.2rem;
-    color: var(--bg-color);
+    color: black;
     letter-spacing: .05rem;
     font-weight: 1000;
-    border: .1rem solid;
+    border: rem solid;
     transition: .3s ease;
     cursor: pointer;
     margin: 0;
 }
 
 .filter-btn.active {
-    opacity : 0.5 ;
+    opacity : 0.2 ;
 }
 
 .filter-btn:hover {
@@ -74,35 +74,35 @@ p {
 }
 
 .filter-btn.technicien {
-    background-color: #28a745; /* Couleur spécifique pour Technicien */
+    background-color: #8ceaa2; /* Couleur spécifique pour Technicien */
 }
 
 .filter-btn.support {
-    background-color: #ffc107; /* Couleur spécifique pour Support */
+    background-color: #f3d98d; /* Couleur spécifique pour Support */
 }
 
 .filter-btn.développeur {
-    background-color: #076aff; /* Couleur spécifique pour Support */
+    background-color: #a9c2e6; /* Couleur spécifique pour Support */
 }
 
 .filter-btn.seo {
-    background-color: #07d2ff; /* Couleur spécifique pour Support */
+    background-color: #c6dce1; /* Couleur spécifique pour Support */
 }
 
 .filter-btn.technicien.active {
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .filter-btn.support.active {
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .filter-btn.développeur.active {
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .filter-btn.seo.active {
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .cards-container {
@@ -178,21 +178,18 @@ p {
 .btn-download {
     display: inline-block;
     padding: 0.8rem 1.6rem; 
-    background: var(--main-color);
+    background: var(--btn-background);
     border-radius: 8px;  
     font-size: 1.4rem; 
-    color: var(--white-color);
+    color: var(--text-color);
     letter-spacing: 0.05rem; 
     font-weight: 500; 
-    border: 0.1rem solid; 
     transition: 0.3s ease; 
     margin-top: 20px;
 }
 
 .btn-download:hover {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--btn-color);
+    background-color: var(--hover-button);
 }
 
 .popup {
@@ -258,16 +255,13 @@ p {
     color: var(--white-color);
     letter-spacing: 0.05rem; 
     font-weight: 500; 
-    border: 0.1rem solid; 
     transition: 0.3s ease; 
     margin-top: 20px;
     cursor : pointer ; 
 }
 
 .btn-competences:hover {
-    background: transparent;
-    color: var(--main-color);
-    border-color: var(--btn-color);
+    opacity: 0.8;
 }
 
 

@@ -20,8 +20,9 @@
     --text2-color: rgb(124, 120, 120); 
     --btn-color: rgb(202, 199, 199); 
     --bleu-color : #007bff;
-    --hover-button : #ebebeb;
+    --hover-button : #c0c0c0;
     --button-background: #000000;
+    --btn-background: #dddbdb;
 }
 
 .dark-mode {
