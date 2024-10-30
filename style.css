@@ -377,7 +377,45 @@ section{
 
 
 
-
+#carousel {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .carousel-item i {
+    font-size: 40px;
+    color: var(--bleu-color);
+  }
+  
+  .carousel-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--main-color);
+  }
+  
 
 
 
