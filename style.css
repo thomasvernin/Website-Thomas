@@ -67,7 +67,7 @@ body{
 
 .header.sticky{
     background-color: var(-text2-color);
-    background: rgba(255, 255, 255, 0.1); 
+    
     backdrop-filter: blur(30px); 
 }
 
