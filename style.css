@@ -109,6 +109,11 @@ body{
     
 }
 
+.header.sticky .navbar a:hover{
+    color: var(--main-color);
+    
+}
+
 .header.sticky .navbar a.active{
     color: var(-text-color);
     
@@ -129,6 +134,73 @@ body{
     background: var(--main-color);
     opacity: 10;
 }
+
+
+
+
+
+
+
+
+/* Style de la navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Style des liens principaux */
+.navbar a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+}
+
+/* Sous-menu */
+.submenu {
+    position: relative;
+}
+
+/* Contenu du sous-menu caché par défaut */
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Place le sous-menu juste en dessous */
+    left: 0;
+    background: var(--btn-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+}
+
+/* Style des liens dans le sous-menu */
+.submenu-content a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    color: var(--main-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Afficher le sous-menu au survol */
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+/* Couleur au survol pour les liens du sous-menu */
+.submenu-content a:hover {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
 
 #darkMode-icon{
     font-size: 1.5rem;
