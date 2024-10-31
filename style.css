@@ -161,10 +161,13 @@ section{
 .home{
     display: flex;
     align-items: center;
+    justify-content: center; 
+    height: 100vh;
 }
 
 .home .home-content{
-    max-width: 44rem;
+    max-width: 44em;
+    text-align: center;
 }
 
 .home-content h3{
@@ -182,8 +185,8 @@ section{
 
 .home-content p{
     font-size: 1.6rem;
-    text-align: justify;
     color: var(--text2-color)
+    text-align: center;
 }
 
 .blogger-link {
@@ -253,51 +256,6 @@ section{
     animation: professionRotate 12s ease-out infinite;
 }
 
-@keyframes professionRotate {
-    0%, 20%{
-        transform:rotate(0deg);
-    }
-
-    25%, 45%{
-        transform:rotate(-90deg);
-    }
-
-    50%, 70%{
-        transform:rotate(-180deg);
-    }
-
-    75%, 95%{
-        transform:rotate(-270deg);
-    }
-
-    100%{
-        transform:rotate(-360deg);
-    }
-    
-}
-
-.home .profession-box .profession {
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--main-color);
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
-    padding: 13px 0;
-}
-
-.home .profession-box .profession:nth-child(1) i{
-    margin-right: 15px;
-
-}
-
-.home .profession-box .profession:nth-child(2),
-.home .profession-box .profession:nth-child(4){
-    padding-bottom: 20px;
-}
-
 .home .profession i{
     font-size: 3.8rem;
 }
@@ -306,13 +264,6 @@ section{
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600;
-}
-
-.home .profession-box .circle{
-    width: 560px;
-    height: 560px;
-    border: 0px solid var(--main-color);
-    border-radius: 50%;
 }
 
 .home-img img {
@@ -325,10 +276,6 @@ section{
 .home-img img:hover {
     border: .1rem solid var(--bg-color);
 }
-
-
-
-
 
 .home {
     position: relative;
@@ -370,11 +317,6 @@ section{
     z-index: -1;
     opacity: 0.2;
 }
-
-
-
-
-
 
 
 
