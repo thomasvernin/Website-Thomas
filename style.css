@@ -316,9 +316,10 @@ section{
 }
 
 .home-img img {
-    max-width: 30%; 
-    border-radius: 50px; 
+    max-width: 25%; 
+    border-radius: 60px; 
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .home-img img:hover {
