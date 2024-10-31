@@ -1217,6 +1217,32 @@ span{
         display: block;
     }
 
+
+    /* Style du lien "À propos" */
+.about-link {
+    position: relative; /* Pour positionner la flèche par rapport à ce lien */
+}
+
+    /* Style de la flèche */
+.arrow {
+    display: inline-block;
+    margin-left: 0.5rem; /* Espace entre le texte et la flèche */
+    transition: transform 0.3s ease; /* Transition pour la rotation */
+}
+
+/* Rotation de 180 degrés au survol de l'élément .submenu */
+.submenu:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* Affichage du sous-menu au survol */
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+
+
+
     .home {
         padding: 2rem 3% 23rem;
         justify-content: center;
