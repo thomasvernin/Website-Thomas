@@ -176,7 +176,7 @@ body{
 /* Style des liens dans le sous-menu */
 .submenu-content a {
     display: block;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 0.8rem;
     color: var(--main-color);
     text-decoration: none;
     white-space: nowrap;
@@ -1196,6 +1196,25 @@ span{
 
     .navbar a::before{
         display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Sous-menu : affichage en menu déroulant */
+    .submenu-content {
+        position: static; /* Place le sous-menu dans le flux normal */
+        width: 100%; /* Prend toute la largeur sur mobile */
+        box-shadow: none; /* Supprime l'ombre */
+        display: none;
+    }
+
+    /* Afficher le sous-menu au clic ou touche */
+    .submenu:active .submenu-content,
+    .submenu:focus-within .submenu-content {
+        display: block;
     }
 
     .home {
