@@ -195,13 +195,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 #darkMode-icon{
     font-size: 1.5rem;
     color: var(--main-color);
@@ -397,7 +390,6 @@ section{
 }
 
 
-
 #carousel {
     width: 100%;
     overflow: hidden;
@@ -437,26 +429,6 @@ section{
     color: var(--main-color);
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 span{
