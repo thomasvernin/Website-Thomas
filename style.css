@@ -67,7 +67,7 @@ body{
 
 .header.sticky{
     background-color: var(-text2-color);
-    
+    /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(30px); 
 }
 
@@ -1026,7 +1026,8 @@ span{
     }
 
     .header.sticky{
-        background-color: var(--bg-color);
+        /* background-color: var(--bg-color); */
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
 }
@@ -1075,7 +1076,7 @@ span{
 @media (max-width: 991px){
 
     .header.sticky{
-        background-color: var(--bg-color);
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
 
@@ -1115,7 +1116,7 @@ span{
 @media (max-width: 768px){
 
     .header.sticky{
-        background-color: var(--bg-color);
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
     
@@ -1368,7 +1369,7 @@ span{
 @media (max-width: 617px){
 
     .header.sticky{
-        background-color: var(--bg-color);
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
 
@@ -1426,7 +1427,7 @@ span{
 @media (max-width: 450px) {
 
     .header.sticky{
-        background-color: var(--bg-color);
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
 
@@ -1510,7 +1511,7 @@ span{
 @media (max-width: 365px) {
 
     .header.sticky{
-        background-color: var(--bg-color);
+        background-color: var(-text2-color);
         backdrop-filter: blur(10px); 
     }
     
