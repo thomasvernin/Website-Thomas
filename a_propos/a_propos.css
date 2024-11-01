@@ -93,6 +93,10 @@ p {
     background-color: #db7dd3; /* Couleur spécifique pour Support */
 }
 
+.filter-btn.ia {
+    background-color: #7cbdda; /* Couleur spécifique pour Support */
+}
+
 .filter-btn.technicien.active {
     opacity: 0.3;
 }
@@ -110,6 +114,10 @@ p {
 }
 
 .filter-btn.seo.bureautique {
+    opacity: 0.3;
+}
+
+.filter-btn.seo.ia {
     opacity: 0.3;
 }
 
