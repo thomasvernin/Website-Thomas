@@ -1543,3 +1543,38 @@ a i.bx {
         background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
     }
 }
+
+
+.fas.fa-user-tie:hover{
+    font-size: px;
+    background: 
+    linear-gradient(45deg, #003366 12.5%, transparent 12.5%, transparent 37.5%, #004080 37.5%, #0056b3 62.5%, transparent 62.5%, transparent 87.5%, #003366 87.5%) 0 0,
+    linear-gradient(45deg, #004080 12.5%, transparent 12.5%, transparent 37.5%, #0056b3 37.5%, #007acc 62.5%, transparent 62.5%, transparent 87.5%, #004080 87.5%) 5px 5px,
+    linear-gradient(45deg, #00264d 12.5%, transparent 12.5%, transparent 37.5%, #003366 37.5%, #004080 62.5%, transparent 62.5%, transparent 87.5%, #00264d 87.5%) 0 5px,
+    linear-gradient(45deg, #003366 12.5%, transparent 12.5%, transparent 37.5%, #004080 37.5%, #0056b3 62.5%, transparent 62.5%, transparent 87.5%, #003366 87.5%) 5px 0,
+    linear-gradient(45deg, #004080 12.5%, transparent 12.5%, transparent 37.5%, #0056b3 37.5%, #007acc 62.5%, transparent 62.5%, transparent 87.5%, #004080 87.5%) -5px -5px,
+    linear-gradient(45deg, #00264d 12.5%, transparent 12.5%, transparent 37.5%, #003366 37.5%, #004080 62.5%, transparent 62.5%, transparent 87.5%, #00264d 87.5%) -10px -10px;
+    background-size: 10px 10px;
+    background-color: #6cb3cf;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pixelAnimation 20s infinite alternate;
+}
+
+@keyframes pixelAnimation {
+    0% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+    25% {
+        background-position: -10px 10px, 10px -10px, -10px -5px, 10px 5px, -15px -5px, -5px -15px;
+    }
+    50% {
+        background-position: 15px -15px, -15px 15px, 15px 10px, -15px -10px, 10px -15px, 15px 10px;
+    }
+    75% {
+        background-position: -5px -10px, 5px 10px, -5px 10px, 5px -10px, -10px 5px, 10px -5px;
+    }
+    100% {
+        background-position: 0 0, 5px 5px, 0 5px, 5px 0, -5px -5px, -10px -10px;
+    }
+}
