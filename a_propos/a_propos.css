@@ -42,7 +42,7 @@ p {
 
 .filters {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 0.5rem; 
     justify-content: center;
     margin-bottom: 50px;
@@ -52,17 +52,17 @@ p {
 .filter-btn {
     display: inline-block;
     max-width: 200px;
-    padding: 1rem 0rem;
-    background :rgb(140, 140, 140);
-    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
     font-size: 1.2rem;
-    color: black;
     letter-spacing: .05rem;
-    font-weight: 1000;
-    border: rem solid;
+    font-weight: 500 ;
+    border: 1px solid;
     transition: .3s ease;
     cursor: pointer;
+    color: #568dda;
     margin: 0;
+    background-color: var(--bg-color);
 }
 
 .filter-btn.active {
@@ -74,27 +74,33 @@ p {
 }
 
 .filter-btn.technicien {
-    background-color: #8ceaa2; /* Couleur spécifique pour Technicien */
+    border-color: #26dd51;
+    color:#26dd51;
 }
 
-.filter-btn.support {
-    background-color: #f3d98d; /* Couleur spécifique pour Support */
+.filter-btn.support { 
+    border-color: #cea62e;
+    color: #cea62e; 
 }
 
 .filter-btn.développeur {
-    background-color: #a9c2e6; /* Couleur spécifique pour Support */
+    border-color: #568dda; 
+    color: #568dda; 
 }
 
 .filter-btn.seo {
-    background-color: #c6dce1; /* Couleur spécifique pour Support */
+    border-color: #96b9c1;
+    color: #96b9c1;  
 }
 
 .filter-btn.bureautique {
-    background-color: #db7dd3; /* Couleur spécifique pour Support */
+    border-color: #f353e5; 
+    color: #f353e5; 
 }
 
 .filter-btn.ia {
-    background-color: #7cbdda; /* Couleur spécifique pour Support */
+    border-color: #9a4694;
+    color: #9a4694;  
 }
 
 .filter-btn.technicien.active {
