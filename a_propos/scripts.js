@@ -5,17 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');  // Cartes de certification
 
     let activeFilter = 'all'; // Filtre actif par défaut
+    let activeSubFilter = null; // Aucun sous-filtre actif par défaut
 
-    // Fonction pour appliquer le filtre
+    // Fonction pour appliquer un filtre
     function applyFilter(filter) {
         // Appliquer le filtre aux cartes
         cards.forEach(card => {
             const categories = card.getAttribute('data-category').split(' ');
 
             if (filter === 'all' || categories.includes(filter)) {
-                card.style.display = 'block';
+                card.style.display = 'block';  // Afficher la carte si elle correspond au filtre
             } else {
-                card.style.display = 'none';
+                card.style.display = 'none';  // Masquer la carte sinon
             }
         });
 
@@ -24,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
         if (activeBtn) activeBtn.classList.add('active');  // Ajouter la classe active au filtre sélectionné
 
+        activeFilter = filter;  // Mettre à jour le filtre actif
+
         // Si le filtre est "Data", afficher les sous-filtres
         if (filter === 'data') {
             subFilterContainer.style.display = 'block';
         } else {
             subFilterContainer.style.display = 'none';
         }
-
-        activeFilter = filter; // Mettre à jour le filtre actif
     }
 
     // Ajouter des événements de clic pour chaque bouton de filtre principal
@@ -49,18 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lorsqu'on clique sur un sous-filtre (par exemple "Data Scientist")
+    // Fonction pour appliquer un sous-filtre
+    function applySubFilter(subFilter) {
+        activeSubFilter = subFilter;  // Mettre à jour le sous-filtre actif
+
+        // Réinitialiser l'état des sous-filtres
+        subFilterButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Ajouter la classe active au bouton du sous-filtre sélectionné
+        const activeBtn = document.querySelector(`.sub-filter-btn[data-filter="${subFilter}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+
+        // Appliquer ou masquer les cartes en fonction du sous-filtre
+        cards.forEach(card => {
+            const categories = card.getAttribute('data-category').split(' ');
+
+            if (activeFilter === 'data' && categories.includes(subFilter)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Ajouter des événements de clic pour chaque sous-filtre
     subFilterButtons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.stopPropagation();  // Empêche la propagation pour ne pas fermer les sous-filtres
 
-            const filter = button.getAttribute('data-filter');
+            const subFilter = button.getAttribute('data-filter');
 
-            // Applique "Data" pour garder le sous-filtre visible
-            applyFilter('data');
-
-            // Appliquer le sous-filtre (par exemple, Data Scientist)
-            button.classList.add('active');  // Ajouter la classe active au bouton du sous-filtre
+            // Appliquer le sous-filtre sélectionné
+            applySubFilter(subFilter);
         });
     });
 
@@ -71,35 +92,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Fonction pour ouvrir un popup
 function openPopup(popupId) {
-    // Trouver le popup avec l'ID donné
     var popup = document.getElementById(popupId);
-    
-    // Afficher le popup
     popup.style.display = 'block';
-    
-    // Afficher l'overlay (fond sombre)
     document.getElementById('popupOverlay').style.display = 'block';
 }
 
 // Fonction pour fermer un popup
 function closePopup(popupId) {
-    // Trouver le popup avec l'ID donné
     var popup = document.getElementById(popupId);
-    
-    // Cacher le popup
     popup.style.display = 'none';
-    
-    // Cacher l'overlay (fond sombre)
     document.getElementById('popupOverlay').style.display = 'none';
 }
 
-// Ajout d'un événement pour fermer le popup quand l'utilisateur clique en dehors de la fenêtre
+// Fermer les popups lorsqu'on clique en dehors
 document.getElementById('popupOverlay').addEventListener('click', function() {
     var popups = document.querySelectorAll('.popup');
     popups.forEach(function(popup) {
         closePopup(popup.id);
     });
 });
+
+
+
+
 
 
 
