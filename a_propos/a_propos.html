@@ -92,19 +92,26 @@
     <div> 
         <h2 class="heading" id="certificats">
             <br><br><br>
-            Mes Certificats<span> Tech & Compétences </span>
+            Mes <span>Certificats & Compétences </span>
             <br><br><br>
         </h2>
-        <h2>Catégories</h2>
+        <h2>Catégories des sous-secteurs : </h2>
         <div class="filters">
             <button class="filter-btn" data-filter="all">Tous</button>
             <button class="filter-btn développeur" data-filter="Développeur">#Développement Web</button>
-            <button class="filter-btn data" data-filter="data">#Data </button>
+            <button class="filter-btn data" data-filter="data">#Data</button>
             <button class="filter-btn technicien" data-filter="technicien">#Technicien informatique</button>
             <button class="filter-btn support" data-filter="support">#Support Informatique</button>
             <button class="filter-btn seo" data-filter="seo">#SEO</button>
             <button class="filter-btn bureautique" data-filter="bureautique">#La Bureautique</button>
             <button class="filter-btn ia" data-filter="ia">#Intelligence Artificielle</button>
+        </div>
+
+        <!-- Sous-filtre Métier -->
+        <div class="sub-filter-container" style="display: none;">
+            <h4>Spécialités du sous-secteur : </h4>
+            <button class="sub-filter-btn datascientist" data-filter="datascientist">Data Scientist</button>
+            <!-- Autres sous-filtres possibles -->
         </div>
 
         <div class="cards-container">
@@ -325,7 +332,7 @@
                 <div class="btn-competences" onclick="openPopup('popup28')">Mes Compétences</div>
                 <a href="https://drive.google.com/file/d/17XZrtJekPfFMiSTvS7d4SKmAMGTYjn0K/view?usp=sharing" class="btn-download" download>Télécharger PDF</a>
             </div>
-            <div class="card" data-category="data">
+            <div class="card" data-category="data datascientist"> 
                 <div class="icon"><i class="fas fa-graduation-cap"></i></div>
                 <h3>Initiez-vous à <br> Python pour l'analyse <br> de données</h3>
                 <p>Date : 20 Novembre 2024 </p> 
