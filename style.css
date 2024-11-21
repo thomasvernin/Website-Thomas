@@ -135,13 +135,6 @@ body{
     opacity: 10;
 }
 
-
-
-
-
-
-
-
 /* Style de la navbar */
 .navbar {
     display: flex;
@@ -191,8 +184,6 @@ body{
 .submenu-content a:hover {
     color: var(--main-color);
 }
-
-
 
 
 #darkMode-icon{
@@ -255,7 +246,7 @@ section{
 }
 
 .highlight {
-    font-size: 2rem; /* Taille de police plus grande */
+    font-size: 1.5rem; /* Taille de police plus grande */
     font-weight: bold; /* Met en gras */
     color: var(--text2-color); /* Couleur du texte, ajustable si nécessaire */
 }
@@ -338,7 +329,7 @@ section{
 }
 
 .home-img img {
-    max-width: 30%; 
+    max-width: 15%; 
     border-radius: 60px; 
     margin-bottom: 10px;
     margin-top: 40px;
