@@ -162,25 +162,25 @@ p {
 
 .sub-filter-btn {
     display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    border: 1px solid #ccc;
+    padding: 0.5em 1rem;
+    border-radius: 30px;
+    background-color: var(--btn-background);
+    color: var(--text-color);
+    border: 1px solid var(--btn-color);
     margin: 5px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: all 0.3s ease;
 }
 
 /* Style du bouton des sous-filtres actif */
 .sub-filter-btn.active {
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 /* Hover sur les sous-filtres */
 .sub-filter-btn:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 /* Positionnement et espacement des sous-filtres */
