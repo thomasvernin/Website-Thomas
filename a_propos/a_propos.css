@@ -160,6 +160,14 @@ p {
     padding-left: 0px;
 }
 
+.sub-filter-container-rh h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    padding-left: 0px;
+}
+
 .sub-filter-btn {
     display: inline-block;
     padding: 0.5em 1rem;
