@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');  // Boutons des filtres principaux
-    const subFilterContainer = document.querySelector('.sub-filter-container');  // Conteneur des sous-filtres
-    const subFilterButtons = document.querySelectorAll('.sub-filter-btn');  // Boutons des sous-filtres
+    const subFilterContainerData = document.querySelector('.sub-filter-container');  // Conteneur des sous-filtres Data
+    const subFilterContainerRh = document.querySelector('.sub-filter-container-rh');  // Conteneur des sous-filtres RH
+    const subFilterButtons = document.querySelectorAll('.sub-filter-btn');  // Boutons des sous-filtres Data
+    const subFilterButtonsRh = document.querySelectorAll('.sub-filter-btn.rh-specialist');  // Boutons des sous-filtres RH
     const cards = document.querySelectorAll('.card');  // Cartes de certification
 
     let activeFilter = 'all'; // Filtre actif par défaut
@@ -27,11 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         activeFilter = filter;  // Mettre à jour le filtre actif
 
-        // Si le filtre est "Data", afficher les sous-filtres
+        // Afficher les sous-filtres en fonction du filtre actif
         if (filter === 'data') {
-            subFilterContainer.style.display = 'block';
+            subFilterContainerData.style.display = 'block';
+            subFilterContainerRh.style.display = 'none';  // Masquer sous-filtres RH
+        } else if (filter === 'rh') {
+            subFilterContainerRh.style.display = 'block';
+            subFilterContainerData.style.display = 'none';  // Masquer sous-filtres Data
         } else {
-            subFilterContainer.style.display = 'none';
+            subFilterContainerData.style.display = 'none';
+            subFilterContainerRh.style.display = 'none';  // Masquer sous-filtres
         }
     }
 
@@ -43,9 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Appliquer le filtre principal
             applyFilter(filter);
 
-            // Si on clique sur un autre filtre que "Data", cacher les sous-filtres
-            if (filter !== 'data') {
-                subFilterContainer.style.display = 'none';  // Cache les sous-filtres
+            // Si on clique sur un autre filtre que "Data" ou "Rh", cacher les sous-filtres
+            if (filter !== 'data' && filter !== 'rh') {
+                subFilterContainerData.style.display = 'none';  // Cache les sous-filtres Data
+                subFilterContainerRh.style.display = 'none';  // Cache les sous-filtres RH
             }
         });
     });
@@ -56,16 +64,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Réinitialiser l'état des sous-filtres
         subFilterButtons.forEach(btn => btn.classList.remove('active'));
+        subFilterButtonsRh.forEach(btn => btn.classList.remove('active'));
 
         // Ajouter la classe active au bouton du sous-filtre sélectionné
         const activeBtn = document.querySelector(`.sub-filter-btn[data-filter="${subFilter}"]`);
         if (activeBtn) activeBtn.classList.add('active');
 
-        // Appliquer ou masquer les cartes en fonction du sous-filtre
+        // Appliquer ou masquer les cartes en fonction du sous-filtre sélectionné
         cards.forEach(card => {
             const categories = card.getAttribute('data-category').split(' ');
 
             if (activeFilter === 'data' && categories.includes(subFilter)) {
+                card.style.display = 'block';
+            } else if (activeFilter === 'rh' && categories.includes(subFilter)) {
                 card.style.display = 'block';
             } else {
                 card.style.display = 'none';
@@ -79,8 +90,18 @@ document.addEventListener('DOMContentLoaded', () => {
             event.stopPropagation();  // Empêche la propagation pour ne pas fermer les sous-filtres
 
             const subFilter = button.getAttribute('data-filter');
-
             // Appliquer le sous-filtre sélectionné
+            applySubFilter(subFilter);
+        });
+    });
+
+    // Ajouter des événements de clic pour chaque sous-filtre RH
+    subFilterButtonsRh.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();  // Empêche la propagation pour ne pas fermer les sous-filtres
+
+            const subFilter = button.getAttribute('data-filter');
+            // Appliquer le sous-filtre RH sélectionné
             applySubFilter(subFilter);
         });
     });
@@ -90,27 +111,275 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
 });
 
-// Fonction pour ouvrir un popup
-function openPopup(popupId) {
-    var popup = document.getElementById(popupId);
-    popup.style.display = 'block';
-    document.getElementById('popupOverlay').style.display = 'block';
-}
 
-// Fonction pour fermer un popup
-function closePopup(popupId) {
-    var popup = document.getElementById(popupId);
-    popup.style.display = 'none';
-    document.getElementById('popupOverlay').style.display = 'none';
-}
 
-// Fermer les popups lorsqu'on clique en dehors
-document.getElementById('popupOverlay').addEventListener('click', function() {
-    var popups = document.querySelectorAll('.popup');
-    popups.forEach(function(popup) {
-        closePopup(popup.id);
-    });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
