@@ -198,6 +198,11 @@ p {
     gap: 10px; /* Espacement entre les sous-filtres */
 }
 
+
+.sub-filter-container-rh {
+    margin-bottom: 20px; 
+}
+
 .sub-filter-btn {
     flex: 1 1 200px;  /* Adapte la taille des boutons des sous-filtres */
     max-width: 180px; /* Taille maximale des sous-filtres */
