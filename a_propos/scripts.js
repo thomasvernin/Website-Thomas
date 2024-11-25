@@ -114,6 +114,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Fonction pour ouvrir un popup
+function openPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+    document.getElementById('popupOverlay').style.display = 'block';
+}
+
+// Fonction pour fermer un popup
+function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = 'none';
+    document.getElementById('popupOverlay').style.display = 'none';
+}
+
+// Fermer les popups lorsqu'on clique en dehors
+document.getElementById('popupOverlay').addEventListener('click', function() {
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function(popup) {
+        closePopup(popup.id);
+    });
+});
+
+
+
+
 
 
 
